@@ -122,6 +122,9 @@ My research interests lie in data mining, Trustworthy Graph Learning, AI for Soc
 </article>
 </div>
 
+
+<img src="..\images\interaction.png" alt="Fake Health News Dataset Repository" style="height: 40px" class="image">
+
 <div style="display: flex;">
 <div class="column">
     <h3> Graph-Augmented AI for Social Good </h3>
