@@ -116,9 +116,8 @@ My research interests lie in data mining, Trustworthy Graph Learning, AI for Soc
         </p>
     </article>
     <article class="mini-post" style="height: 130px">
-        <b> A Comprehensive Survey of Trustworthy Graph Neural Networks in Fairness,  </b>
+        <b> A Comprehensive Survey of Trustworthy Graph Neural Networks: Privacy, Robustness, Fairness, and Explainability.  </b>
         <a href="your_link_to_paper" class="link">Paper</a>
-        </div>
     </article>
     </div>
 </div>
