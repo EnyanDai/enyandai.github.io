@@ -75,7 +75,7 @@ My research interests lie in data mining, Trustworthy Graph Learning, AI for Soc
 
 </style>
 
-<div style="display: flex;" style="border-top: 2px solid #000000;">
+<div style="display: flex; flex-direction: column;">
 <article class="mini-post" style="height: 200px">
     <img src="images\fairness.png" alt="Fairness" style="width: 140px; height=50px;" class="image">
     <p> <b> Fair Graph Neural Network </b> (WSDM-21) 
@@ -110,7 +110,7 @@ My research interests lie in data mining, Trustworthy Graph Learning, AI for Soc
 </div>
 </div>
 
-<div style="display: flex;"  style="border-bottom: 2px solid #000000;">
+<div style="display: flex; flex-direction: column;"  style="border-bottom: 2px solid #000000;">
 <div class="column">
     <h3> Trustworthy Graph Learning </h3>
 </div>
@@ -129,7 +129,7 @@ My research interests lie in data mining, Trustworthy Graph Learning, AI for Soc
 </div>
 </div>
 
-<div style="display: flex;" style="border: 2px solid #000000;">
+<div style="display: flex; flex-direction: column;" style="border: 2px solid #000000;">
 <div class="column">
     <h3> Graph-Augmented AI for Social Good </h3>
 </div>
