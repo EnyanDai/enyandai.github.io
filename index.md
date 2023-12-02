@@ -14,7 +14,7 @@ author_profile: true
 I am a final year Ph.D student in the College of Information Sciences and Technology at [Penn State University](https://www.psu.edu/) - University Park. My advisor is [Dr. Suhang Wang](https://suhangwang.ist.psu.edu/). I obtained my Master of AI degree from Computer Science Department at [KU Leuven](https://www.kuleuven.be/english/). I received my Bachelor Degree from the [University of Science and Technology of China](https://www.ustc.edu.cn/). I am actively hinting positions in academia/industry.
 
 ## Research Interests
-My research interests lie in data mining, Trustworthy Graph Learning, AI for Social Good applications, Trustworhty AI for Science, and Graph Foundation Model. update
+My research interests lie in data mining, Trustworthy Graph Learning, AI for Social Good applications, Trustworhty AI for Science, and Graph Foundation Model. update2
 
 <!-- ![intro_image](/images/symposium.png){:class="img-responsive"} -->
 <!-- <img src="/images/Jonggi_presentation.png" width="100%"> -->
@@ -57,8 +57,6 @@ My research interests lie in data mining, Trustworthy Graph Learning, AI for Soc
 }
 
 .column {
-    display: flex;
-    flex-direction: column;
     align-items: left;
     justify-content: center;
     margin: 0.5em 0.5em 0.5em 0.5em;
@@ -109,8 +107,6 @@ My research interests lie in data mining, Trustworthy Graph Learning, AI for Soc
     <a href="your_link_to_code" class="link">Code</a> </p>
 </article>
 </div>
-
-<div style="display: flex; flex-direction: column;"  style="border-bottom: 2px solid #000000;">
 <div class="column">
     <h3> Trustworthy Graph Learning </h3>
 </div>
@@ -129,7 +125,7 @@ My research interests lie in data mining, Trustworthy Graph Learning, AI for Soc
 </article>
 </div>
 
-<div style="display: flex; flex-direction: column;" style="border: 2px solid #000000;">
+<div style="display: flex;">
 <div class="column">
     <h3> Graph-Augmented AI for Social Good </h3>
 </div>
