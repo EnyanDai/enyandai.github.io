@@ -54,6 +54,21 @@ My research interests lie in data mining, Trustworthy Graph Learning, AI for Soc
     color: #333;
 }
 
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px; /* Adjust as needed */
+}
 /* Style for headings */
 .heading {
     font-size: 1.5em;
@@ -63,46 +78,43 @@ My research interests lie in data mining, Trustworthy Graph Learning, AI for Soc
 
 </style>
 
-
-<div class="mini-post">
-    <h3> Trustworthy Graph Learning </h3>
-</div>
-<div class="mini-post">
-    <img src="images\500x300.png" alt="Explainability" class="image">
-    <p> <b> Self-Explainable GNN </b> (CIKM-21) </p>
-    <div class="link-group">
-        <a href="your_link_to_paper" class="link">Paper</a>
-        <a href="your_link_to_code" class="link">Code</a>
+<div class="container">
+    <div class="column">
+        <h3> Trustworthy Graph Learning </h3>
     </div>
-</div>
-
-<div class="mini-post">
-    <p> <b> Survey of Trustworthy GNNs </b> </p>
-    <div class="link-group">
-        <a href="your_link_to_paper" class="link">Paper</a>
+    <div class="mini-post">
+        <img src="images\500x300.png" alt="Explainability" class="image">
+        <p> <b> Self-Explainable GNN </b> (CIKM-21) </p>
+        <div class="link-group">
+            <a href="your_link_to_paper" class="link">Paper</a>
+            <a href="your_link_to_code" class="link">Code</a>
+        </div>
     </div>
-</div>
-
-
-<div class="mini-post">
-    <h3> Graph-Augmented AI for Social Good </h3>
-</div>
-<div class="mini-post">
-    <img src="images\500x300.png" alt="Fake Health News Dataset Repository" class="image">
-    <p> <b> Fake Health News Dataset Repository </b> (ICWMS-20) </p>
-    <div class="link-group">
-        <a href="your_link_to_paper" class="link">Paper</a>
-        <a href="your_link_to_dataset" class="link">Dataset</a>
-        <a href="your_link_to_code" class="link">Code</a>
+    <div class="mini-post">
+        <p> <b> Survey of Trustworthy GNNs </b> </p>
+        <div class="link-group">
+            <a href="your_link_to_paper" class="link">Paper</a>
+        </div>
     </div>
-</div>
-
-<div class="mini-post">
-    <img src="images\500x300.png" alt="Graph-Augmented Anomaly Detection on Power Grids" class="image">
-    <p> <b> Graph-Augmented Anomaly Detection on Power Grids </b> (ICLR-20) </p>
-    <div class="link-group">
-        <a href="your_link_to_paper" class="link">Paper</a>
-        <a href="your_link_to_code" class="link">Code</a>
+    <div class="column">
+        <h3> Graph-Augmented AI for Social Good </h3>
+    </div>
+    <div class="mini-post">
+        <img src="images\500x300.png" alt="Fake Health News Dataset Repository" class="image">
+        <p> <b> Fake Health News Dataset Repository </b> (ICWMS-20) </p>
+        <div class="link-group">
+            <a href="your_link_to_paper" class="link">Paper</a>
+            <a href="your_link_to_dataset" class="link">Dataset</a>
+            <a href="your_link_to_code" class="link">Code</a>
+        </div>
+    </div>
+    <div class="mini-post">
+        <img src="images\500x300.png" alt="Graph-Augmented Anomaly Detection on Power Grids" class="image">
+        <p> <b> Graph-Augmented Anomaly Detection on Power Grids </b> (ICLR-20) </p>
+        <div class="link-group">
+            <a href="your_link_to_paper" class="link">Paper</a>
+            <a href="your_link_to_code" class="link">Code</a>
+        </div>
     </div>
 </div>
 <!-- End HTML content -->
