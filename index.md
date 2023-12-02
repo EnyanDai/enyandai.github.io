@@ -14,7 +14,7 @@ author_profile: true
 I am a final year Ph.D student in the College of Information Sciences and Technology at [Penn State University](https://www.psu.edu/) - University Park. My advisor is [Dr. Suhang Wang](https://suhangwang.ist.psu.edu/). I obtained my Master of AI degree from Computer Science Department at [KU Leuven](https://www.kuleuven.be/english/). I received my Bachelor Degree from the [University of Science and Technology of China](https://www.ustc.edu.cn/). I am actively hinting positions in academia/industry.
 
 ## Research Interests
-My research interests lie in data mining, Trustwortht Graph Learning, machine learning fairness, and robust machine learning.
+My research interests lie in data mining, Trustworthy Graph Learning, AI for Social Good applications, Trustworhty AI for Science, and Graph Foundation Model.
 
 <!-- ![intro_image](/images/symposium.png){:class="img-responsive"} -->
 <!-- <img src="/images/Jonggi_presentation.png" width="100%"> -->
@@ -43,27 +43,6 @@ My research interests lie in data mining, Trustwortht Graph Learning, machine le
     width: 30%;
 }
 /* Container for the whole page content */
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding: 20px;
-}
-
-/* Style for individual columns */
-.column {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 300px; /* Adjust as needed */
-}
-
-/* Style for images */
-.image {
-    margin-bottom: 10px;
-}
 
 /* Style for links */
 .link {
@@ -73,15 +52,6 @@ My research interests lie in data mining, Trustwortht Graph Learning, machine le
     border-radius: 5px;
     text-decoration: none;
     color: #333;
-}
-
-.link:hover {
-    background-color: #ddd;
-}
-
-/* Style for link groups */
-.link-group {
-    text-align: center;
 }
 
 /* Style for headings */
@@ -94,15 +64,44 @@ My research interests lie in data mining, Trustwortht Graph Learning, machine le
 </style>
 
 
-# Research Overview Section
+<div class="mini-post">
+    <h3> Trustworthy Graph Learning </h3>
+</div>
+<div class="mini-post">
+    <img src="images\500x300.png" alt="Explainability" class="image">
+    <p> <b> Self-Explainable GNN </b> (CIKM-21) </p>
+    <div class="link-group">
+        <a href="your_link_to_paper" class="link">Paper</a>
+        <a href="your_link_to_code" class="link">Code</a>
+    </div>
+</div>
 
-<!-- Begin HTML content -->
+<div class="mini-post">
+    <p> <b> Survey of Trustworthy GNNs </b> </p>
+    <div class="link-group">
+        <a href="your_link_to_paper" class="link">Paper</a>
+    </div>
+</div>
+
+
+<div class="mini-post">
+    <h3> Graph-Augmented AI for Social Good </h3>
+</div>
 <div class="mini-post">
     <img src="images\500x300.png" alt="Fake Health News Dataset Repository" class="image">
-    <p> Fake Health News Dataset Repository (ICWMS-20) </p>
+    <p> <b> Fake Health News Dataset Repository </b> (ICWMS-20) </p>
     <div class="link-group">
         <a href="your_link_to_paper" class="link">Paper</a>
         <a href="your_link_to_dataset" class="link">Dataset</a>
+        <a href="your_link_to_code" class="link">Code</a>
+    </div>
+</div>
+
+<div class="mini-post">
+    <img src="images\500x300.png" alt="Graph-Augmented Anomaly Detection on Power Grids" class="image">
+    <p> <b> Graph-Augmented Anomaly Detection on Power Grids </b> (ICLR-20) </p>
+    <div class="link-group">
+        <a href="your_link_to_paper" class="link">Paper</a>
         <a href="your_link_to_code" class="link">Code</a>
     </div>
 </div>
