@@ -40,7 +40,7 @@ My research interests lie in data mining, Trustworthy Graph Learning, AI for Soc
     border: solid 1px rgba(160, 160, 160, 0.3);
     margin: 0.5em 0.5em 0.5em 0.5em;
     padding: 1em 1em 1em 1em;
-    width: 230PX;
+    width: 33%
 }
 /* Container for the whole page content */
 
