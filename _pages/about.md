@@ -11,7 +11,7 @@ redirect_from:
 I am a final year Ph.D student in the College of Information Sciences and Technology at [Penn State University](https://www.psu.edu/) - University Park. My advisor is [Dr. Suhang Wang](https://suhangwang.ist.psu.edu/). I obtained my Master of AI degree from Computer Science Department at [KU Leuven](https://www.kuleuven.be/english/). I received my Bachelor Degree from the [University of Science and Technology of China](https://www.ustc.edu.cn/). I am actively hinting positions in academia/industry.
 
 ## Research Interests
-My research interests lie in data mining, Trustworthy Graph Learning, AI for Social Good applications, Trustworhty AI for Science, and Graph Foundation Model. update2
+My research interests lie in data mining, Trustworthy Graph Learning, AI for Social Good applications, Trustworhty AI for Science, and Graph Foundation Model. update3
 
 <!-- ![intro_image](/images/symposium.png){:class="img-responsive"} -->
 <!-- <img src="/images/Jonggi_presentation.png" width="100%"> -->
