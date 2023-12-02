@@ -69,63 +69,63 @@ My research interests lie in data mining, Trustworthy Graph Learning, AI for Soc
 }
 
 </style>
-
-<div style="display: flex;">
-<article class="mini-post" style="height: 200px">
-    <img src="..\images\fairness.png" alt="Fairness" style="width: 140px; height=50px;" class="image">
-    <p> <b> Fair Graph Neural Network </b> (WSDM-21) 
-    <a href="your_link_to_paper" class="link">Paper</a> 
-    <a href="your_link_to_code" class="link">Code</a> </p>
-    <p> <b> Privacy Preserving FairGNN </b> (TKDE) 
-    <a href="your_link_to_paper" class="link">Paper</a>
-    </p>
-</article>
-<article class="mini-post" style="height: 200px" >
-    <img src="..\images\privacy.png" alt="Privacy" style="width: 130px;" class="image">
-    <p> <b> Sensitive Attribute Protection </b> (TKDE) 
-    <a href="your_link_to_paper" class="link">Paper</a> 
-    <a href="your_link_to_code" class="link">Code</a> </p>
-    <p> <b> Membership Privacy Protection </b> (KDD-23) 
-    <a href="your_link_to_paper" class="link">Paper</a>
-    </p>
-</article>
-<article class="mini-post" style="height: 200px">
-    <img src="..\images\robustness.png" alt="robustness" style="width: 160px;" class="image">
-    <p> <b> Label Noise-Resistant GNN </b> (KDD-21) 
-    <a href="your_link_to_paper" class="link">Paper</a> 
-    <a href="your_link_to_code" class="link">Code</a>
-    <br> 
-    <b> Defend Structural Noise </b> (WSDM-22)
-    <a href="your_link_to_paper" class="link">Paper</a>
-    <a href="your_link_to_code" class="link">Code</a> 
-    <br>
-        <b> Unnoticeable Graph Backdoor </b> (WWW-23) 
-    <a href="your_link_to_paper" class="link">Paper</a>
-    <a href="your_link_to_code" class="link">Code</a> </p>
-</article>
-</div>
-<div style="display: flex;">
-<div class="column">
-    <h3> Trustworthy Graph Learning </h3>
-</div>
-<article class="mini-post" style="height: 130px">
-    <img src="..\images\explainability.png" alt="Explainability" style="width: 160px;" class="image">
-    <p> <b> Self-Explainable GNN </b> (CIKM-21)
-    <a href="your_link_to_paper" class="link">Paper</a>
-    <a href="your_link_to_code" class="link">Code</a>
-    </p>
-</article>
-<article class="mini-post" style="height: 130px">
-    <b> A Comprehensive Survey of Trustworthy Graph Neural Networks in Fairness,  </b>
-    <a href="your_link_to_paper" class="link">Paper</a>
+<div style="border: 1px dashed #000000;">
+    <div style="display: flex;">
+    <article class="mini-post" style="height: 200px">
+        <img src="..\images\fairness.png" alt="Fairness" style="width: 140px; height=50px;" class="image">
+        <p> <b> Fair Graph Neural Network </b> (WSDM-21) 
+        <a href="your_link_to_paper" class="link">Paper</a> 
+        <a href="your_link_to_code" class="link">Code</a> </p>
+        <p> <b> Privacy Preserving FairGNN </b> (TKDE) 
+        <a href="your_link_to_paper" class="link">Paper</a>
+        </p>
+    </article>
+    <article class="mini-post" style="height: 200px" >
+        <img src="..\images\privacy.png" alt="Privacy" style="width: 130px;" class="image">
+        <p> <b> Sensitive Attribute Protection </b> (TKDE) 
+        <a href="your_link_to_paper" class="link">Paper</a> 
+        <a href="your_link_to_code" class="link">Code</a> </p>
+        <p> <b> Membership Privacy Protection </b> (KDD-23) 
+        <a href="your_link_to_paper" class="link">Paper</a>
+        </p>
+    </article>
+    <article class="mini-post" style="height: 200px">
+        <img src="..\images\robustness.png" alt="robustness" style="width: 160px;" class="image">
+        <p> <b> Label Noise-Resistant GNN </b> (KDD-21) 
+        <a href="your_link_to_paper" class="link">Paper</a> 
+        <a href="your_link_to_code" class="link">Code</a>
+        <br> 
+        <b> Defend Structural Noise </b> (WSDM-22)
+        <a href="your_link_to_paper" class="link">Paper</a>
+        <a href="your_link_to_code" class="link">Code</a> 
+        <br>
+            <b> Unnoticeable Graph Backdoor </b> (WWW-23) 
+        <a href="your_link_to_paper" class="link">Paper</a>
+        <a href="your_link_to_code" class="link">Code</a> </p>
+    </article>
     </div>
-</article>
+    <div style="display: flex;">
+    <div class="column">
+        <h3> Trustworthy Graph Learning </h3>
+    </div>
+    <article class="mini-post" style="height: 130px">
+        <img src="..\images\explainability.png" alt="Explainability" style="width: 160px;" class="image">
+        <p> <b> Self-Explainable GNN </b> (CIKM-21)
+        <a href="your_link_to_paper" class="link">Paper</a>
+        <a href="your_link_to_code" class="link">Code</a>
+        </p>
+    </article>
+    <article class="mini-post" style="height: 130px">
+        <b> A Comprehensive Survey of Trustworthy Graph Neural Networks in Fairness,  </b>
+        <a href="your_link_to_paper" class="link">Paper</a>
+        </div>
+    </article>
+    </div>
 </div>
-
 
 <img src="..\images\interaction.png" alt="Fake Health News Dataset Repository" style="height: 40px" class="image">
 
-<div style="display: flex;">
+<div style="display: flex; border: 1px dashed #000000;">
 <div class="column">
     <h3> Graph-Augmented AI for Social Good </h3>
 </div>
