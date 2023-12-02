@@ -28,10 +28,7 @@ My research interests lie in data mining, Trustworthy Graph Learning, AI for Soc
     padding: 0;
 }
 .mini-post {
-    display: -moz-flex;
-    display: -webkit-flex;
-    display: -ms-flex;
-    display: inline-flex;
+    display: flex;
     -moz-flex-direction: column;
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
@@ -40,7 +37,8 @@ My research interests lie in data mining, Trustworthy Graph Learning, AI for Soc
     border: solid 1px rgba(160, 160, 160, 0.3);
     margin: 0.5em 0.5em 0.5em 0.5em;
     padding: 1em 1em 1em 1em;
-    width: 33%
+    width: 30%;
+    font-size: 13px
 }
 /* Container for the whole page content */
 
@@ -81,24 +79,24 @@ My research interests lie in data mining, Trustworthy Graph Learning, AI for Soc
 </style>
 
 
-<div class="mini-post" style="height: 210px">
-    <img src="images\fairness.png" alt="Fairness" style="width: 150px;" class="image">
+<article class="mini-post" style="height: 200px">
+    <img src="images\fairness.png" alt="Fairness" style="width: 140px; height=50px;" class="image">
     <p> <b> Fair Graph Neural Network </b> (WSDM-21) 
     <a href="your_link_to_paper" class="link">Paper</a> 
     <a href="your_link_to_code" class="link">Code</a> </p>
     <p> <b> Privacy Preserving FairGNN </b> (TKDE) 
     <a href="your_link_to_paper" class="link">Paper</a>
     </p>
-</div>
-<div class="mini-post" style="height: 210px">
-    <img src="images\privacy.png" alt="Privacy" style="width: 140px;" class="image">
+</article>
+<article class="mini-post" style="height: 200px" >
+    <img src="images\privacy.png" alt="Privacy" style="width: 140px; height=50px;" class="image">
     <p> <b> Sensitive Attribute Protection </b> (TKDE) 
     <a href="your_link_to_paper" class="link">Paper</a> 
     <a href="your_link_to_code" class="link">Code</a> </p>
     <p> <b> Membership Privacy Protection </b> (KDD-23) 
     <a href="your_link_to_paper" class="link">Paper</a>
     </p>
-</div>
+</article>
 <div class="mini-post" style="height: 210px">
     <img src="images\robustness.png" alt="robustness" style="width: 160px;" class="image">
     <p> <b> Label Noise-Resistant GNN </b> (KDD-21) 
