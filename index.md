@@ -40,15 +40,15 @@ My research interests lie in data mining, Trustworthy Graph Learning, AI for Soc
     border: solid 1px rgba(160, 160, 160, 0.3);
     margin: 0.5em 0.5em 0.5em 0.5em;
     padding: 1em 1em 1em 1em;
-    width: 30%;
+    width: 230PX;
 }
 /* Container for the whole page content */
 
 /* Style for links */
 .link {
     background-color: #eee;
-    padding: 5px 10px;
-    margin: 5px 0;
+    padding: 2px 5px;
+    margin: 2px 0;
     border-radius: 5px;
     text-decoration: none;
     color: #333;
@@ -66,8 +66,10 @@ My research interests lie in data mining, Trustworthy Graph Learning, AI for Soc
 .column {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 300px; /* Adjust as needed */
+    align-items: left;
+    justify-content: center;
+    width: 180px; /* Adjust as needed */
+    height: 100%;
 }
 /* Style for headings */
 .heading {
@@ -79,6 +81,36 @@ My research interests lie in data mining, Trustworthy Graph Learning, AI for Soc
 </style>
 
 <div class="container">
+    <div class="mini-post">
+        <img src="images\fairness.png" alt="Fairness" style="width: 150px; height: 50px;" class="image">
+        <p> <b> Fair Graph Neural Network </b> (WSDM-21) 
+        <a href="your_link_to_paper" class="link">Paper</a> 
+        <a href="your_link_to_code" class="link">Code</a> </p>
+        <p> <b> Privacy Preserving FairGNN </b> (TKDE) 
+        <a href="your_link_to_paper" class="link">Paper</a>
+        </p>
+    </div>
+    <div class="mini-post">
+        <img src="images\privacy.png" alt="Privacy" style="width: 150px; height: 50px;" class="image">
+        <p> <b> Sensitive Attribute Protection </b> (TKDE) 
+        <a href="your_link_to_paper" class="link">Paper</a> 
+        <a href="your_link_to_code" class="link">Code</a> </p>
+        <p> <b> Membership Privacy Protection </b> (KDD-23) 
+        <a href="your_link_to_paper" class="link">Paper</a>
+        </p>
+    </div>
+    <div class="mini-post">
+        <img src="images\robustness.png" alt="robustness" style="width: 160px; height: 45px;" class="image">
+        <p> <b> Label Noise-Resistant GNN </b> (KDD-21) 
+        <a href="your_link_to_paper" class="link">Paper</a> 
+        <a href="your_link_to_code" class="link">Code</a> 
+         <b> Defend Structural Noise </b> (WSDM-22) 
+        <a href="your_link_to_paper" class="link">Paper</a>
+        <a href="your_link_to_code" class="link">Code</a> 
+         <b> Unnoticeable Graph Backdoor </b> (WWW-23) 
+        <a href="your_link_to_paper" class="link">Paper</a>
+        <a href="your_link_to_code" class="link">Code</a> </p>
+    </div>
     <div class="column">
         <h3> Trustworthy Graph Learning </h3>
     </div>
@@ -100,8 +132,8 @@ My research interests lie in data mining, Trustworthy Graph Learning, AI for Soc
         <h3> Graph-Augmented AI for Social Good </h3>
     </div>
     <div class="mini-post">
-        <img src="images\500x300.png" alt="Fake Health News Dataset Repository" class="image">
-        <p> <b> Fake Health News Dataset Repository </b> (ICWMS-20) </p>
+        <img src="images\Fakehealth.png" alt="Fake Health News Dataset Repository" style="height: 120px" class="image">
+        <p> <b> Fake Health News Repository </b> with Social Network Context (ICWMS-20)  </p>
         <div class="link-group">
             <a href="your_link_to_paper" class="link">Paper</a>
             <a href="your_link_to_dataset" class="link">Dataset</a>
@@ -109,7 +141,7 @@ My research interests lie in data mining, Trustworthy Graph Learning, AI for Soc
         </div>
     </div>
     <div class="mini-post">
-        <img src="images\500x300.png" alt="Graph-Augmented Anomaly Detection on Power Grids" class="image">
+        <img src="images\GANF.png" alt="Graph-Augmented Anomaly Detection on Power Grids" style="height: 120px" class="image">
         <p> <b> Graph-Augmented Anomaly Detection on Power Grids </b> (ICLR-20) </p>
         <div class="link-group">
             <a href="your_link_to_paper" class="link">Paper</a>
