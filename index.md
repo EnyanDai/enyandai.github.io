@@ -80,70 +80,69 @@ My research interests lie in data mining, Trustworthy Graph Learning, AI for Soc
 
 </style>
 
-<div class="container">
-    <div class="mini-post" style="height: 210px">
-        <img src="images\fairness.png" alt="Fairness" style="width: 150px;" class="image">
-        <p> <b> Fair Graph Neural Network </b> (WSDM-21) 
-        <a href="your_link_to_paper" class="link">Paper</a> 
-        <a href="your_link_to_code" class="link">Code</a> </p>
-        <p> <b> Privacy Preserving FairGNN </b> (TKDE) 
+
+<div class="mini-post" style="height: 210px">
+    <img src="images\fairness.png" alt="Fairness" style="width: 150px;" class="image">
+    <p> <b> Fair Graph Neural Network </b> (WSDM-21) 
+    <a href="your_link_to_paper" class="link">Paper</a> 
+    <a href="your_link_to_code" class="link">Code</a> </p>
+    <p> <b> Privacy Preserving FairGNN </b> (TKDE) 
+    <a href="your_link_to_paper" class="link">Paper</a>
+    </p>
+</div>
+<div class="mini-post" style="height: 210px">
+    <img src="images\privacy.png" alt="Privacy" style="width: 140px;" class="image">
+    <p> <b> Sensitive Attribute Protection </b> (TKDE) 
+    <a href="your_link_to_paper" class="link">Paper</a> 
+    <a href="your_link_to_code" class="link">Code</a> </p>
+    <p> <b> Membership Privacy Protection </b> (KDD-23) 
+    <a href="your_link_to_paper" class="link">Paper</a>
+    </p>
+</div>
+<div class="mini-post" style="height: 210px">
+    <img src="images\robustness.png" alt="robustness" style="width: 160px;" class="image">
+    <p> <b> Label Noise-Resistant GNN </b> (KDD-21) 
+    <a href="your_link_to_paper" class="link">Paper</a> 
+    <a href="your_link_to_code" class="link">Code</a> 
+        <b> Defend Structural Noise </b> (WSDM-22) 
+    <a href="your_link_to_paper" class="link">Paper</a>
+    <a href="your_link_to_code" class="link">Code</a> 
+        <b> Unnoticeable Graph Backdoor </b> (WWW-23) 
+    <a href="your_link_to_paper" class="link">Paper</a>
+    <a href="your_link_to_code" class="link">Code</a> </p>
+</div>
+<div class="column">
+    <h3> Trustworthy Graph Learning </h3>
+</div>
+<div class="mini-post" style="height: 130px">
+    <img src="images\explainability.png" alt="Explainability" style="width: 160px;" class="image">
+    <p> <b> Self-Explainable GNN </b> (CIKM-21)
+    <a href="your_link_to_paper" class="link">Paper</a>
+    <a href="your_link_to_code" class="link">Code</a>
+    </p>
+</div>
+<div class="mini-post" style="height: 130px">
+    <p> <b> A Comprehensive Survey of Trustworthy Graph Neural Networks in Fairness </b> </p>
+    <div class="link-group">
         <a href="your_link_to_paper" class="link">Paper</a>
-        </p>
     </div>
-    <div class="mini-post" style="height: 210px">
-        <img src="images\privacy.png" alt="Privacy" style="width: 140px;" class="image">
-        <p> <b> Sensitive Attribute Protection </b> (TKDE) 
-        <a href="your_link_to_paper" class="link">Paper</a> 
-        <a href="your_link_to_code" class="link">Code</a> </p>
-        <p> <b> Membership Privacy Protection </b> (KDD-23) 
-        <a href="your_link_to_paper" class="link">Paper</a>
-        </p>
-    </div>
-    <div class="mini-post" style="height: 210px">
-        <img src="images\robustness.png" alt="robustness" style="width: 160px;" class="image">
-        <p> <b> Label Noise-Resistant GNN </b> (KDD-21) 
-        <a href="your_link_to_paper" class="link">Paper</a> 
-        <a href="your_link_to_code" class="link">Code</a> 
-         <b> Defend Structural Noise </b> (WSDM-22) 
-        <a href="your_link_to_paper" class="link">Paper</a>
-        <a href="your_link_to_code" class="link">Code</a> 
-         <b> Unnoticeable Graph Backdoor </b> (WWW-23) 
-        <a href="your_link_to_paper" class="link">Paper</a>
-        <a href="your_link_to_code" class="link">Code</a> </p>
-    </div>
-    <div class="column">
-        <h3> Trustworthy Graph Learning </h3>
-    </div>
-    <div class="mini-post" style="height: 130px">
-        <img src="images\explainability.png" alt="Explainability" style="width: 160px;" class="image">
-        <p> <b> Self-Explainable GNN </b> (CIKM-21)
-        <a href="your_link_to_paper" class="link">Paper</a>
-        <a href="your_link_to_code" class="link">Code</a>
-        </p>
-    </div>
-    <div class="mini-post" style="height: 130px">
-        <p> <b> A Comprehensive Survey of Trustworthy Graph Neural Networks in Fairness </b> </p>
-        <div class="link-group">
-            <a href="your_link_to_paper" class="link">Paper</a>
-        </div>
-    </div>
-    <div class="column">
-        <h3> Graph-Augmented AI for Social Good </h3>
-    </div>
-    <div class="mini-post">
-        <img src="images\Fakehealth.png" alt="Fake Health News Dataset Repository" style="height: 120px" class="image">
-        <p> <b> Fake Health News Repository </b> with Social Network Context (ICWMS-20)  
-        <a href="your_link_to_paper" class="link">Paper</a>
-        <a href="your_link_to_dataset" class="link">Dataset</a>
-        </p>
-    </div>
-    <div class="mini-post">
-        <img src="images\GANF.png" alt="Graph-Augmented Anomaly Detection on Power Grids" style="height: 120px" class="image">
-        <p> <b> Graph-Augmented Anomaly Detection on Power Grids </b> (ICLR-20)
-        <a href="your_link_to_paper" class="link">Paper</a>
-        <a href="your_link_to_code" class="link">Code</a>
-        </p>
-    </div>
+</div>
+<div class="column">
+    <h3> Graph-Augmented AI for Social Good </h3>
+</div>
+<div class="mini-post">
+    <img src="images\Fakehealth.png" alt="Fake Health News Dataset Repository" style="height: 120px" class="image">
+    <p> <b> Fake Health News Repository </b> with Social Network Context (ICWMS-20)  
+    <a href="your_link_to_paper" class="link">Paper</a>
+    <a href="your_link_to_dataset" class="link">Dataset</a>
+    </p>
+</div>
+<div class="mini-post">
+    <img src="images\GANF.png" alt="Graph-Augmented Anomaly Detection on Power Grids" style="height: 120px" class="image">
+    <p> <b> Graph-Augmented Anomaly Detection on Power Grids </b> (ICLR-20)
+    <a href="your_link_to_paper" class="link">Paper</a>
+    <a href="your_link_to_code" class="link">Code</a>
+    </p>
 </div>
 <!-- End HTML content -->
 
