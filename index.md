@@ -14,7 +14,7 @@ author_profile: true
 I am a final year Ph.D student in the College of Information Sciences and Technology at [Penn State University](https://www.psu.edu/) - University Park. My advisor is [Dr. Suhang Wang](https://suhangwang.ist.psu.edu/). I obtained my Master of AI degree from Computer Science Department at [KU Leuven](https://www.kuleuven.be/english/). I received my Bachelor Degree from the [University of Science and Technology of China](https://www.ustc.edu.cn/). I am actively hinting positions in academia/industry.
 
 ## Research Interests
-My research interests lie in data mining, Trustworthy Graph Learning, AI for Social Good applications, Trustworhty AI for Science, and Graph Foundation Model.
+My research interests lie in data mining, Trustworthy Graph Learning, AI for Social Good applications, Trustworhty AI for Science, and Graph Foundation Model. update
 
 <!-- ![intro_image](/images/symposium.png){:class="img-responsive"} -->
 <!-- <img src="/images/Jonggi_presentation.png" width="100%"> -->
@@ -75,7 +75,7 @@ My research interests lie in data mining, Trustworthy Graph Learning, AI for Soc
 
 </style>
 
-<div style="display: flex; flex-direction: column;">
+<div style="display: flex;">
 <article class="mini-post" style="height: 200px">
     <img src="images\fairness.png" alt="Fairness" style="width: 140px; height=50px;" class="image">
     <p> <b> Fair Graph Neural Network </b> (WSDM-21) 
@@ -94,7 +94,7 @@ My research interests lie in data mining, Trustworthy Graph Learning, AI for Soc
     <a href="your_link_to_paper" class="link">Paper</a>
     </p>
 </article>
-<div class="mini-post" style="height: 200px">
+<article class="mini-post" style="height: 200px">
     <img src="images\robustness.png" alt="robustness" style="width: 160px;" class="image">
     <p> <b> Label Noise-Resistant GNN </b> (KDD-21) 
     <a href="your_link_to_paper" class="link">Paper</a> 
@@ -107,46 +107,46 @@ My research interests lie in data mining, Trustworthy Graph Learning, AI for Soc
         <b> Unnoticeable Graph Backdoor </b> (WWW-23) 
     <a href="your_link_to_paper" class="link">Paper</a>
     <a href="your_link_to_code" class="link">Code</a> </p>
-</div>
+</article>
 </div>
 
 <div style="display: flex; flex-direction: column;"  style="border-bottom: 2px solid #000000;">
 <div class="column">
     <h3> Trustworthy Graph Learning </h3>
 </div>
-<div class="mini-post" style="height: 130px">
+<article class="mini-post" style="height: 130px">
     <img src="images\explainability.png" alt="Explainability" style="width: 160px;" class="image">
     <p> <b> Self-Explainable GNN </b> (CIKM-21)
     <a href="your_link_to_paper" class="link">Paper</a>
     <a href="your_link_to_code" class="link">Code</a>
     </p>
-</div>
-<div class="mini-post" style="height: 130px">
+</article>
+<article class="mini-post" style="height: 130px">
     <p> <b> A Comprehensive Survey of Trustworthy Graph Neural Networks in Fairness </b> </p>
     <div class="link-group">
         <a href="your_link_to_paper" class="link">Paper</a>
     </div>
-</div>
+</article>
 </div>
 
 <div style="display: flex; flex-direction: column;" style="border: 2px solid #000000;">
 <div class="column">
     <h3> Graph-Augmented AI for Social Good </h3>
 </div>
-<div class="mini-post">
+<article class="mini-post">
     <img src="images\Fakehealth.png" alt="Fake Health News Dataset Repository" style="height: 120px" class="image">
     <p> <b> Fake Health News Repository </b> with Social Network Context (ICWMS-20)  
     <a href="your_link_to_paper" class="link">Paper</a>
     <a href="your_link_to_dataset" class="link">Dataset</a>
     </p>
-</div>
-<div class="mini-post">
+</article>
+<article class="mini-post">
     <img src="images\GANF.png" alt="Graph-Augmented Anomaly Detection on Power Grids" style="height: 120px" class="image">
     <p> <b> Graph-Augmented Anomaly Detection on Power Grids </b> (ICLR-20)
     <a href="your_link_to_paper" class="link">Paper</a>
     <a href="your_link_to_code" class="link">Code</a>
     </p>
-</div>
+</article>
 </div>
 <!-- End HTML content -->
 
