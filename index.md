@@ -21,6 +21,12 @@ My research interests lie in data mining, Trustwortht Graph Learning, machine le
 
 
 <style>
+/* Basic reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 .mini-post {
     display: -moz-flex;
     display: -webkit-flex;
@@ -34,49 +40,74 @@ My research interests lie in data mining, Trustwortht Graph Learning, machine le
     border: solid 1px rgba(160, 160, 160, 0.3);
     margin: 0.5em 0.5em 0.5em 0.5em;
     padding: 1em 1em 1em 1em;
-    width: 45%;
+    width: 30%;
 }
-.author img {
-    display: block;
-    width: 2em;
-    margin: 0.5em;
+/* Container for the whole page content */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
 }
+
+/* Style for individual columns */
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px; /* Adjust as needed */
+}
+
+/* Style for images */
+.image {
+    margin-bottom: 10px;
+}
+
+/* Style for links */
+.link {
+    background-color: #eee;
+    padding: 5px 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #333;
+}
+
+.link:hover {
+    background-color: #ddd;
+}
+
+/* Style for link groups */
+.link-group {
+    text-align: center;
+}
+
+/* Style for headings */
+.heading {
+    font-size: 1.5em;
+    color: #333;
+    margin: 10px 0;
+}
+
 </style>
 
 
+# Research Overview Section
 
-<article class="mini-post">
-    <header>
-        <h2>Trustworthy Graph Learning</h2>
-    </header>
-    <a class="prj_thumb" href="projects/index.html#trustworthy-graph-learning">
-        <img src="/images/graph_learning_thumbnail.png" alt="Trustworthy Graph Learning Thumbnail" />
-    </a>
-    <div>
-        Fairness, Privacy, Robustness, Explainability
+<!-- Begin HTML content -->
+<div class="mini-post">
+    <img src="images\500x300.png" alt="Fake Health News Dataset Repository" class="image">
+    <p> Fake Health News Dataset Repository (ICWMS-20) </p>
+    <div class="link-group">
+        <a href="your_link_to_paper" class="link">Paper</a>
+        <a href="your_link_to_dataset" class="link">Dataset</a>
+        <a href="your_link_to_code" class="link">Code</a>
     </div>
-    <div>
-        <a href="projects/index.html#ai-for-social-good">AI for Social Good</a><br>
-        <a href="projects/index.html#ai-for-science">AI for Science</a><br>
-        <a href="projects/index.html#graph-foundation-model">Graph Foundation Model</a>
-    </div>
-</article>
+</div>
+<!-- End HTML content -->
 
-<article class="mini-post">
-    <header>
-        <h2>AI for Real-World Applications</h2>
-    </header>
-    <a class="prj_thumb" href="projects/index.html#ai-for-real-world-applications">
-        <img src="/images/real_world_applications_thumbnail.png" alt="AI for Real-World Applications Thumbnail" />
-    </a>
-    <div>
-        Promote, Require
-    </div>
-    <div>
-        <a href="projects/index.html#promote">Promote</a><br>
-        <a href="projects/index.html#require">Require</a>
-    </div>
-</article>
 
 
 
