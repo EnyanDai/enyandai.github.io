@@ -81,8 +81,8 @@ My research interests lie in data mining, Trustworthy Graph Learning, AI for Soc
 </style>
 
 <div class="container">
-    <div class="mini-post">
-        <img src="images\fairness.png" alt="Fairness" style="width: 150px; height: 50px;" class="image">
+    <div class="mini-post" style="height: 210px">
+        <img src="images\fairness.png" alt="Fairness" style="width: 150px;" class="image">
         <p> <b> Fair Graph Neural Network </b> (WSDM-21) 
         <a href="your_link_to_paper" class="link">Paper</a> 
         <a href="your_link_to_code" class="link">Code</a> </p>
@@ -90,8 +90,8 @@ My research interests lie in data mining, Trustworthy Graph Learning, AI for Soc
         <a href="your_link_to_paper" class="link">Paper</a>
         </p>
     </div>
-    <div class="mini-post">
-        <img src="images\privacy.png" alt="Privacy" style="width: 150px; height: 50px;" class="image">
+    <div class="mini-post" style="height: 210px">
+        <img src="images\privacy.png" alt="Privacy" style="width: 140px;" class="image">
         <p> <b> Sensitive Attribute Protection </b> (TKDE) 
         <a href="your_link_to_paper" class="link">Paper</a> 
         <a href="your_link_to_code" class="link">Code</a> </p>
@@ -99,8 +99,8 @@ My research interests lie in data mining, Trustworthy Graph Learning, AI for Soc
         <a href="your_link_to_paper" class="link">Paper</a>
         </p>
     </div>
-    <div class="mini-post">
-        <img src="images\robustness.png" alt="robustness" style="width: 160px; height: 45px;" class="image">
+    <div class="mini-post" style="height: 210px">
+        <img src="images\robustness.png" alt="robustness" style="width: 160px;" class="image">
         <p> <b> Label Noise-Resistant GNN </b> (KDD-21) 
         <a href="your_link_to_paper" class="link">Paper</a> 
         <a href="your_link_to_code" class="link">Code</a> 
@@ -114,16 +114,15 @@ My research interests lie in data mining, Trustworthy Graph Learning, AI for Soc
     <div class="column">
         <h3> Trustworthy Graph Learning </h3>
     </div>
-    <div class="mini-post">
-        <img src="images\500x300.png" alt="Explainability" class="image">
-        <p> <b> Self-Explainable GNN </b> (CIKM-21) </p>
-        <div class="link-group">
-            <a href="your_link_to_paper" class="link">Paper</a>
-            <a href="your_link_to_code" class="link">Code</a>
-        </div>
+    <div class="mini-post" style="height: 130px">
+        <img src="images\explainability.png" alt="Explainability" style="width: 160px;" class="image">
+        <p> <b> Self-Explainable GNN </b> (CIKM-21)
+        <a href="your_link_to_paper" class="link">Paper</a>
+        <a href="your_link_to_code" class="link">Code</a>
+        </p>
     </div>
-    <div class="mini-post">
-        <p> <b> Survey of Trustworthy GNNs </b> </p>
+    <div class="mini-post" style="height: 130px">
+        <p> <b> A Comprehensive Survey of Trustworthy Graph Neural Networks in Fairness </b> </p>
         <div class="link-group">
             <a href="your_link_to_paper" class="link">Paper</a>
         </div>
@@ -133,20 +132,17 @@ My research interests lie in data mining, Trustworthy Graph Learning, AI for Soc
     </div>
     <div class="mini-post">
         <img src="images\Fakehealth.png" alt="Fake Health News Dataset Repository" style="height: 120px" class="image">
-        <p> <b> Fake Health News Repository </b> with Social Network Context (ICWMS-20)  </p>
-        <div class="link-group">
-            <a href="your_link_to_paper" class="link">Paper</a>
-            <a href="your_link_to_dataset" class="link">Dataset</a>
-            <a href="your_link_to_code" class="link">Code</a>
-        </div>
+        <p> <b> Fake Health News Repository </b> with Social Network Context (ICWMS-20)  
+        <a href="your_link_to_paper" class="link">Paper</a>
+        <a href="your_link_to_dataset" class="link">Dataset</a>
+        </p>
     </div>
     <div class="mini-post">
         <img src="images\GANF.png" alt="Graph-Augmented Anomaly Detection on Power Grids" style="height: 120px" class="image">
-        <p> <b> Graph-Augmented Anomaly Detection on Power Grids </b> (ICLR-20) </p>
-        <div class="link-group">
-            <a href="your_link_to_paper" class="link">Paper</a>
-            <a href="your_link_to_code" class="link">Code</a>
-        </div>
+        <p> <b> Graph-Augmented Anomaly Detection on Power Grids </b> (ICLR-20)
+        <a href="your_link_to_paper" class="link">Paper</a>
+        <a href="your_link_to_code" class="link">Code</a>
+        </p>
     </div>
 </div>
 <!-- End HTML content -->
