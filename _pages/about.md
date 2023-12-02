@@ -86,7 +86,7 @@ My research interests lie in data mining, Trustworthy Graph Learning, AI for Soc
         <p> <b> Sensitive Attribute Protection </b> (TKDE) 
         <a href="https://enyandai.github.io/files/FairGNN_journal.pdf" class="link">Paper</a> 
         <p> <b> Membership Privacy Protection </b> (KDD-23) 
-        <a href="https://dl.acm.org/doi/abs/10.1145/3580305.3599248" class="link">Paper</a>
+        <a href="" class="link">Paper</a>
         </p>
     </article>
     <article class="mini-post" style="height: 200px">
