@@ -1,9 +1,11 @@
+# main links links
 main:
   - title: "Publications"
-    url: /publicatios/
-
+    url: /publications
+        
   - title: "Blog Posts"
     url: /year-archive/
     
   - title: "CV"
     url: /files/CV.pdf
+    

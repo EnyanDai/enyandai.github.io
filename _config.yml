@@ -5,25 +5,13 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # `jekyll serve`. If you change this file, please restart the server process.
 
-
-      
-author:
-  name             : "Enyan Dai"
-  avatar           : "profile.png"
-  bio              : "The Pennsylvania State University, IST"
-  location         : 
-  googlescholar    : "https://scholar.google.com/citations?user=bLfT4OYAAAAJ&hl=en"
-  email            : "emd5759@psu.edu" 
-  github           : "enyandai"
-  
-
-
 # Site Settings
+locale                   : "en-US"
 title                    : "Enyan Dai"
 title_separator          : "|"
 name                     : &name "Enyan Dai"
 description              : &description "Enyan's website"
-url                      : "https://enyandai.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : https://enyandai.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "enyandai/enyandai.github.io"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
@@ -69,7 +57,7 @@ yandex_site_verification :
 
 # Social Sharing
 twitter:
-  username               : &jonggi_hong
+  username               : &twitter
 facebook:
   username               :
   app_id                 :
@@ -84,14 +72,49 @@ social:
 
 
 # Analytics
-#analytics: 
-#  provider               :  "google-universal" # false (default), "google", "google-universal", "custom"
-#  google:
-#    tracking_id          : "UA-46462564-2"
-google_analytics: G-EFJZLCFJ0V
+analytics:
+  provider               :  "google-universal" # false (default), "google", "google-universal", "custom"
+  google:
+    tracking_id          :
 
 
-  
+# Site Author
+author:
+  name             : "Enyan Dai"
+  avatar           : "profile.png"
+  bio              : "The Pennsylvania State University, IST"
+  location         : 
+  employer         :
+  pubmed           : 
+  googlescholar    : "https://scholar.google.com/citations?user=bLfT4OYAAAAJ&hl=en"
+  email            : "emd5759@psu.edu" 
+  researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
+  uri              :
+  bitbucket        :
+  codepen          :
+  dribbble         :
+  flickr           :
+  facebook         :
+  foursquare       :
+  github           : "enyandai"
+  google_plus      :
+  keybase          :
+  instagram        :
+  impactstory      : 
+  lastfm           :
+  linkedin         :
+  orcid            : 
+  pinterest        :
+  soundcloud       :
+  stackoverflow    : 
+  steam            :
+  tumblr           :
+  twitter          : 
+  vine             :
+  weibo            :
+  xing             :
+  youtube          :
+  wikipedia        :
 
 
 # Reading Files
@@ -150,6 +173,21 @@ kramdown:
   enable_coderay: false
 
 
+# Collections
+collections:
+  teaching:
+    output: true
+    permalink: /:collection/:path/
+  publications:
+    output: true
+    permalink: /:collection/:path/
+  portfolio:
+    output: true
+    permalink: /:collection/:path/
+  talks:
+    output: true
+    permalink: /:collection/:path/
+
 
 # Defaults
 defaults:
@@ -171,7 +209,41 @@ defaults:
     values:
       layout: single
       author_profile: true
-
+  # _teaching
+  - scope:
+      path: ""
+      type: teaching
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comments: true
+  # _publications
+  - scope:
+      path: ""
+      type: publications
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comments: true
+  # _portfolio
+  - scope:
+      path: ""
+      type: portfolio
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comment: true
+  # _talks
+  - scope:
+      path: ""
+      type: talks
+    values:
+      layout: talk
+      author_profile: true
+      share: true
 
 # Sass/SCSS
 sass:
@@ -183,7 +255,7 @@ sass:
 permalink: /:categories/:title/
 # paginate: 5 # amount of posts to show
 # paginate_path: /page:num/
-timezone: America/New_York # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: America/Los_Angeles # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins
