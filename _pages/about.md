@@ -90,7 +90,7 @@ My research interests lie in data mining, Trustworthy Graph Learning, AI for Soc
     </article>
     <article class="mini-post">
         <img src="..\images\robustness.png" alt="robustness" style="width: 160px;" class="image">
-        <p> <b> Label Noise-Resistant GNN </b> (KDD-21) 
+        <b> Label Noise-Resistant GNN </b> (KDD-21) 
         <a href="https://arxiv.org/abs/2106.04714" class="link">Paper</a> 
         <a href="https://github.com/EnyanDai/NRGNN" class="link">Code</a>
         <br> 
@@ -98,9 +98,9 @@ My research interests lie in data mining, Trustworthy Graph Learning, AI for Soc
         <a href="https://arxiv.org/pdf/2201.00232.pdf" class="link">Paper</a>
         <a href="https://github.com/EnyanDai/RSGNN" class="link">Code</a> 
         <br>
-            <b> Unnoticeable Graph Backdoor </b> (WWW-23) 
+        <b> Unnoticeable Graph Backdoor </b> (WWW-23) 
         <a href="https://arxiv.org/pdf/2303.01263.pdf" class="link">Paper</a>
-        <a href="https://github.com/EnyanDai/UGBA" class="link">Code</a> </p>
+        <a href="https://github.com/EnyanDai/UGBA" class="link">Code</a> 
     </article>
     </div>
     <div style="display: flex;">
