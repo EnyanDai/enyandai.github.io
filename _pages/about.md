@@ -142,8 +142,7 @@ My research interests lie in data mining, Trustworthy Graph Learning, AI for Soc
     </p>
 </article>
 </div>
-
-<h2>Future Research Directions</h2>
+<h3>Future Research Directions</h3>
 <div style="display: flex;">
     <article class="mini-post">
         <h2> Unified Framework of Trustworhy Graph Model </h2>
