@@ -143,10 +143,10 @@ My research interests lie in data mining, Trustworthy Graph Learning, AI for Soc
 </article>
 </div>
 
-<h3>Future Research Directions</h3>
+<h2>Future Research Directions</h2>
 <div style="display: flex;">
     <article class="mini-post">
-        <h3> Unified Framework of Trustworhy Graph Model </h3>
+        <h2> Unified Framework of Trustworhy Graph Model </h2>
         <p> <b> Preliminary Works: </b> 
         <br>
         <b> Fairness and Sensitive Attribute Privacy </b> (TKDE)
@@ -157,7 +157,7 @@ My research interests lie in data mining, Trustworthy Graph Learning, AI for Soc
         </p>
     </article>
     <article class="mini-post">
-        <h3> Domain-Specific Graph Foundation Model </h3>
+        <h2> Domain-Specific Graph Foundation Model </h2>
         <p> <b> Preliminary Works: </b>
         <br>
         <b> Neural Architecture on Small Heterophilic Graphs </b> (LOG-22)
@@ -169,7 +169,7 @@ My research interests lie in data mining, Trustworthy Graph Learning, AI for Soc
         </p>
     </article>
     <article class="mini-post">
-        <h3> Trustworthy Model for Science </h3>
+        <h2> Trustworthy Model for Science </h2>
         <p> <b> Preliminary Works: </b> 
         <br>
         <b> Prototype-Based Explainable Molecular Classifier </b> to Interpret the Key Pattern of Each Class (Preprint). 
