@@ -126,14 +126,14 @@ My research interests lie in data mining, Trustworthy Graph Learning, AI for Soc
     <h3> Graph-Augmented AI for Social Good </h3>
 </div>
 <article class="mini-post">
-    <img src="..\images\Fakehealth.png" alt="Fake Health News Dataset Repository" style="height: 120px" class="image">
+    <img src="..\images\Fakehealth.png" alt="Fake Health News Dataset Repository" style="width: 170px" class="image">
     <p> <b> Fake Health News Repository </b> with Social Network Context (ICWMS-20)  
     <a href="https://arxiv.org/pdf/2002.00837.pdf" class="link">Paper</a>
     <a href="https://zenodo.org/record/3606757" class="link">Dataset</a>
     </p>
 </article>
 <article class="mini-post">
-    <img src="..\images\GANF.png" alt="Graph-Augmented Anomaly Detection on Power Grids" style="height: 120px" class="image">
+    <img src="..\images\GANF.png" alt="Graph-Augmented Anomaly Detection on Power Grids" style="width: 170px" class="image">
     <p> <b> Graph-Augmented Anomaly Detection on Power Grids </b> (ICLR-22)
     <a href="https://openreview.net/pdf?id=45L_dgP48Vd" class="link">Paper</a>
     <a href="https://github.com/EnyanDai/GANF" class="link">Code</a>
