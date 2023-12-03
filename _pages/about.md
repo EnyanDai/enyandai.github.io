@@ -115,8 +115,8 @@ My research interests lie in data mining, Trustworthy Graph Learning, AI for Soc
     <article class="mini-post">
         <img src="..\images\explainability.png" alt="Explainability" style="width: 160px;" class="image">
         <p> <b> Self-Explainable GNN </b> (CIKM-21)
-        <a href="https://arxiv.org/pdf/2009.01454.pdf" class="link">Paper</a>
-        <a href="https://github.com/EnyanDai/FairGNN" class="link">Code</a>
+        <a href="https://arxiv.org/pdf/2108.12055.pdf" class="link">Paper</a>
+        <a href="https://github.com/EnyanDai/SEGNN" class="link">Code</a>
         </p>
     </article>
     <article class="mini-post">
