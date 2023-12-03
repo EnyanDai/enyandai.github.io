@@ -145,7 +145,7 @@ My research interests lie in data mining, Trustworthy Graph Learning, AI for Soc
 <h3>Future Research Directions</h3>
 <div style="display: flex;">
     <article class="mini-post">
-        <h2> Unified Framework of Trustworhy Graph Model </h2>
+        <h2> Unified Framework of Trustworthy Graph Model </h2>
         <p> <b> Preliminary Works: </b> 
         <br>
         <b> Fairness and Sensitive Attribute Privacy </b> (TKDE)
