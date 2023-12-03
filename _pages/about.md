@@ -147,7 +147,7 @@ My research interests lie in data mining, Trustworthy Graph Learning, AI for Soc
 <div style="display: flex;">
     <article class="mini-post">
         <h3> Unified Framework of Trustworhy Graph Model </h3>
-        <p> <b> Preliminarly Works: </b> 
+        <p> <b> Preliminary Works: </b> 
         <br>
         <b> Fairness and Sensitive Attribute Privacy </b> (TKDE)
         <a href="https://openreview.net/pdf?id=45L_dgP48Vd" class="link">Paper</a>
@@ -155,14 +155,10 @@ My research interests lie in data mining, Trustworthy Graph Learning, AI for Soc
         <b> Robustness and Membership Privacy </b>
         <a href="https://dl.acm.org/doi/abs/10.1145/3580305.3599248" class="link">Paper</a>
         </p>
-        <p> <b> To Do: </b>
-        <br>
-        <b> Unifying all aspects of trustworthiness in graph learning </b>
-        </p>
     </article>
     <article class="mini-post">
         <h3> Domain-Specific Graph Foundation Model </h3>
-        <p> <b> Preliminarly Works: </b>
+        <p> <b> Preliminary Works: </b>
         <br>
         <b> Neural Architecture on Small Heterophilic Graphs </b> (LOG-22)
         <a href="https://arxiv.org/pdf/2110.08128.pdf" class="link">Paper</a>
@@ -171,26 +167,16 @@ My research interests lie in data mining, Trustworthy Graph Learning, AI for Soc
         <b> LLM-Enhanced Explainable GNN on Molecular Classification  </b> (Preprint)
         <a href="" class="link">Paper</a>
         </p>
-        <p> <b> To Do: </b>
-        <br>
-        <b> Training tasks, model architecture, trustworhtiness for domains such as protein Molecular, energy Network, computer network, etc </b>
-        </p>
     </article>
     <article class="mini-post">
         <h3> Trustworthy Model for Science </h3>
-        <p> <b> Preliminarly Works: </b> 
+        <p> <b> Preliminary Works: </b> 
         <br>
         <b> Prototype-Based Explainable Molecular Classifier </b> to Interpret the Key Pattern of Each Class (Preprint). 
         <a href="https://arxiv.org/abs/2210.01974" class="link">Paper</a>
         <br>
         <b> LLM-Enhanced Explainable GNN on Molecular Classification  </b> (Preprint)
         <a href="" class="link">Paper</a>
-        </p>
-        <p> <b> To Do: </b>
-        <br>
-        <b> Foundation investigations on improving performance and trustworhiness. </b>
-        <br>
-        <b> Trustworhy models on more real and impactful scientific problems such as protein analysis and mechanics. </b>
         </p>
     </article>
 </div>
