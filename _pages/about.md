@@ -71,7 +71,7 @@ My research interests lie in data mining, Trustworthy Graph Learning, AI for Soc
 </style>
 <div style="border: 1px dashed #000000;">
     <div style="display: flex;">
-    <article class="mini-post" style="height: 200px">
+    <article class="mini-post">
         <img src="..\images\fairness.png" alt="Fairness" style="width: 140px; height=50px;" class="image">
         <p> <b> Fair Graph Neural Network </b> (WSDM-21) 
         <a href="https://arxiv.org/pdf/2009.01454.pdf" class="link">Paper</a> 
@@ -80,7 +80,7 @@ My research interests lie in data mining, Trustworthy Graph Learning, AI for Soc
         <a href="https://enyandai.github.io/files/FairGNN_journal.pdf" class="link">Paper</a>
         </p>
     </article>
-    <article class="mini-post" style="height: 200px" >
+    <article class="mini-post">
         <img src="..\images\privacy.png" alt="Privacy" style="width: 130px;" class="image">
         <p> <b> Sensitive Attribute Protection </b> (TKDE) 
         <a href="https://enyandai.github.io/files/FairGNN_journal.pdf" class="link">Paper</a> </p>
@@ -88,7 +88,7 @@ My research interests lie in data mining, Trustworthy Graph Learning, AI for Soc
         <a href="https://dl.acm.org/doi/abs/10.1145/3580305.3599248" class="link">Paper</a>
         </p>
     </article>
-    <article class="mini-post" style="height: 200px">
+    <article class="mini-post">
         <img src="..\images\robustness.png" alt="robustness" style="width: 160px;" class="image">
         <p> <b> Label Noise-Resistant GNN </b> (KDD-21) 
         <a href="https://arxiv.org/abs/2106.04714" class="link">Paper</a> 
@@ -107,14 +107,14 @@ My research interests lie in data mining, Trustworthy Graph Learning, AI for Soc
     <div class="column">
         <h3> Trustworthy Graph Learning </h3>
     </div>
-    <article class="mini-post" style="height: 130px">
+    <article class="mini-post">
         <img src="..\images\explainability.png" alt="Explainability" style="width: 160px;" class="image">
         <p> <b> Self-Explainable GNN </b> (CIKM-21)
         <a href="https://arxiv.org/pdf/2009.01454.pdf" class="link">Paper</a>
         <a href="https://github.com/EnyanDai/FairGNN" class="link">Code</a>
         </p>
     </article>
-    <article class="mini-post" style="height: 130px">
+    <article class="mini-post">
         <b> A Comprehensive Survey of Trustworthy Graph Neural Networks: Privacy, Robustness, Fairness, and Explainability.  </b>
         <a href="https://arxiv.org/pdf/2204.08570.pdf" class="link">Paper</a>
     </article>
@@ -134,7 +134,7 @@ My research interests lie in data mining, Trustworthy Graph Learning, AI for Soc
 </article>
 <article class="mini-post">
     <img src="..\images\GANF.png" alt="Graph-Augmented Anomaly Detection on Power Grids" style="height: 120px" class="image">
-    <p> <b> Graph-Augmented Anomaly Detection on Power Grids </b> (ICLR-20)
+    <p> <b> Graph-Augmented Anomaly Detection on Power Grids </b> (ICLR-22)
     <a href="https://openreview.net/pdf?id=45L_dgP48Vd" class="link">Paper</a>
     <a href="https://github.com/EnyanDai/GANF" class="link">Code</a>
     </p>
