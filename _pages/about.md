@@ -10,7 +10,7 @@ redirect_from:
 
 I am a final year Ph.D student in the College of Information Sciences and Technology at [Penn State University](https://www.psu.edu/) - University Park. My advisor is [Dr. Suhang Wang](https://suhangwang.ist.psu.edu/). I obtained my Master of AI degree from Computer Science Department at [KU Leuven](https://www.kuleuven.be/english/). I received my Bachelor Degree from the [University of Science and Technology of China](https://www.ustc.edu.cn/). I am actively looking for positions in academia/industry.
 
-<span style="color:red"><b> I will attend NeurIPS-23 in New Orleans during 12.10~12.13. Should you be attending as well, I welcome the chance to connect and engage in insightful discussions.  </b></span>
+<span style="color:red"><b> I will attend NeurIPS-23 in New Orleans during 12.10~12.13. Should you be attending as well, I welcome the chance to connect and engage in insightful discussions.  </b> &#x1F600; </span>
 
 
 ## Research Interests
