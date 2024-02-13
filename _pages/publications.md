@@ -10,7 +10,7 @@ author_profile: true
 1. **Enyan Dai**, Tianxiang Zhao, Huaisheng Zhu, Junjie Xu, Zhimeng Guo, Hui Liu, Jiliang Tang, and Suhang Wang. "A Comprehensive Survey on Trustworthy Graph Neural Networks: Privacy, Robustness, Fairness, and Explainability." \[[paper](https://arxiv.org/pdf/2204.08570.pdf)].
 2. **Enyan Dai**, Suhang Wang. "Towards Prototype-Based Self-Explainable Graph Neural Network."  Submitted to **TKDD (Minor Revision)** [[paper](https://arxiv.org/abs/2210.01974)]
 3. **Enyan Dai**, Minhua Lin, Suhang Wang. "PreGIP: Watermarking the Pretraining of Graph Neural Networks for Deep Intellectual Property Protection." [[paper](https://arxiv.org/abs/2402.04435)]
-4. Junjie Xu, **Enyan Dai**, Dongsheng Luo, Xiang Zhang, Suhang Wang. "Shape-aware Graph Spectral Learning."
+4. Junjie Xu, **Enyan Dai**, Dongsheng Luo, Xiang Zhang, Suhang Wang. "Shape-aware Graph Spectral Learning." [[paper](https://arxiv.org/abs/2310.10064)]
 5.  Minhua Lin, **Enyan Dai**, Junjie Xu, Suhang Wang. "Stealing Training Graphs from Graph Neural Networks."
 6.  Zhiwei Zhang, **Enyan Dai**, Minhua Lin. "Rethinking Graph Backdoor Attacks: A Distribution-Preserving Perspective."
 7.  Shuotong Bai, **Enyan Dai**, Liu Lei, Huaxiao Liu. ``AIPL: Automated Linking GitHub Issue and PR." Submitted to **TSE (Major Revision)**
