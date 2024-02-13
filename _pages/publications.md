@@ -7,12 +7,19 @@ author_profile: true
 
 
 ## Preprints
-1. **Enyan Dai**, Tianxiang Zhao, Huaisheng Zhu, Junjie Xu, Zhimeng Guo, Hui Liu, Jiliang Tang, and Suhang Wang. "A Comprehensive Survey on Trustworthy Graph Neural Networks: Privacy, Robustness, Fairness, and Explainability." \[[paper](https://arxiv.org/pdf/2204.08570.pdf)] submitted to **TIST**.
-2. **Enyan Dai**, Suhang Wang. "Towards Prototype-Based Self-Explainable Graph Neural Network." [[paper](https://arxiv.org/abs/2210.01974)]
+1. **Enyan Dai**, Tianxiang Zhao, Huaisheng Zhu, Junjie Xu, Zhimeng Guo, Hui Liu, Jiliang Tang, and Suhang Wang. "A Comprehensive Survey on Trustworthy Graph Neural Networks: Privacy, Robustness, Fairness, and Explainability." \[[paper](https://arxiv.org/pdf/2204.08570.pdf)].
+2. **Enyan Dai**, Suhang Wang. "Towards Prototype-Based Self-Explainable Graph Neural Network."  Submitted to **TKDD (Minor Revision)** [[paper](https://arxiv.org/abs/2210.01974)]
+3. **Enyan Dai**, Minhua Lin, Suhang Wang. "PreGIP: Watermarking the Pretraining of Graph Neural Networks for Deep Intellectual Property Protection." [[paper](https://arxiv.org/abs/2402.04435)]
+4. Junjie Xu, **Enyan Dai**, Dongsheng Luo, Xiang Zhang, Suhang Wang. "Shape-aware Graph Spectral Learning."
+5.  Minhua Lin, **Enyan Dai**, Junjie Xu, Suhang Wang. "Stealing Training Graphs from Graph Neural Networks."
+6.  Zhiwei Zhang, **Enyan Dai**, Minhua Lin. "Rethinking Graph Backdoor Attacks: A Distribution-Preserving Perspective."
+7.  Shuotong Bai, **Enyan Dai**, Liu Lei, Huaxiao Liu. ``AIPL: Automated Linking GitHub Issue and PR." Submitted to **TSE (Major Revision)**
 
 ## Journal Paper
 1.  **Enyan Dai**, Suhang Wang. "Learning Fair Graph Neural Networks with Limited andPrivate Sensitive Attribute Information" \[[paper](https://enyandai.github.io/files/FairGNN_journal.pdf)] Accepted by **TKDE**
 2.  Huaisheng Zhu, **Enyan Dai**, Hui Liu, Suhang Wang. "Learning Fair Models without Sensitive Attributes: A Generative Approach" Accepted by **Neurocomputing**
+3.  Yuqing Hu, Xiaoyuan Cheng, Suhang Wang, Jianli Chen, Tianxiang Zhao, and **Enyan Dai**. ``Times series forecasting for urban building energy consumption based on graph convolutional network." In **Applied Energy**
+4.  Xiaoyuan Cheng, Yuqing Hu, Jianxiang Huang, Suhang Wang, Tianxiang Zhao, and **Enyan Dai**. ``Urban Building Energy Modeling: A Time-Series Building Energy Consumption Use Simulation Prediction Tool Based on Graph Neural Network." In **Computing in Civil Engineering**
 
 ## Conference Paper
 ### 2023
