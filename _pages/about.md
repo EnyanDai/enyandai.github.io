@@ -9,7 +9,7 @@ redirect_from:
 
 I am a final year Ph.D student in the College of Information Sciences and Technology at [Penn State University](https://www.psu.edu/) - University Park. My advisor is [Dr. Suhang Wang](https://suhangwang.ist.psu.edu/). I obtained my Master of AI degree from Computer Science Department at [KU Leuven](https://www.kuleuven.be/english/). I received my Bachelor Degree from the [University of Science and Technology of China](https://www.ustc.edu.cn/). 
 
-<p style="color: #d9534f;">
+<p style="color: #d9534f; font-weight: bold">
     I will join the 
     <a href="https://www.hkust-gz.edu.cn/academics/hubs-and-thrust-areas/information-hub/artificial-intelligence/" style="color: #d9534f; text-decoration: none;">
         AI Thrust at Hong Kong University of Science and Technology (Guangzhou)
@@ -33,6 +33,10 @@ I am a final year Ph.D student in the College of Information Sciences and Techno
 
 ## Research Directions at <img src="../images/logo.svg" style="height: 2.5em; vertical-align: middle;">(Trust & Application AI Lab)
 
+The overview of the research directions are listed following. More details can be referred in my [research statement](../files/ResearchStatement.pdf).
+<div style="display: flex; justify-content: center;">
+    <img src="..\images\overview.svg" alt="Fake Health News Dataset Repository" style="width: 90%" class="image">
+</div>
 
 <style>
 /* Basic reset*/
@@ -61,15 +65,6 @@ I am a final year Ph.D student in the College of Information Sciences and Techno
     color: #333;
 }
 
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding: 20px;
-}
-
 .column {
     align-items: left;
     justify-content: center;
@@ -78,29 +73,11 @@ I am a final year Ph.D student in the College of Information Sciences and Techno
     width: 30%; /* Adjust as needed */
     height: 100%;
 }
-/* Style for headings*/
-.heading {
-    font-size: 1.5em;
-    color: #333;
-    margin: 10px 0;
-}
 
 </style>
-<div style="border: 1px dashed #000000;">
-    <div style="display: flex;">
-    <div  style="align-items: flex-start; justify-content: center;">
-        <h3> Trustworthy AI: Trustworhty Graph Learning, Trustworthy Foundation Models, etc.</h3>
-    </div>
-</div>
-</div>
-<img src="..\images\interaction.png" alt="Fake Health News Dataset Repository" style="height: 40px" class="image">
-<div style="border: 1px dashed #000000;">
-    <div style="display: flex;">
-    <div  style="align-items: flex-start; justify-content: center;">
-        <h3> Applications: AI for Social Good, AI for Science, AI for Sports, etc. </h3>
-    </div>
-</div>
-</div>
+
+
+
 
 <h3> Summary of Prior Works </h3>
 <div style="border: 1px dashed #000000;">
@@ -193,7 +170,7 @@ I am a final year Ph.D student in the College of Information Sciences and Techno
 * 06/2022: "Fairness and Explainability in Graph Neural Networks" at DataFunSummit2022
 
 ## News 
-* 05/2024：<p style="color: #d9534f; display: inline">I will join the AI Thrust at Hong Kong University of Science and Technology (Guangzhou) this summer.</p>
+* 05/2024：I will join the AI Thrust at Hong Kong University of Science and Technology (Guangzhou) this summer.
 * 05/2024: [One paper entitled: Rethinking Graph Backdoor Attacks: A Distribution-Preserving Perspective]() accepted by KDD-2024
 * 09/2023：[One paper entitiled: "Certifiably Robust Graph Contrastive Learning"]() accepted by NeurIPS-2023
 * 09/2023：[One paper entitled:"Learning Fair Models without Sensitive Attributes: A Generative Approach"]() accepted by Neurocomputing 
