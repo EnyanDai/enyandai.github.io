@@ -88,34 +88,16 @@ I am a final year Ph.D student in the College of Information Sciences and Techno
 </style>
 <div style="border: 1px dashed #000000;">
     <div style="display: flex;">
-    <div  style="align-items: flex-start; justify-content: center; margin: 0.5em; padding: 1em; width: 30%;">
-        <h3> Trustworthy AI: </h3>
-    </div>
-    <div class="mini-post">
-        <h3> Trustworthy Graph Learning </h3>
-    </div>
-    <div class="mini-post">
-        <h3> Trustworthy Foundation Models </h3>
-    </div>
-    <div  style="align-items: flex-start; justify-content: center; margin: 0.5em; padding: 1em; width: 10%;">
-        <h3> ... </h3>
+    <div  style="align-items: flex-start; justify-content: center;">
+        <h3> Trustworthy AI: Trustworhty Graph Learning, Trustworthy Foundation Models, etc.</h3>
     </div>
 </div>
 </div>
 <img src="..\images\interaction.png" alt="Fake Health News Dataset Repository" style="height: 40px" class="image">
 <div style="border: 1px dashed #000000;">
     <div style="display: flex;">
-    <div  style="align-items: flex-start; justify-content: center; margin: 0.5em; padding: 1em; width: 30%;">
-        <h3> Applications: </h3>
-    </div>
-    <div class="mini-post">
-        <h3> AI for Science </h3>
-    </div>
-    <div class="mini-post">
-        <h3> AI for Sports </h3>
-    </div>
-    <div  style="align-items: flex-start; justify-content: center; margin: 0.5em; padding: 1em; width: 10%;">
-        <h3> ... </h3>
+    <div  style="align-items: flex-start; justify-content: center;">
+        <h3> Applications: AI for Social Good, AI for Science, AI for Sports, etc. </h3>
     </div>
 </div>
 </div>
