@@ -23,7 +23,7 @@ I am a final year Ph.D student in the College of Information Sciences and Techno
         [Ph.D. student and Research Assistant Positions available]
     </p>
     <p style="font-size: 15px; color: black; font-weight: bold; display: inline;">
-    I am seeking highly self-motivated Ph.D. students and Research Assistants to join my team starting in Fall 2024, Spring 2025, or Fall 2025. Candidates with solid backgrounds in data mining, machine learning, mathematics and other related fields are encouraged to apply. If interested, please email me your CV and transcript, kindly using the subject line "[Ph.D./RA Application - your name]."
+    I am seeking highly self-motivated Ph.D. students and Research Assistants to join my team starting in Fall 2024, Spring 2025, or Fall 2025. Candidates with solid backgrounds in data mining, machine learning, mathematics and other related fields are encouraged to apply. If interested, please email me (emd5759@psu.edu) your CV and transcript, kindly using the subject line "[Ph.D./RA Application - your name]."
     </p>
 </div>
 
