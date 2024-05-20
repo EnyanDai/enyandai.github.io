@@ -35,7 +35,7 @@ I am a final year Ph.D student in the College of Information Sciences and Techno
 
 The overview of the research directions are listed following. More details can be referred in my [research statement](../files/ResearchStatement.pdf).
 <div style="display: flex; justify-content: center;">
-    <img src="..\images\overview.svg" alt="Fake Health News Dataset Repository" style="width: 90%" class="image">
+    <img src="..\images\overview.svg" alt="Fake Health News Dataset Repository" style="width: 10%" class="image">
 </div>
 
 <style>
