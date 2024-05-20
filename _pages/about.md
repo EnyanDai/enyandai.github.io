@@ -9,13 +9,29 @@ redirect_from:
 
 I am a final year Ph.D student in the College of Information Sciences and Technology at [Penn State University](https://www.psu.edu/) - University Park. My advisor is [Dr. Suhang Wang](https://suhangwang.ist.psu.edu/). I obtained my Master of AI degree from Computer Science Department at [KU Leuven](https://www.kuleuven.be/english/). I received my Bachelor Degree from the [University of Science and Technology of China](https://www.ustc.edu.cn/). 
 
+<p style="color: #d9534f;">
+    I will join the 
+    <a href="https://www.hkust-gz.edu.cn/academics/hubs-and-thrust-areas/information-hub/artificial-intelligence/" style="color: #d9534f; text-decoration: none;">
+        AI Thrust at Hong Kong University of Science and Technology (Guangzhou)
+    </a> 
+    to build and direct Trust & Application AI Lab (TAI Lab). 
+</p>
 
-## Research Interests
 
-My research interests lie in data mining, Trustworthy Graph Learning, AI for Social Good applications, Trustworhty AI for Science, and Graph Foundation Model.
+<div style="background-color: #f9d9a6; padding: 10px; border: 2px solid #e0a96d;">
+    <p style="font-size: 15px; color: #d9534f; font-weight: bold; display: inline;">
+        [Ph.D. student and Research Assistant Positions available]
+    </p>
+    <p style="font-size: 15px; color: black; font-weight: bold; display: inline;">
+    I am seeking highly self-motivated Ph.D. students and Research Assistants to join my team starting in Fall 2024, Spring 2025, or Fall 2025. Candidates with solid backgrounds in data mining, machine learning, mathematics and other related fields are encouraged to apply. If interested, please email me your CV and transcript, kindly using the subject line "[Ph.D./RA Application - your name]."
+    </p>
+</div>
 
-<!-- ![intro_image](/images/symposium.png){:class="img-responsive"} -->
-<!-- <img src="/images/Jonggi_presentation.png" width="100%"> -->
+
+
+
+
+## Research Directions at <img src="../images/logo.svg" style="height: 2.5em; vertical-align: middle;">(Trust & Application AI Lab)
 
 
 <style>
@@ -72,6 +88,41 @@ My research interests lie in data mining, Trustworthy Graph Learning, AI for Soc
 </style>
 <div style="border: 1px dashed #000000;">
     <div style="display: flex;">
+    <div  style="align-items: flex-start; justify-content: center; margin: 0.5em; padding: 1em; width: 30%;">
+        <h3> Trustworthy AI: </h3>
+    </div>
+    <div class="mini-post">
+        <h3> Trustworthy Graph Learning </h3>
+    </div>
+    <div class="mini-post">
+        <h3> Trustworthy Foundation Models </h3>
+    </div>
+    <div  style="align-items: flex-start; justify-content: center; margin: 0.5em; padding: 1em; width: 10%;">
+        <h3> ... </h3>
+    </div>
+</div>
+</div>
+<img src="..\images\interaction.png" alt="Fake Health News Dataset Repository" style="height: 40px" class="image">
+<div style="border: 1px dashed #000000;">
+    <div style="display: flex;">
+    <div  style="align-items: flex-start; justify-content: center; margin: 0.5em; padding: 1em; width: 30%;">
+        <h3> Applications: </h3>
+    </div>
+    <div class="mini-post">
+        <h3> AI for Science </h3>
+    </div>
+    <div class="mini-post">
+        <h3> AI for Sports </h3>
+    </div>
+    <div  style="align-items: flex-start; justify-content: center; margin: 0.5em; padding: 1em; width: 10%;">
+        <h3> ... </h3>
+    </div>
+</div>
+</div>
+
+<h3> Summary of Prior Works </h3>
+<div style="border: 1px dashed #000000;">
+    <div style="display: flex;">
     <article class="mini-post">
         <img src="..\images\fairness.png" alt="Fairness" style="width: 140px; height=50px;" class="image">
         <p> <b> Fair Graph Neural Network </b> (WSDM-21) 
@@ -83,11 +134,15 @@ My research interests lie in data mining, Trustworthy Graph Learning, AI for Soc
     </article>
     <article class="mini-post">
         <img src="..\images\privacy.png" alt="Privacy" style="width: 130px;" class="image">
-        <p> <b> Sensitive Attribute Protection </b> (TKDE) 
-        <a href="https://enyandai.github.io/files/FairGNN_journal.pdf" class="link">Paper</a> </p>
-        <p> <b> Membership Privacy Protection </b> (KDD-23) 
+        <br>
+        <b> Sensitive Attribute Protection </b> (TKDE) 
+        <a href="https://enyandai.github.io/files/FairGNN_journal.pdf" class="link">Paper</a>
+        <br>
+        <b> Membership Privacy Protection </b> (KDD-23) 
         <a href="https://dl.acm.org/doi/abs/10.1145/3580305.3599248" class="link">Paper</a>
-        </p>
+        <br>
+        <b> Deep IP Protection </b> (Preprint) 
+        <a href="https://arxiv.org/abs/2402.04435" class="link">Paper</a>
     </article>
     <article class="mini-post">
         <img src="..\images\robustness.png" alt="robustness" style="width: 160px;" class="image">
@@ -122,7 +177,7 @@ My research interests lie in data mining, Trustworthy Graph Learning, AI for Soc
     </article>
     </div>
 </div>
-<img src="..\images\interaction.png" alt="Fake Health News Dataset Repository" style="height: 40px" class="image">
+<!-- <img src="..\images\interaction.png" alt="Fake Health News Dataset Repository" style="height: 40px" class="image"> -->
 <div style="display: flex; border: 1px dashed #000000;">
 <div class="column">
     <h3> Graph-Augmented AI for Social Good </h3>
@@ -142,43 +197,6 @@ My research interests lie in data mining, Trustworthy Graph Learning, AI for Soc
     </p>
 </article>
 </div>
-<h3>Future Research Directions</h3>
-<div style="display: flex;">
-    <article class="mini-post">
-        <h2> Unified Framework of Trustworthy Graph Model </h2>
-        <p> <b> Preliminary Works: </b> 
-        <br>
-        <b> Fairness and Sensitive Attribute Privacy </b> (TKDE)
-        <a href="https://openreview.net/pdf?id=45L_dgP48Vd" class="link">Paper</a>
-        <br>
-        <b> Robustness and Membership Privacy </b>
-        <a href="https://dl.acm.org/doi/abs/10.1145/3580305.3599248" class="link">Paper</a>
-        </p>
-    </article>
-    <article class="mini-post">
-        <h2> Domain-Specific Graph Foundation Model </h2>
-        <p> <b> Preliminary Works: </b>
-        <br>
-        <b> Neural Architecture on Small Heterophilic Graphs </b> (LOG-22)
-        <a href="https://arxiv.org/pdf/2110.08128.pdf" class="link">Paper</a>
-        <a href="https://github.com/EnyanDai/LWGCN" class="link">Code</a>
-        <br>
-        <b> LLM-Enhanced Explainable GNN on Molecular Classification  </b> (Preprint)
-        <a href="" class="link">Paper</a>
-        </p>
-    </article>
-    <article class="mini-post">
-        <h2> Trustworthy Model for Science </h2>
-        <p> <b> Preliminary Works: </b> 
-        <br>
-        <b> Prototype-Based Explainable Molecular Classifier </b> to Interpret the Key Pattern of Each Class (Preprint). 
-        <a href="https://arxiv.org/abs/2210.01974" class="link">Paper</a>
-        <br>
-        <b> LLM-Enhanced Explainable GNN on Molecular Classification  </b> (Preprint)
-        <a href="" class="link">Paper</a>
-        </p>
-    </article>
-</div>
 
 
 
@@ -193,6 +211,8 @@ My research interests lie in data mining, Trustworthy Graph Learning, AI for Soc
 * 06/2022: "Fairness and Explainability in Graph Neural Networks" at DataFunSummit2022
 
 ## News 
+* 05/2024：<p style="color: #d9534f; display: inline">I will join the AI Thrust at Hong Kong University of Science and Technology (Guangzhou) this summer.</p>
+* 05/2024: [One paper entitled: Rethinking Graph Backdoor Attacks: A Distribution-Preserving Perspective]() accepted by KDD-2024
 * 09/2023：[One paper entitiled: "Certifiably Robust Graph Contrastive Learning"]() accepted by NeurIPS-2023
 * 09/2023：[One paper entitled:"Learning Fair Models without Sensitive Attributes: A Generative Approach"]() accepted by Neurocomputing 
 * 05/2023: [One paper entitled:"A Unified Framework of Graph Information Bottleneck for Robustness and Membership Privacy"](https://arxiv.org/abs/2306.08604) accepted by KDD-2023
