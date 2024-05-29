@@ -18,6 +18,7 @@ author_profile: true
 1. **Enyan Dai**, Tianxiang Zhao, Huaisheng Zhu, Junjie Xu, Zhimeng Guo, Hui Liu, Jiliang Tang, and Suhang Wang. "A Comprehensive Survey on Trustworthy Graph Neural Networks: Privacy, Robustness, Fairness, and Explainability." Accepted by Machine Intelligence Research \[[paper](https://arxiv.org/pdf/2204.08570.pdf)].
 1. Zhiwei Zhang, Minhua Lin, **Enyan Dai**, Suhang Wang "Rethinking Graph Backdoor Attacks: A Distribution-Preserving Perspective." In Proceedings of the30th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining **(KDD 2024)**
 1. Shuotong Bai, Huaxiao Liu, **Enyan Dai**, Liu Lei. ``AIPL: Automated Linking GitHub Issue and PR." Accepted by IEEE Transactions on Software Engineering.
+
 ### 2023
 1. **Enyan Dai** et al. "A Unified Framework of Graph Information Bottleneck for Robustness and Membership Privacy" In Proceedings of the 29th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining **(KDD 2023)**
 1. **Enyan Dai**\*, Minhua Lin\*, Xiang Zhang, and Suhang Wang. "Unnoticeable Backdoor Attacks on Graph Neural Networks" In Proceedings of The Web Conference **(WWW 2023)** \[[paper](https://arxiv.org/pdf/2303.01263.pdf), [code](https://github.com/EnyanDai/UGBA)\]
