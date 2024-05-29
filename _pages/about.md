@@ -171,6 +171,7 @@ The overview of the research directions are listed following. More details can b
 
 ## News 
 * 05/2024：I will join the AI Thrust at Hong Kong University of Science and Technology (Guangzhou) this summer.
+* 05/2024: [One paper entitled:Improving Issue-PR Link Prediction via Knowledge-aware Heterogeneous Graph Learning]() accepted by IEEE Transactions on Software Engineering
 * 05/2024: [One paper entitled: Rethinking Graph Backdoor Attacks: A Distribution-Preserving Perspective]() accepted by KDD-2024
 * 09/2023：[One paper entitiled: "Certifiably Robust Graph Contrastive Learning"]() accepted by NeurIPS-2023
 * 09/2023：[One paper entitled:"Learning Fair Models without Sensitive Attributes: A Generative Approach"]() accepted by Neurocomputing 
