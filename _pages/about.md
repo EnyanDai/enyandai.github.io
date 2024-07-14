@@ -7,23 +7,15 @@ redirect_from:
   - /about.html
 ---
 
-I am a final year Ph.D student in the College of Information Sciences and Technology at [Penn State University](https://www.psu.edu/) - University Park. My advisor is [Dr. Suhang Wang](https://suhangwang.ist.psu.edu/). I obtained my Master of AI degree from Computer Science Department at [KU Leuven](https://www.kuleuven.be/english/). I received my Bachelor Degree from the [University of Science and Technology of China](https://www.ustc.edu.cn/). 
-
-<p style="color: #d9534f; font-weight: bold">
-    I will join the 
-    <a href="https://www.hkust-gz.edu.cn/academics/hubs-and-thrust-areas/information-hub/artificial-intelligence/" style="color: #d9534f; text-decoration: none;">
-        AI Thrust at Hong Kong University of Science and Technology (Guangzhou)
-    </a> 
-    to build and direct Trust & Application AI Lab (TAI Lab). 
-</p>
-
+I am a tenure-track assistant professor in the AI Trust at the [Hong Kong University of Science and Technology (Guangzhou)](https://www.hkust-gz.edu.cn/).
+I recevied my Ph.D. degree from the [Pennsylvania State University](https://www.psu.edu/) under the supervision of [Dr. Suhang Wang](https://suhangwang.ist.psu.edu/). I obtained my Master of AI degree from Computer Science Department at [KU Leuven](https://www.kuleuven.be/english/). I received my Bachelor Degree from the [University of Science and Technology of China](https://www.ustc.edu.cn/). 
 
 <div style="background-color: #f9d9a6; padding: 10px; border: 2px solid #e0a96d;">
     <p style="font-size: 15px; color: #d9534f; font-weight: bold; display: inline;">
         [Ph.D. student and Research Assistant Positions available]
     </p>
     <p style="font-size: 15px; color: black; font-weight: bold; display: inline;">
-    I am seeking highly self-motivated Ph.D. students and Research Assistants to join my team starting in Fall 2024, Spring 2025, or Fall 2025. Candidates with solid backgrounds in data mining, machine learning, mathematics and other related fields are encouraged to apply. If interested, please email me (emd5759@psu.edu) your CV and transcript, kindly using the subject line "[Ph.D./RA Application - your name]."
+    I am seeking highly self-motivated Ph.D. students and Research Assistants to join my team starting in Fall 2025. Candidates with solid backgrounds in data mining, machine learning, mathematics and other related fields are encouraged to apply. If interested, please email me (enyandai@hkust-gz.edu.cn) your CV and transcript, kindly using the subject line "[Ph.D./RA Application - your name]."
     </p>
 </div>
 
@@ -170,7 +162,7 @@ The overview of the research directions are listed following. More details can b
 * 06/2022: "Fairness and Explainability in Graph Neural Networks" at DataFunSummit2022
 
 ## News 
-* 05/2024：I will join the AI Thrust at Hong Kong University of Science and Technology (Guangzhou) this summer.
+* 07/2024：I joined the AI Thrust at Hong Kong University of Science and Technology (Guangzhou).
 * 05/2024: [One paper entitled:Improving Issue-PR Link Prediction via Knowledge-aware Heterogeneous Graph Learning]() accepted by IEEE Transactions on Software Engineering
 * 05/2024: [One paper entitled: Rethinking Graph Backdoor Attacks: A Distribution-Preserving Perspective]() accepted by KDD-2024
 * 09/2023：[One paper entitiled: "Certifiably Robust Graph Contrastive Learning"]() accepted by NeurIPS-2023
