@@ -162,6 +162,7 @@ The overview of the research directions are listed following. More details can b
 * 06/2022: "Fairness and Explainability in Graph Neural Networks" at DataFunSummit2022
 
 ## News 
+* 07/2024: Two papers accepted by CIKM-2024 in full paper track and short paper track respectively. 
 * 07/2024：I joined the AI Thrust at Hong Kong University of Science and Technology (Guangzhou).
 * 05/2024: [One paper entitled:Improving Issue-PR Link Prediction via Knowledge-aware Heterogeneous Graph Learning]() accepted by IEEE Transactions on Software Engineering
 * 05/2024: [One paper entitled: Rethinking Graph Backdoor Attacks: A Distribution-Preserving Perspective]() accepted by KDD-2024
