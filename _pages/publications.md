@@ -9,14 +9,15 @@ author_profile: true
 ## Preprints
 1. **Enyan Dai**, Suhang Wang. "Towards Prototype-Based Self-Explainable Graph Neural Network."  Submitted to **TKDD (Minor Revision)** [[paper](https://arxiv.org/abs/2210.01974)]
 1. **Enyan Dai**, Minhua Lin, Suhang Wang. "PreGIP: Watermarking the Pretraining of Graph Neural Networks for Deep Intellectual Property Protection." [[paper](https://arxiv.org/abs/2402.04435)]
-1. Junjie Xu, **Enyan Dai**, Dongsheng Luo, Xiang Zhang, Suhang Wang. "Shape-aware Graph Spectral Learning." [[paper](https://arxiv.org/abs/2310.10064)]
 1.  Minhua Lin, **Enyan Dai**, Junjie Xu, Suhang Wang. "Stealing Training Graphs from Graph Neural Networks."
 
 
 ## Publications
 ### 2024
 1. **Enyan Dai**, Tianxiang Zhao, Huaisheng Zhu, Junjie Xu, Zhimeng Guo, Hui Liu, Jiliang Tang, and Suhang Wang. "A Comprehensive Survey on Trustworthy Graph Neural Networks: Privacy, Robustness, Fairness, and Explainability." Accepted by Machine Intelligence Research \[[paper](https://arxiv.org/pdf/2204.08570.pdf)].
-1. Zhiwei Zhang, Minhua Lin, **Enyan Dai**, Suhang Wang "Rethinking Graph Backdoor Attacks: A Distribution-Preserving Perspective." In Proceedings of the30th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining **(KDD 2024)**
+1. Xuanhao Fan, **Enyan Dai** "Effective Clean-Label Backdoor Attacks on Graph Neural Networks." In Proceedings of the 33th ACM International Conference on Information and Knowledge Management **(CIKM 2024)**.
+1. Junjie Xu, **Enyan Dai**, Dongsheng Luo, Xiang Zhang, Suhang Wang. "Shape-aware Graph Spectral Learning."  In Proceedings of the 33th ACM International Conference on Information and Knowledge Management **(CIKM 2024)** [[paper](https://arxiv.org/abs/2310.10064)].
+1. Zhiwei Zhang, Minhua Lin, **Enyan Dai**, Suhang Wang "Rethinking Graph Backdoor Attacks: A Distribution-Preserving Perspective." In Proceedings of the 30th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining **(KDD 2024)**
 1. Shuotong Bai, Huaxiao Liu, **Enyan Dai**, Liu Lei. ``AIPL: Automated Linking GitHub Issue and PR." Accepted by IEEE Transactions on Software Engineering.
 
 ### 2023
