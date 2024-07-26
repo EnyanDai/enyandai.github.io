@@ -7,13 +7,13 @@ author_profile: true
 
 
 ## Preprints
-1. **Enyan Dai**, Suhang Wang. "Towards Prototype-Based Self-Explainable Graph Neural Network."  Submitted to **TKDD (Minor Revision)** [[paper](https://arxiv.org/abs/2210.01974)]
 1. **Enyan Dai**, Minhua Lin, Suhang Wang. "PreGIP: Watermarking the Pretraining of Graph Neural Networks for Deep Intellectual Property Protection." [[paper](https://arxiv.org/abs/2402.04435)]
 1.  Minhua Lin, **Enyan Dai**, Junjie Xu, Suhang Wang. "Stealing Training Graphs from Graph Neural Networks."
 
 
 ## Publications
 ### 2024
+1. **Enyan Dai**, Suhang Wang. "Towards Prototype-Based Self-Explainable Graph Neural Network."  Accepted by **TKDD** [[paper](https://arxiv.org/abs/2210.01974)]
 1. **Enyan Dai**, Tianxiang Zhao, Huaisheng Zhu, Junjie Xu, Zhimeng Guo, Hui Liu, Jiliang Tang, and Suhang Wang. "A Comprehensive Survey on Trustworthy Graph Neural Networks: Privacy, Robustness, Fairness, and Explainability." Accepted by Machine Intelligence Research \[[paper](https://arxiv.org/pdf/2204.08570.pdf)].
 1. Xuanhao Fan, **Enyan Dai** "Effective Clean-Label Backdoor Attacks on Graph Neural Networks." In Proceedings of the 33th ACM International Conference on Information and Knowledge Management **(CIKM 2024)**.
 1. Junjie Xu, **Enyan Dai**, Dongsheng Luo, Xiang Zhang, Suhang Wang. "Shape-aware Graph Spectral Learning."  In Proceedings of the 33th ACM International Conference on Information and Knowledge Management **(CIKM 2024)** [[paper](https://arxiv.org/abs/2310.10064)].
