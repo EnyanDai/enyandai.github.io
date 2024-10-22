@@ -1,10 +1,7 @@
 ---
-permalink: /
+permalink: /students/
 title: "People@TAI Lab"
-author_profile: true
-redirect_from: 
-  - /students/
-  - /students.html
+author_profile: false
 ---
 ## Principle Investigator
 <style>
