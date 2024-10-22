@@ -1,16 +1,11 @@
 ---
+layout: archive
 permalink: /students/
 title: "People@TAI Lab"
 author_profile: false
 ---
 ## Principle Investigator
 <style>
-    body {
-        font-family: Arial, sans-serif;
-        background: #f4f4f4;
-        margin: 0;
-        padding: 0;
-    }
     .container {
         display: flex;
         align-items: center; /* Aligns items vertically */
@@ -43,7 +38,7 @@ author_profile: false
     }
 </style>
 </head>
-<body>
+
 <div class="container">
     <img src="../images/profile.png" alt="Profile Image" class="profile-img">
     <div class="profile-details">
@@ -58,17 +53,9 @@ author_profile: false
     </div>
     
 </div>
-</body>
-</html>
 
 ## Students
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Research Team</title>
 <style>
     body {
         font-family: Arial, sans-serif;
@@ -111,7 +98,7 @@ author_profile: false
 <body>
 <div class="container">
     <div class="profile">
-        <img src="../images/profile.png" alt="Portrait of Yuliang Yan">
+        <img src="" alt="Portrait of Yuliang Yan">
         <br>
         <a href="more_info1.html" class="name">Yuliang Yan, Ph.D. student</a>
         <div class="position">Master from Fudan University</div>
@@ -140,4 +127,3 @@ author_profile: false
     </div>
 </div>
 </body>
-</html>
