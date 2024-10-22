@@ -9,7 +9,6 @@ author_profile: false
     .container {
         display: flex;
         align-items: center; /* Aligns items vertically */
-        background: white;
         margin-top: 20px;
         padding: 20px;
         box-shadow: 0 2px 5px rgba(0,0,0,0.1);
@@ -23,12 +22,12 @@ author_profile: false
         flex-grow: 1; /* Takes up remaining space */
     }
     .profile-name {
-        font-size: 20px;
+        font-size: 18px;
         font-weight: bold;
         color: #333;
     }
     .profile-info {
-        font-size: 18px;
+        font-size: 16px;
         color: #666;
         margin-top: 5px;
         line-height: 1.5; /* Improved readability */
@@ -37,7 +36,6 @@ author_profile: false
         color: red;
     }
 </style>
-</head>
 
 <div class="container">
     <img src="../images/profile.png" alt="Profile Image" class="profile-img">
@@ -57,19 +55,12 @@ author_profile: false
 ## Students
 
 <style>
-    body {
-        font-family: Arial, sans-serif;
-        background: #f4f4f4;
-        margin: 0;
-        padding: 0;
-    }
     .container {
         display: flex;
         justify-content: space-around;
         margin-top: 20px;
     }
     .profile {
-        background: white;
         border-radius: 8px;
         padding: 20px;
         box-shadow: 0 2px 5px rgba(0,0,0,0.1);
@@ -81,21 +72,19 @@ author_profile: false
         border-radius: 150px;
     }
     .name {
-        font-size: 16px;
+        font-size: 14px;
         font-weight: bold;
         margin-top: 10px;
     }
     .position {
-        font-size: 14px;
-        color: #666;
+        font-size: 13px;
     }
     .research {
         margin-top: 10px;
-        font-size: 14px;
+        font-size: 13px;
     }
 </style>
-</head>
-<body>
+
 <div class="container">
     <div class="profile">
         <img src="" alt="Portrait of Yuliang Yan">
@@ -104,26 +93,85 @@ author_profile: false
         <div class="position">Master from Fudan University</div>
         <div class="research">
             <li>Trustworthy Multi-Agent System</li>
-            <li>Graph Foundatiom Models</li>
+            <li>Graph Foundation Model</li>
         </div>
     </div>
     <div class="profile">
-        <img src="path_to_image2.jpg" alt="Portrait of 黄伟伦">
-        <div class="name">黄伟伦，科研助理</div>
-        <div class="position">瑞士苏黎世中央科学大学生物与医疗专业</div>
+        <img src="path_to_image2.jpg" alt="Portrait of Shuo Yan">
+        <br>
+        <a href="more_info1.html" class="name"> Shuo Yan，Research Assistant</a>
+        <div class="position">Master from UCAS</div>
         <div class="research">
-            <li>生命延续基础型</li>
-            <li >图神经网络在肿瘤诊断应用</li>
+            <li>AI for Protein Analysis</li>
+            <li >Graph Foundation Model</li>
         </div>
     </div>
     <div class="profile">
-        <img src="path_to_image3.jpg" alt="Portrait of 白桦琳">
-        <div class="name">白桦琳，访问学者</div>
-        <div class="position">白桦大学计算机科技博士在读</div>
+        <img src="path_to_image3.jpg" alt="Portrait of Bin Ma">
+        <br>
+        <a href="more_info1.html" class="name"> Bin Ma，Research Assistant</a>
+        <div class="position">Bachelor from Xian Jiaotong University</div>
         <div class="research">
-            <li class="research-item">图神经网络公平性</li>
-            <li class="research-item">社交网络、开源社区分析</li>
+            <li class="research-item">Privacy of Graph Models</li>
+            <li class="research-item">Application of Explainable GNNs</li>
         </div>
     </div>
 </div>
-</body>
+
+<div class="container">
+    <div class="profile">
+        <img src="" alt="Portrait">
+        <br>
+        <a href="more_info1.html" class="name">Shuotong Bai, Visiting Scholar</a>
+        <div class="position">Ph.D. Student from Jilin University</div>
+        <div class="research">
+            <li>Fairness of Graph Mining</li>
+            <li>Open Source Community</li>
+        </div>
+    </div>
+    <div class="profile">
+        <img src="path_to_image2.jpg" alt="Portrait">
+        <br>
+        <a href="more_info1.html" class="name"> Yuyuan Feng, Intern</a>
+        <div class="position">Master Student from Xiamen University </div>
+        <div class="research">
+            <li>Graph Foundation Model</li>
+            <li>AI for Football Analysis</li>
+        </div>
+    </div>
+    <div class="profile">
+        <img src="path_to_image3.jpg" alt="Portrait">
+        <br>
+        <a href="more_info1.html" class="name">Jiahua Lu，Intern</a>
+        <div class="position">Master Student from Jilin University</div>
+        <div class="research">
+            <li class="research-item">Fairness of Graph Mining</li>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="profile">
+        <img src="" alt="Portrait">
+        <br>
+        <a href="more_info1.html" class="name">Haochun Tang, Intern</a>
+        <div class="position">Master Student from Jilin University</div>
+        <div class="research">
+            <li>Graph Foundation Model</li>
+        </div>
+    </div>
+    <div class="profile">
+        <img src="path_to_image2.jpg" alt="Portrait">
+        <br>
+        <a href="more_info1.html" class="name"> Chenao Li，Remote Intern</a>
+        <div class="position">Master Student from UCAS</div>
+        <div class="research">
+            <li>AI for Protein Analysis</li>
+        </div>
+    </div>
+    <div class="profile">
+    We want you!
+    </div>
+</div>
+
+
