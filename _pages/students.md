@@ -68,8 +68,10 @@ author_profile: false
         max-width: 300px; /* Maximum width */
     }
     .profile img {
-        width: 60%;
-        border-radius: 150px;
+        width: 100px;  /* Fixed width */
+        height: 100px; /* Fixed height, equal to the width */
+        border-radius: 50%; /* Make the image round */
+        object-fit: cover; /* Ensures the image covers the area without being distorted */
     }
     .name {
         font-size: 14px;
@@ -82,14 +84,16 @@ author_profile: false
     .research {
         margin-top: 10px;
         font-size: 13px;
+        list-style-type: none; /* Remove default list bullets */
+        padding-left: 0; /* Align text properly under the title */
     }
 </style>
 
 <div class="container">
     <div class="profile">
-        <img src="" alt="Portrait of Yuliang Yan">
+        <img src="https://github.com/TrustApplication-AI-Lab/TrustApplication-AI-Lab.github.io/blob/main/content/authors/yuliangyan/avatar.jpg?raw=true" alt="Portrait of Yuliang Yan">
         <br>
-        <a href="more_info1.html" class="name">Yuliang Yan, Ph.D. student</a>
+        <a href="https://yuliangyan0807.github.io/" class="name">Yuliang Yan, Ph.D. student</a>
         <div class="position">Master from Fudan University</div>
         <div class="research">
             <li>Trustworthy Multi-Agent System</li>
@@ -97,9 +101,9 @@ author_profile: false
         </div>
     </div>
     <div class="profile">
-        <img src="path_to_image2.jpg" alt="Portrait of Shuo Yan">
+        <img src="https://github.com/TrustApplication-AI-Lab/TrustApplication-AI-Lab.github.io/blob/main/content/authors/shuoyan/avatar.jpg?raw=true" alt="Portrait of Shuo Yan">
         <br>
-        <a href="more_info1.html" class="name"> Shuo Yan，Research Assistant</a>
+        <a href="" class="name"> Shuo Yan，Research Assistant</a>
         <div class="position">Master from UCAS</div>
         <div class="research">
             <li>AI for Protein Analysis</li>
@@ -107,9 +111,9 @@ author_profile: false
         </div>
     </div>
     <div class="profile">
-        <img src="path_to_image3.jpg" alt="Portrait of Bin Ma">
+        <img src="https://github.com/TrustApplication-AI-Lab/TrustApplication-AI-Lab.github.io/blob/main/content/authors/binma/avatar.jpg?raw=true" alt="Portrait of Bin Ma">
         <br>
-        <a href="more_info1.html" class="name"> Bin Ma，Research Assistant</a>
+        <a href="" class="name"> Bin Ma，Research Assistant</a>
         <div class="position">Bachelor from Xian Jiaotong University</div>
         <div class="research">
             <li class="research-item">Privacy of Graph Models</li>
@@ -120,9 +124,9 @@ author_profile: false
 
 <div class="container">
     <div class="profile">
-        <img src="" alt="Portrait">
+        <img src="https://github.com/TrustApplication-AI-Lab/TrustApplication-AI-Lab.github.io/blob/main/content/authors/shuotongbai/avatar.png?raw=true" alt="Portrait">
         <br>
-        <a href="more_info1.html" class="name">Shuotong Bai, Visiting Scholar</a>
+        <a href="" class="name">Shuotong Bai, Visiting Scholar</a>
         <div class="position">Ph.D. Student from Jilin University</div>
         <div class="research">
             <li>Fairness of Graph Mining</li>
@@ -130,9 +134,9 @@ author_profile: false
         </div>
     </div>
     <div class="profile">
-        <img src="path_to_image2.jpg" alt="Portrait">
+        <img src="https://github.com/TrustApplication-AI-Lab/TrustApplication-AI-Lab.github.io/blob/main/content/authors/yuyuanfeng/avatar.png?raw=true" alt="Portrait">
         <br>
-        <a href="more_info1.html" class="name"> Yuyuan Feng, Intern</a>
+        <a href="https://yuyuan6.github.io/" class="name"> Yuyuan Feng, Intern</a>
         <div class="position">Master Student from Xiamen University </div>
         <div class="research">
             <li>Graph Foundation Model</li>
@@ -140,9 +144,9 @@ author_profile: false
         </div>
     </div>
     <div class="profile">
-        <img src="path_to_image3.jpg" alt="Portrait">
+        <img src="https://github.com/TrustApplication-AI-Lab/TrustApplication-AI-Lab.github.io/blob/main/content/authors/jiahualu/avatar.png?raw=true" alt="Portrait">
         <br>
-        <a href="more_info1.html" class="name">Jiahua Lu，Intern</a>
+        <a href="" class="name">Jiahua Lu，Intern</a>
         <div class="position">Master Student from Jilin University</div>
         <div class="research">
             <li class="research-item">Fairness of Graph Mining</li>
@@ -152,18 +156,18 @@ author_profile: false
 
 <div class="container">
     <div class="profile">
-        <img src="" alt="Portrait">
+        <img src="https://github.com/TrustApplication-AI-Lab/TrustApplication-AI-Lab.github.io/blob/main/content/authors/haochuntang/avatar.png?raw=true" alt="Portrait">
         <br>
-        <a href="more_info1.html" class="name">Haochun Tang, Intern</a>
+        <a href="" class="name">Haochun Tang, Intern</a>
         <div class="position">Master Student from Jilin University</div>
         <div class="research">
             <li>Graph Foundation Model</li>
         </div>
     </div>
     <div class="profile">
-        <img src="path_to_image2.jpg" alt="Portrait">
-        <br>
-        <a href="more_info1.html" class="name"> Chenao Li，Remote Intern</a>
+        <!-- <img src="path_to_image2.jpg" alt="Portrait"> -->
+        <!-- <br> -->
+        <a href="" class="name"> Chenao Li，Remote Intern</a>
         <div class="position">Master Student from UCAS</div>
         <div class="research">
             <li>AI for Protein Analysis</li>
