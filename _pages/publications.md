@@ -11,9 +11,11 @@ author_profile: true
 
 
 
+
 ## Publications
 ### 2025
 1.  Minhua Lin, **Enyan Dai**, Junjie Xu, Suhang Wang. "Stealing Training Graphs from Graph Neural Networks." In Proceedings of the 31th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining **(KDD 2025)**  [[paper]()]
+2.  Zhiwei Zhang, Minhua Lin, Junjie Xu, Zongyu Wu, **Enyan Dai**, Suhang Wang. "Robustness Inspired Graph Backdoor Defense." In Proceedings of the 13th International Conference on Learning Representations **(ICLR 2025)** [[paper]()]
 
 ### 2024
 1. **Enyan Dai**, Suhang Wang. "Towards Prototype-Based Self-Explainable Graph Neural Network."  Accepted by **TKDD** [[paper](https://arxiv.org/abs/2210.01974)]
