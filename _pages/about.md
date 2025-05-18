@@ -161,7 +161,8 @@ The overview of the research directions are listed following. More details can b
 * 08/2022: "Graph Structure Learning for Robustness" at Amazon
 * 06/2022: "Fairness and Explainability in Graph Neural Networks" at DataFunSummit2022
 
-## News 
+## News
+* 05/2025: Two papers accepted by KDD-2025 
 * 1/2025:[One paper entitled: Robustness Inspired Graph Backdoor Defense]() accepted by ICLR-2025 (**Oral Paper**)
 * 11/2024:[One paper entitled: Stealing Training Graphs from Graph Neural Networks](https://arxiv.org/abs/2411.11197) accepted by KDD-2025
 * 07/2024：[One paper entitled: Towards Prototype-Based Self-Explainable Graph Neural Network](https://arxiv.org/abs/2210.01974) accepted by TKDD
