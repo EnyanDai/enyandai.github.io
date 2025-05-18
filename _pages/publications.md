@@ -7,17 +7,19 @@ author_profile: true
 
 
 ## Preprints
-1. **Enyan Dai**, Minhua Lin, Suhang Wang. "PreGIP: Watermarking the Pretraining of Graph Neural Networks for Deep Intellectual Property Protection." [[paper](https://arxiv.org/abs/2402.04435)]
-2. Chenao Li, Shuo Yan, **Enyan Dai**. "UniZyme: A Unified Protein Cleavage Site Predictor Enhanced with Enzyme Active-Site Knowledge" [[paper](https://arxiv.org/abs/2502.06914)]
+1. Chenao Li, Shuo Yan, **Enyan Dai**. "UniZyme: A Unified Protein Cleavage Site Predictor Enhanced with Enzyme Active-Site Knowledge" [[paper](https://arxiv.org/abs/2502.06914)]
 
 
 
 
 ## Publications
 ### 2025
-1.  Minhua Lin, **Enyan Dai**, Junjie Xu, Suhang Wang. "Stealing Training Graphs from Graph Neural Networks." In Proceedings of the 31th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining **(KDD 2025)**  [[paper]()]
-2.  Zhiwei Zhang, Minhua Lin, Junjie Xu, Zongyu Wu, **Enyan Dai**, Suhang Wang. "Robustness Inspired Graph Backdoor Defense." In Proceedings of the 13th International Conference on Learning Representations **(ICLR 2025 Oral)** [[paper]()]
-3. LiSA: Leveraging Link Recommender to Attack Graph Neural Networks via Subgraph Injection. In Proceedings of the Pacific-Asia Conference on Knowledge Discovery and Data Mining (PAKDD)
+1.  **Enyan Dai**\*, Minhua Lin\*, Suhang Wang. "PreGIP: Watermarking the Pretraining of Graph Neural Networks for Deep Intellectual Property Protection." In Proceedings of the 31th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining **(KDD 2025)** [[paper](https://arxiv.org/abs/2402.04435)]
+2.  Minhua Lin, **Enyan Dai**, Junjie Xu, Suhang Wang. "Stealing Training Graphs from Graph Neural Networks." In Proceedings of the 31th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining **(KDD 2025)**  [[paper](https://arxiv.org/abs/2411.11197)]
+3.  Minhua Lin, Zhiwei Zhang, **Enyan Dai**, Zongyu Wu, Yilong Wang, Xiang Zhang, Suhang Wang. "Are You Using Reliable Graph Prompts? Trojan Prompt Attacks on Graph Neural Networks." In Proceedings of the 31th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining **(KDD 2025)**  [[paper]()]
+4.  Zhiwei Zhang, Minhua Lin, Junjie Xu, Zongyu Wu, **Enyan Dai**, Suhang Wang. "Robustness Inspired Graph Backdoor Defense." In Proceedings of the 13th International Conference on Learning Representations **(ICLR 2025 Oral)** [[paper]()]
+5. Wenlun Zhang, **Enyan Dai**. "LiSA: Leveraging Link Recommender to Attack Graph Neural Networks via Subgraph Injection." In Proceedings of the Pacific-Asia Conference on Knowledge Discovery and Data Mining (**PAKDD Best Paper Shortliested**)
+
 ### 2024
 1. **Enyan Dai**, Suhang Wang. "Towards Prototype-Based Self-Explainable Graph Neural Network."  Accepted by **TKDD** [[paper](https://arxiv.org/abs/2210.01974)]
 1. **Enyan Dai**, Tianxiang Zhao, Huaisheng Zhu, Junjie Xu, Zhimeng Guo, Hui Liu, Jiliang Tang, and Suhang Wang. "A Comprehensive Survey on Trustworthy Graph Neural Networks: Privacy, Robustness, Fairness, and Explainability." Accepted by Machine Intelligence Research \[[paper](https://arxiv.org/pdf/2204.08570.pdf)].
