@@ -7,7 +7,10 @@ author_profile: true
 
 
 ## Preprints
-1. Chenao Li, Shuo Yan, **Enyan Dai**. "UniZyme: A Unified Protein Cleavage Site Predictor Enhanced with Enzyme Active-Site Knowledge" [[paper](https://arxiv.org/abs/2502.06914)]
+1. Shuo Yan, Yuliang Yan, Bin Ma, Chenao Li, Haochun Tang, Jiahua Lu, Minhua Lin, Yuyuan Feng, Hui Xiong, **Enyan Dai**. "Protap: A Benchmark for Protein Modeling on Realistic Downstream Applications" [[paper]](https://arxiv.org/pdf/2506.02052)
+2. Chenao Li, Shuo Yan, **Enyan Dai**. "UniZyme: A Unified Protein Cleavage Site Predictor Enhanced with Enzyme Active-Site Knowledge" [[paper](https://arxiv.org/abs/2502.06914)]
+3. Yuliang Yan, Haochun Tang, Shuo Yan, **Enyan Dai**. "DuFFin: A Dual-Level Fingerprinting Framework for LLMs IP Protection" [[paper]](https://arxiv.org/pdf/2505.16530)
+4. Bin Ma, Yuyuan Feng, Minhua Lin, **Enyan Dai**. "How Explanations Leak the Decision Logic: Stealing Graph Neural Networks via Explanation Alignment" [[paper]](https://arxiv.org/pdf/2506.03087)
 
 
 
@@ -18,7 +21,7 @@ author_profile: true
 2.  Minhua Lin, **Enyan Dai**, Junjie Xu, Suhang Wang. "Stealing Training Graphs from Graph Neural Networks." In Proceedings of the 31th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining **(KDD 2025)**  [[paper](https://arxiv.org/abs/2411.11197)]
 3.  Minhua Lin, Zhiwei Zhang, **Enyan Dai**, Zongyu Wu, Yilong Wang, Xiang Zhang, Suhang Wang. "Are You Using Reliable Graph Prompts? Trojan Prompt Attacks on Graph Neural Networks." In Proceedings of the 31th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining **(KDD 2025)**  [[paper]()]
 4.  Zhiwei Zhang, Minhua Lin, Junjie Xu, Zongyu Wu, **Enyan Dai**, Suhang Wang. "Robustness Inspired Graph Backdoor Defense." In Proceedings of the 13th International Conference on Learning Representations **(ICLR 2025 Oral)** [[paper]()]
-5. Wenlun Zhang, **Enyan Dai**. "LiSA: Leveraging Link Recommender to Attack Graph Neural Networks via Subgraph Injection." In Proceedings of the Pacific-Asia Conference on Knowledge Discovery and Data Mining (**PAKDD Best Paper Shortlisted**)
+5. Wenlun Zhang, **Enyan Dai**. "LiSA: Leveraging Link Recommender to Attack Graph Neural Networks via Subgraph Injection." In Proceedings of the Pacific-Asia Conference on Knowledge Discovery and Data Mining (**PAKDD Best Paper Award**)
 
 ### 2024
 1. **Enyan Dai**, Suhang Wang. "Towards Prototype-Based Self-Explainable Graph Neural Network."  Accepted by **TKDD** [[paper](https://arxiv.org/abs/2210.01974)]
