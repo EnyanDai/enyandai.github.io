@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a tenure-track assistant professor in the AI Trust at the [Hong Kong University of Science and Technology (Guangzhou)](https://www.hkust-gz.edu.cn/).
+I am a tenure-track assistant professor in the AI Thrust at the [Hong Kong University of Science and Technology (Guangzhou)](https://www.hkust-gz.edu.cn/).
 I recevied my Ph.D. degree from the [Pennsylvania State University](https://www.psu.edu/) under the supervision of [Dr. Suhang Wang](https://suhangwang.ist.psu.edu/). I obtained my Master of AI degree from Computer Science Department at [KU Leuven](https://www.kuleuven.be/english/). I received my Bachelor Degree from the [University of Science and Technology of China](https://www.ustc.edu.cn/). 
 
 <div style="background-color: #f9d9a6; padding: 10px; border: 2px solid #e0a96d;">
@@ -155,23 +155,23 @@ The overview of the research directions are listed following. More details can b
 * [[Video] Introduction about Unnoticeable Backdoor Attacks on Graph Neural Networks (WWW-2023)](https://enyandai.github.io/posts/2023/04/UGBA/)
 * [[Video] Introduction about robust structural noise-resistant GNN (WWW-2022)](https://enyandai.github.io/posts/2023/04/trustworthy/)
 * [A Comprehensive Survey on Trustworthy Graph Neural Networks: Privacy, Robustness, Fairness, and Explainability](https://enyandai.github.io/posts/2022/04/trustworthy/)
-  
-## Invited Talks
-* 06/2023: "Towards Trustworthy Graph Neural Networks in Fairness, Robustness, and Privacy" at University of Science and Technology of China
-* 08/2022: "Graph Structure Learning for Robustness" at Amazon
-* 06/2022: "Fairness and Explainability in Graph Neural Networks" at DataFunSummit2022
+
 
 ## News
-* 05/2025: Two papers accepted by KDD-2025 
-* 1/2025:[One paper entitled: Robustness Inspired Graph Backdoor Defense]() accepted by ICLR-2025 (**Oral Paper**)
-* 11/2024:[One paper entitled: Stealing Training Graphs from Graph Neural Networks](https://arxiv.org/abs/2411.11197) accepted by KDD-2025
-* 07/2024：[One paper entitled: Towards Prototype-Based Self-Explainable Graph Neural Network](https://arxiv.org/abs/2210.01974) accepted by TKDD
+* 06/2026: We released [**Protap**: A Benchmark for Protein Modeling on Realistic Downstream Applications](https://arxiv.org/pdf/2506.02052) [[package](https://github.com/Trust-App-AI-Lab/protap)]
+* 06/2026: Very honored that the paper [LiSA: Leveraging Link Recommender to Attack Graph Neural Networks via Subgraph Injection](https://arxiv.org/pdf/2502.09271) corresponded by me received the **PAKDD 2025 Best Paper Award**!
+* 05/2025: Two papers accepted by **KDD-2025**
+  * [PreGIP: Watermarking the Pretraining of Graph Neural Networks for Deep Intellectual Property Protection](https://arxiv.org/abs/2402.04435)
+  * [Are You Using Reliable Graph Prompts? Trojan Prompt Attacks on Graph Neural Networks](https://arxiv.org/pdf/2410.13974)
+* 1/2025: [One paper entitled: Robustness Inspired Graph Backdoor Defense](https://arxiv.org/abs/2406.09836) accepted by ICLR-2025 (**Oral Paper**)
+* 11/2024: [One paper entitled: Stealing Training Graphs from Graph Neural Networks](https://arxiv.org/abs/2411.11197) accepted by **KDD-2025**
+* 07/2024: [One paper entitled: Towards Prototype-Based Self-Explainable Graph Neural Network](https://arxiv.org/abs/2210.01974) accepted by TKDD
 * 07/2024: Two papers accepted by CIKM-2024 in full paper track and short paper track respectively. 
-* 07/2024：I joined the AI Thrust at Hong Kong University of Science and Technology (Guangzhou).
+* 07/2024: I joined the AI Thrust at Hong Kong University of Science and Technology (Guangzhou).
 * 05/2024: [One paper entitled:Improving Issue-PR Link Prediction via Knowledge-aware Heterogeneous Graph Learning]() accepted by IEEE Transactions on Software Engineering
 * 05/2024: [One paper entitled: Rethinking Graph Backdoor Attacks: A Distribution-Preserving Perspective]() accepted by KDD-2024
-* 09/2023：[One paper entitiled: "Certifiably Robust Graph Contrastive Learning"]() accepted by NeurIPS-2023
-* 09/2023：[One paper entitled:"Learning Fair Models without Sensitive Attributes: A Generative Approach"]() accepted by Neurocomputing 
+* 09/2023: [One paper entitiled: "Certifiably Robust Graph Contrastive Learning"]() accepted by NeurIPS-2023
+* 09/2023: [One paper entitled:"Learning Fair Models without Sensitive Attributes: A Generative Approach"]() accepted by Neurocomputing 
 * 05/2023: [One paper entitled:"A Unified Framework of Graph Information Bottleneck for Robustness and Membership Privacy"](https://arxiv.org/abs/2306.08604) accepted by KDD-2023
 * 04/2023: Serve as reviewer of KDD-2023 and ICML-2023.
 * 03/2023: Very glad to receive the IST Ph.D. Student Award for Research Excellence
