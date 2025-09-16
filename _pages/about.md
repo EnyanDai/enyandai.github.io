@@ -15,7 +15,7 @@ I recevied my Ph.D. degree from the [Pennsylvania State University](https://www.
         [Ph.D. student and Research Assistant Positions available]
     </p>
     <p style="font-size: 15px; color: black; font-weight: bold; display: inline;">
-    I am seeking highly self-motivated Ph.D. students and Research Assistants to join my team starting in Fall 2025. Candidates with solid backgrounds in data mining, machine learning, mathematics and other related fields are encouraged to apply. If interested, please email me (enyandai@hkust-gz.edu.cn) your CV and transcript, kindly using the subject line "[Ph.D./RA Application - your name]."
+    I am seeking highly self-motivated Ph.D. students and Research Assistants to join my team starting in Fall 2026/2027. Candidates with solid backgrounds in data mining, machine learning, mathematics and other related fields are encouraged to apply. If interested, please email me (enyandai@hkust-gz.edu.cn) your CV and transcript, kindly using the subject line "[Ph.D./RA Application - your name]."
     </p>
 </div>
 
@@ -25,7 +25,7 @@ I recevied my Ph.D. degree from the [Pennsylvania State University](https://www.
 
 ## Research Directions at <img src="../images/logo.svg" style="height: 2.5em; vertical-align: middle;">(Trust & Application AI Lab)
 
-The overview of the research directions are listed following. More details can be referred in my [research statement](../files/ResearchStatement.pdf).
+I have wide research interests in Trustworthy AI and Applications of AI in the real-world scenarios.
 <div style="display: flex; justify-content: center;">
     <img src="..\images\overview.svg" alt="Fake Health News Dataset Repository" style="width: 100%" class="image">
 </div>
@@ -71,7 +71,7 @@ The overview of the research directions are listed following. More details can b
 
 
 
-<h3> Summary of Prior Works </h3>
+<!-- <h3> Summary of Prior Works </h3>
 <div style="border: 1px dashed #000000;">
     <div style="display: flex;">
     <article class="mini-post">
@@ -128,7 +128,7 @@ The overview of the research directions are listed following. More details can b
     </article>
     </div>
 </div>
-<!-- <img src="..\images\interaction.png" alt="Fake Health News Dataset Repository" style="height: 40px" class="image"> -->
+<!-- <img src="..\images\interaction.png" alt="Fake Health News Dataset Repository" style="height: 40px" class="image"> 
 <div style="display: flex; border: 1px dashed #000000;">
 <div class="column">
     <h3> Graph-Augmented AI for Social Good </h3>
@@ -147,7 +147,7 @@ The overview of the research directions are listed following. More details can b
     <a href="https://github.com/EnyanDai/GANF" class="link">Code</a>
     </p>
 </article>
-</div>
+</div> -->
 
 
 
@@ -158,8 +158,9 @@ The overview of the research directions are listed following. More details can b
 
 
 ## News
-* 06/2026: We released [**Protap**: A Benchmark for Protein Modeling on Realistic Downstream Applications](https://arxiv.org/pdf/2506.02052) [[package](https://github.com/Trust-App-AI-Lab/protap)]
-* 06/2026: Very honored that the paper [LiSA: Leveraging Link Recommender to Attack Graph Neural Networks via Subgraph Injection](https://arxiv.org/pdf/2502.09271) corresponded by me received the **PAKDD 2025 Best Paper Award**!
+* 09/2025: Serve as an Area Chair for ICLR-2026
+* 06/2025: We released [**Protap**: A Benchmark for Protein Modeling on Realistic Downstream Applications](https://arxiv.org/pdf/2506.02052) [[package](https://github.com/Trust-App-AI-Lab/protap)]
+* 06/2025: Very honored that the paper [LiSA: Leveraging Link Recommender to Attack Graph Neural Networks via Subgraph Injection](https://arxiv.org/pdf/2502.09271) corresponded by me received the **PAKDD 2025 Best Paper Award**!
 * 05/2025: Two papers accepted by **KDD-2025**
   * [PreGIP: Watermarking the Pretraining of Graph Neural Networks for Deep Intellectual Property Protection](https://arxiv.org/abs/2402.04435)
   * [Are You Using Reliable Graph Prompts? Trojan Prompt Attacks on Graph Neural Networks](https://arxiv.org/pdf/2410.13974)
