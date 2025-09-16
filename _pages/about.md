@@ -11,13 +11,19 @@ I am a tenure-track assistant professor in the AI Thrust at the [Hong Kong Unive
 I recevied my Ph.D. degree from the [Pennsylvania State University](https://www.psu.edu/) under the supervision of [Dr. Suhang Wang](https://suhangwang.ist.psu.edu/). I obtained my Master of AI degree from Computer Science Department at [KU Leuven](https://www.kuleuven.be/english/). I received my Bachelor Degree from the [University of Science and Technology of China](https://www.ustc.edu.cn/). 
 
 <div style="background-color: #f9d9a6; padding: 10px; border: 2px solid #e0a96d;">
-    <p style="font-size: 15px; color: #d9534f; font-weight: bold; display: inline;">
-        [Ph.D. student and Research Assistant Positions available]
+    <p style="font-size: 15px; color: #d9534f; font-weight: bold;">
+        [Open Positions]
     </p>
-    <p style="font-size: 15px; color: black; font-weight: bold; display: inline;">
-    I am seeking highly self-motivated Ph.D. students and Research Assistants to join my team starting in Fall 2026/2027. Candidates with solid backgrounds in data mining, machine learning, mathematics and other related fields are encouraged to apply. If interested, please email me (enyandai@hkust-gz.edu.cn) your CV and transcript, kindly using the subject line "[Ph.D./RA Application - your name]."
+    <ul style="font-size: 15px; color: black; font-weight: bold; margin-top: 5px;">
+        <li><strong>Research Assistant/Intern:</strong> Anytime. </li>
+        <li><strong>Master of Philosophy:</strong>  Fall 2026. (Admission is decided by the committee. Admitted students or qualified applicants are encouraged to contact me.) </li>
+        <li><strong>Ph.D.:</strong>  Fall 2027. (Master students or bachelor students with solid research experience are encouraged to contact me in advance.)</li>
+    </ul>
+    <p style="font-size: 15px; color: black; font-weight: bold;">
+        Candidates with solid backgrounds in data mining, machine learning, mathematics, or related fields are encouraged to apply. Interested applicants should email their CV and transcript to <a href="mailto:enyandai@hkust-gz.edu.cn">enyandai@hkust-gz.edu.cn</a>, using the subject line "<strong>[RA/M.Phil./Ph.D. Application - Your Name]</strong>".
     </p>
 </div>
+
 
 
 
