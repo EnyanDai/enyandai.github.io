@@ -8,15 +8,15 @@ author_profile: true
 
 ## Preprints
 1. Shuo Yan, Yuliang Yan, Bin Ma, Chenao Li, Haochun Tang, Jiahua Lu, Minhua Lin, Yuyuan Feng, Hui Xiong, **Enyan Dai**. "Protap: A Benchmark for Protein Modeling on Realistic Downstream Applications" [[paper]](https://arxiv.org/pdf/2506.02052)
-2. Chenao Li, Shuo Yan, **Enyan Dai**. "UniZyme: A Unified Protein Cleavage Site Predictor Enhanced with Enzyme Active-Site Knowledge" [[paper](https://arxiv.org/abs/2502.06914)]
-3. Yuliang Yan, Haochun Tang, Shuo Yan, **Enyan Dai**. "DuFFin: A Dual-Level Fingerprinting Framework for LLMs IP Protection" [[paper]](https://arxiv.org/pdf/2505.16530)
-4. Bin Ma, Yuyuan Feng, Minhua Lin, **Enyan Dai**. "How Explanations Leak the Decision Logic: Stealing Graph Neural Networks via Explanation Alignment" [[paper]](https://arxiv.org/pdf/2506.03087)
+1. Yuliang Yan, Haochun Tang, Shuo Yan, **Enyan Dai**. "DuFFin: A Dual-Level Fingerprinting Framework for LLMs IP Protection" [[paper]](https://arxiv.org/pdf/2505.16530)
+1. Bin Ma, Yuyuan Feng, Minhua Lin, **Enyan Dai**. "How Explanations Leak the Decision Logic: Stealing Graph Neural Networks via Explanation Alignment" [[paper]](https://arxiv.org/pdf/2506.03087)
 
 
 
 
 ## Publications
 ### 2025
+1. Chenao Li, Shuo Yan, **Enyan Dai**. "UniZyme: A Unified Protein Cleavage Site Predictor Enhanced with Enzyme Active-Site Knowledge" [[paper](https://arxiv.org/abs/2502.06914)] Accepted by 39th Conference on Neural Information Processing Systems **(NeurIPS 2025)**
 1.  **Enyan Dai**\*, Minhua Lin\*, Suhang Wang. "PreGIP: Watermarking the Pretraining of Graph Neural Networks for Deep Intellectual Property Protection." In Proceedings of the 31th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining **(KDD 2025)** [[paper](https://arxiv.org/abs/2402.04435)]
 2.  Minhua Lin, **Enyan Dai**, Junjie Xu, Suhang Wang. "Stealing Training Graphs from Graph Neural Networks." In Proceedings of the 31th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining **(KDD 2025)**  [[paper](https://arxiv.org/abs/2411.11197)]
 3.  Minhua Lin, Zhiwei Zhang, **Enyan Dai**, Zongyu Wu, Yilong Wang, Xiang Zhang, Suhang Wang. "Are You Using Reliable Graph Prompts? Trojan Prompt Attacks on Graph Neural Networks." In Proceedings of the 31th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining **(KDD 2025)**  [[paper]()]

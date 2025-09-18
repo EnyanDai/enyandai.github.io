@@ -164,6 +164,7 @@ I have wide research interests in Trustworthy AI and Applications of AI in the r
 
 
 ## News
+* 09/2025:[One paper entitled: UniZyme: A Unified Protein Cleavage Site Predictor Enhanced with Enzyme Active-Site Knowledge](https://arxiv.org/abs/2502.06914) accepted by NeurIPS-2025
 * 09/2025: Serve as an Area Chair for ICLR-2026
 * 06/2025: We released [**Protap**: A Benchmark for Protein Modeling on Realistic Downstream Applications](https://arxiv.org/pdf/2506.02052) [[package](https://github.com/Trust-App-AI-Lab/protap)]
 * 06/2025: Very honored that the paper [LiSA: Leveraging Link Recommender to Attack Graph Neural Networks via Subgraph Injection](https://arxiv.org/pdf/2502.09271) corresponded by me received the **PAKDD 2025 Best Paper Award**!
