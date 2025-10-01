@@ -17,7 +17,7 @@ I recevied my Ph.D. degree from the [Pennsylvania State University](https://www.
     <ul style="font-size: 15px; color: black; font-weight: bold; margin-top: 0; margin-bottom: 10px; padding-left: 20px;">
         <li><strong>Research Assistant/Intern:</strong> Positions available anytime.</li>
         <li><strong>Master of Philosophy (M.Phil.):</strong> Fall 2026. (Admission decisions are made by the admission committee; admitted students or qualified applicants are encouraged to contact me in advance.)</li>
-        <li><strong>Ph.D.:</strong> Fall 2027. (Master students or Bachelor students with strong research experience are encouraged to contact me in advance.)</li>
+        <li><strong>Ph.D.:</strong> Fall 2026. (Master students or Bachelor students with strong research experience are encouraged to contact me in advance.)</li>
     </ul>
     <p style="font-size: 15px; color: black; font-weight: bold; margin-top: 5px;">
         Candidates with strong backgrounds in data mining, machine learning, mathematics, or related fields are encouraged to email their CV and transcript to <a href="mailto:enyandai@hkust-gz.edu.cn">enyandai@hkust-gz.edu.cn</a>, using the subject line "<strong>[RA/M.Phil./Ph.D. Application - Your Name]</strong>".
