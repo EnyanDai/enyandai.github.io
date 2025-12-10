@@ -26,7 +26,11 @@ I recevied my Ph.D. degree from the [Pennsylvania State University](https://www.
 
 ## Research Directions at <img src="../images/logo.svg" style="height: 2.5em; vertical-align: middle;">(Trust & Application AI Lab)
 
-My recent research interests lie in the **Protein Foundation Model** and the **Visual Language Action (VLA) model**. Specifically, he believes that scientific discoveries in proteins can be reshaped by a system of: LLM Idea Propose <-> Protein Foundation Model Dry Experiments <-> Wet Experiments by Visual Language Action Model.
+My recent research interests lie in the **Protein Foundation Model** and the **Visual Language Action (VLA) model**. Specifically, he believes that scientific discoveries in proteins can be reshaped by a system of: LLM Idea Propose <-> Protein Foundation Model Dry Experiments <-> Wet Experiments by Visual Language Action Model. 
+<div style="display: flex; justify-content: center;">
+    <img src="..\images\research.png" alt="" style="width: 100%" class="image">
+</div>
+
 
 ## News
 * 09/2025:[One paper entitled: UniZyme: A Unified Protein Cleavage Site Predictor Enhanced with Enzyme Active-Site Knowledge](https://arxiv.org/abs/2502.06914) accepted by NeurIPS-2025
