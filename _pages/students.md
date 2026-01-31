@@ -105,7 +105,7 @@ author_profile: false
     <div class="profile">
         <img src="https://github.com/TrustApplication-AI-Lab/TrustApplication-AI-Lab.github.io/blob/main/content/authors/binma/avatar.jpg?raw=true" alt="Portrait of Bin Ma">
         <br>
-        <a href="" class="name"> Bin Ma，RA</a>
+        <a href="" class="name"> Bin Ma，Ph.D. student</a>
         <div class="position">Bachelor from Xian Jiaotong University</div>
     </div>
 </div>
@@ -119,7 +119,7 @@ author_profile: false
     <div class="profile">
         <img src="../images/yaochi.jpg" alt="Portrait">
         <br>
-        <a href="" class="name"> Yaochi Zhou，Ph.D. student</a>
+        <a href="" class="name"> Yaochi Guo，Ph.D. student</a>
         <div class="position">Bachelor/Master from USTC/UCAS</div>
     </div>
     <div class="profile">
