@@ -8,7 +8,6 @@ author_profile: true
 
 ## Preprints
 1. Shuo Yan, Yuliang Yan, Bin Ma, Chenao Li, Haochun Tang, Jiahua Lu, Minhua Lin, Yuyuan Feng, Hui Xiong, **Enyan Dai**. "Protap: A Benchmark for Protein Modeling on Realistic Downstream Applications" [[paper]](https://arxiv.org/pdf/2506.02052)
-1. Yuliang Yan, Haochun Tang, Shuo Yan, **Enyan Dai**. "DuFFin: A Dual-Level Fingerprinting Framework for LLMs IP Protection" [[paper]](https://arxiv.org/pdf/2505.16530)
 1. Bin Ma, Yuyuan Feng, Minhua Lin, **Enyan Dai**. "How Explanations Leak the Decision Logic: Stealing Graph Neural Networks via Explanation Alignment" [[paper]](https://arxiv.org/pdf/2506.03087)
 
 
