@@ -15,6 +15,10 @@ author_profile: true
 
 
 ## Publications
+### 2026
+1. Yuliang Yan, Haochun Tang, Shuo Yan, **Enyan Dai**."DuFFin: A Dual-Level Fingerprinting Framework for LLMs IP Protection" [[paper](https://arxiv.org/abs/2505.16530)] In Proceedings of 19th Conference of the European Chapter of the Association for Computational Linguistics (**EACL 2026 Finding**)
+1. Minhua Lin, **Enyan Dai**, Hui Liu, Xianfeng Tang, Yuliang Yan, Zhenwei Dai, Jingying Zeng, Zhiwei Zhang, Fali Wang, Hongcheng Gao, Chen Luo, Xiang Zhang, Qi He, Suhang Wang. "How Far Are LLMs from Professional Poker Players? Revisiting Game-Theoretic Reasoning with Agentic Tool Use." In Proceedings of the 14th International Conference on Learning Representations (**ICLR 2026**)
+
 ### 2025
 1. Chenao Li, Shuo Yan, **Enyan Dai**. "UniZyme: A Unified Protein Cleavage Site Predictor Enhanced with Enzyme Active-Site Knowledge" [[paper](https://arxiv.org/abs/2502.06914)] Accepted by 39th Conference on Neural Information Processing Systems **(NeurIPS 2025)**
 1.  **Enyan Dai**\*, Minhua Lin\*, Suhang Wang. "PreGIP: Watermarking the Pretraining of Graph Neural Networks for Deep Intellectual Property Protection." In Proceedings of the 31th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining **(KDD 2025)** [[paper](https://arxiv.org/abs/2402.04435)]
