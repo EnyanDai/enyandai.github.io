@@ -33,6 +33,9 @@ My recent research interests lie in the **Protein Foundation Model** and the **V
 
 
 ## News
+* 04/2026: 🎉 Two papers accepted by **ACL-2026** (1 Main Conference + 1 Findings)
+  * Route to Rome Attack: Directing LLM Routers to Expensive Models via Adversarial Suffix Optimization
+  * CAGenMol: Condition-Aware Diffusion Language Model for Goal-Directed Molecular Generation
 * 01/2026:[One paper entitled: DuFFin: A Dual-Level Fingerprinting Framework for LLMs IP Protection](https://arxiv.org/abs/2505.16530) accepted by EACL-2026 Findings
 * 01/2026:[One paper entitled: How Far Are LLMs from Professional Poker Players? Revisiting Game-Theoretic Reasoning with Agentic Tool Use]() accepted by ICLR-2026
 * 09/2025:[One paper entitled: UniZyme: A Unified Protein Cleavage Site Predictor Enhanced with Enzyme Active-Site Knowledge](https://arxiv.org/abs/2502.06914) accepted by NeurIPS-2025

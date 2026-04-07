@@ -15,9 +15,11 @@ author_profile: true
 
 ## Publications
 ### 2026
+1. Haochun Tang, Yuliang Yan, Jiahua Lu, Huaxiao Liu, **Enyan Dai**. "Route to Rome Attack: Directing LLM Routers to Expensive Models via Adversarial Suffix Optimization." In Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics (**ACL 2026**)
+1. Yanting Li, Zhuoyang Jiang, **Enyan Dai**, Lei Wang, Wen-Cai Ye, Li Liu. "CAGenMol: Condition-Aware Diffusion Language Model for Goal-Directed Molecular Generation." In Findings of the 64th Annual Meeting of the Association for Computational Linguistics (**ACL 2026 Findings**)
 1. Yuliang Yan, Haochun Tang, Shuo Yan, **Enyan Dai**."DuFFin: A Dual-Level Fingerprinting Framework for LLMs IP Protection" [[paper](https://arxiv.org/abs/2505.16530)] In Proceedings of 19th Conference of the European Chapter of the Association for Computational Linguistics (**EACL 2026 Finding**)
 1. Minhua Lin, **Enyan Dai**, Hui Liu, Xianfeng Tang, Yuliang Yan, Zhenwei Dai, Jingying Zeng, Zhiwei Zhang, Fali Wang, Hongcheng Gao, Chen Luo, Xiang Zhang, Qi He, Suhang Wang. "How Far Are LLMs from Professional Poker Players? Revisiting Game-Theoretic Reasoning with Agentic Tool Use." In Proceedings of the 14th International Conference on Learning Representations (**ICLR 2026**)
-1. Renqiang Luo, Huafei Huang, Tao Tang, Jing Ren, Ziqi Xu, Mingliang Hou, **Enyan Dai** and Feng Xia. "FairGE: Fairness-Aware Graph Encoding in Incomplete Social Networks" In Proceedings of The Web Conference **(WWW 2023)** 
+1. Renqiang Luo, Huafei Huang, Tao Tang, Jing Ren, Ziqi Xu, Mingliang Hou, **Enyan Dai** and Feng Xia. "FairGE: Fairness-Aware Graph Encoding in Incomplete Social Networks" In Proceedings of The Web Conference **(WWW 2026)** 
 
 ### 2025
 1. Chenao Li, Shuo Yan, **Enyan Dai**. "UniZyme: A Unified Protein Cleavage Site Predictor Enhanced with Enzyme Active-Site Knowledge" [[paper](https://arxiv.org/abs/2502.06914)] Accepted by 39th Conference on Neural Information Processing Systems **(NeurIPS 2025)**
