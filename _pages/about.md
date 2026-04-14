@@ -33,6 +33,7 @@ My recent research interests lie in the **Protein Foundation Model** and the **V
 
 
 ## News
+* 04/2026: 🚀 We released <a href="https://trust-app-ai-lab.github.io/StudyClawHub/" class="gradient-text">StudyClawHub</a>, built for sharp students! 🐾 Come to discover and publish skills/agents.
 * 04/2026: 🎉 Two papers accepted by **ACL-2026** (1 Main Conference + 1 Findings)
   * Route to Rome Attack: Directing LLM Routers to Expensive Models via Adversarial Suffix Optimization
   * CAGenMol: Condition-Aware Diffusion Language Model for Goal-Directed Molecular Generation
