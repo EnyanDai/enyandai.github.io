@@ -5,16 +5,10 @@ permalink: /publications/
 author_profile: true
 ---
 
-
-## Preprints
-1. Shuo Yan, Yuliang Yan, Bin Ma, Chenao Li, Haochun Tang, Jiahua Lu, Minhua Lin, Yuyuan Feng, Hui Xiong, **Enyan Dai**. "Protap: A Benchmark for Protein Modeling on Realistic Downstream Applications" [[paper]](https://arxiv.org/pdf/2506.02052)
-1. Bin Ma, Yuyuan Feng, Minhua Lin, **Enyan Dai**. "How Explanations Leak the Decision Logic: Stealing Graph Neural Networks via Explanation Alignment" [[paper]](https://arxiv.org/pdf/2506.03087)
-
-
-
-
 ## Publications
 ### 2026
+1. Bin Ma, Yuyuan Feng, Minhua Lin, **Enyan Dai**. "Do Explanations Increase the Risk of Decision Logic Leakage? Explanation-Guided Stealing of Graph Models." In Proceedings of the 32nd ACM SIGKDD Conference on Knowledge Discovery and Data Mining (**KDD 2026 Research Track**) [[paper](https://arxiv.org/abs/2506.03087)]
+1. Shuo Yan, Yuliang Yan, Bin Ma, Chenao Li, Haochun Tang, Jiahua Lu, Minhua Lin, Yuyuan Feng, **Enyan Dai**. "General Protein Pretraining or Domain-Specific Designs? Benchmarking Protein Modeling on Realistic Applications." In Proceedings of the 32nd ACM SIGKDD Conference on Knowledge Discovery and Data Mining (**KDD 2026 Datasets and Benchmarks Track**) [[paper](https://arxiv.org/abs/2506.02052)]
 1. Haochun Tang, Yuliang Yan, Jiahua Lu, Huaxiao Liu, **Enyan Dai**. "Route to Rome Attack: Directing LLM Routers to Expensive Models via Adversarial Suffix Optimization." In Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics (**ACL 2026**)
 1. Yanting Li, Zhuoyang Jiang, **Enyan Dai**, Lei Wang, Wen-Cai Ye, Li Liu. "CAGenMol: Condition-Aware Diffusion Language Model for Goal-Directed Molecular Generation." In Findings of the 64th Annual Meeting of the Association for Computational Linguistics (**ACL 2026 Findings**)
 1. Yuliang Yan, Haochun Tang, Shuo Yan, **Enyan Dai**."DuFFin: A Dual-Level Fingerprinting Framework for LLMs IP Protection" [[paper](https://arxiv.org/abs/2505.16530)] In Proceedings of 19th Conference of the European Chapter of the Association for Computational Linguistics (**EACL 2026 Finding**)

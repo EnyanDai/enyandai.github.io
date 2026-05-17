@@ -33,6 +33,9 @@ My recent research interests lie in the **Protein Foundation Model** and the **V
 
 
 ## News
+* 05/2026: 🎉 Two papers accepted by **KDD-2026**
+  * [Do Explanations Increase the Risk of Decision Logic Leakage? Explanation-Guided Stealing of Graph Models](https://arxiv.org/abs/2506.03087) (Research Track)
+  * [General Protein Pretraining or Domain-Specific Designs? Benchmarking Protein Modeling on Realistic Applications](https://arxiv.org/abs/2506.02052) (Datasets and Benchmarks Track)
 * 04/2026: 🚀 We released <a href="https://trust-app-ai-lab.github.io/StudyClawHub/" class="gradient-text">StudyClawHub</a>, built for sharp students! 🐾 Come to discover and publish skills/agents.
 * 04/2026: 🎉 Two papers accepted by **ACL-2026** (1 Main Conference + 1 Findings)
   * Route to Rome Attack: Directing LLM Routers to Expensive Models via Adversarial Suffix Optimization
