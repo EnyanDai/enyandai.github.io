@@ -1,0 +1,1111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Individual Meeting Guideline</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #18211f;
+      --muted: #5f6f68;
+      --paper: #fbfaf6;
+      --paper-strong: #f2eee4;
+      --line: #d9d0c2;
+      --green: #2e6f64;
+      --green-deep: #16483f;
+      --rust: #a64f31;
+      --amber: #c98c2b;
+      --blue: #385f8f;
+      --white: #ffffff;
+      --shadow: 0 18px 50px rgba(24, 33, 31, 0.12);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--paper);
+      color: var(--ink);
+      line-height: 1.62;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      opacity: 0.45;
+      background-image:
+        linear-gradient(rgba(24, 33, 31, 0.035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(24, 33, 31, 0.035) 1px, transparent 1px);
+      background-size: 36px 36px;
+      z-index: -2;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      min-height: 88vh;
+      display: grid;
+      align-items: center;
+      padding: 56px 24px 72px;
+      background:
+        radial-gradient(circle at 82% 20%, rgba(201, 140, 43, 0.16), transparent 28%),
+        linear-gradient(135deg, #f7f1e7 0%, #fbfaf6 48%, #e8f0ec 100%);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .hero-inner,
+    .content-inner {
+      width: min(1120px, 100%);
+      margin: 0 auto;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 420px;
+      gap: 44px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--green-deep);
+      font-weight: 750;
+      text-transform: uppercase;
+      font-size: 13px;
+      letter-spacing: 0;
+      margin-bottom: 18px;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 34px;
+      height: 2px;
+      background: var(--rust);
+    }
+
+    h1,
+    h2,
+    h3,
+    p {
+      margin-top: 0;
+    }
+
+    h1 {
+      max-width: 760px;
+      margin-bottom: 22px;
+      font-size: 62px;
+      line-height: 1.02;
+      letter-spacing: 0;
+    }
+
+    .hero-copy {
+      max-width: 720px;
+      color: #35423e;
+      font-size: 21px;
+    }
+
+    .hero-copy strong {
+      color: var(--ink);
+      font-weight: 760;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 32px;
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      min-height: 42px;
+      border: 1px solid rgba(22, 72, 63, 0.28);
+      border-radius: 999px;
+      padding: 8px 14px;
+      background: rgba(255, 255, 255, 0.68);
+      color: var(--green-deep);
+      font-size: 14px;
+      font-weight: 700;
+      backdrop-filter: blur(12px);
+    }
+
+    .visual {
+      position: relative;
+      min-height: 520px;
+    }
+
+    .research-board {
+      position: absolute;
+      inset: 0;
+      border: 1px solid rgba(22, 72, 63, 0.18);
+      border-radius: 8px;
+      background:
+        linear-gradient(160deg, rgba(255, 255, 255, 0.92), rgba(242, 238, 228, 0.82)),
+        repeating-linear-gradient(0deg, transparent 0 31px, rgba(22, 72, 63, 0.07) 32px);
+      box-shadow: var(--shadow);
+      transform: rotate(1.5deg);
+      overflow: hidden;
+    }
+
+    .research-board::before {
+      content: "";
+      position: absolute;
+      inset: 18px;
+      border: 1px solid rgba(166, 79, 49, 0.22);
+      border-radius: 6px;
+    }
+
+    .board-title {
+      position: absolute;
+      top: 34px;
+      left: 34px;
+      right: 34px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      color: var(--green-deep);
+      font-weight: 800;
+      font-size: 14px;
+    }
+
+    .board-title span:last-child {
+      color: var(--rust);
+      font-weight: 750;
+    }
+
+    .note {
+      position: absolute;
+      width: 168px;
+      border: 1px solid rgba(24, 33, 31, 0.12);
+      border-radius: 8px;
+      padding: 14px 14px 13px;
+      background: #fffdf8;
+      box-shadow: 0 12px 26px rgba(24, 33, 31, 0.08);
+      font-size: 13px;
+      line-height: 1.38;
+    }
+
+    .note strong {
+      display: block;
+      margin-bottom: 6px;
+      color: var(--ink);
+      font-size: 14px;
+    }
+
+    .note p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    .note.problem {
+      top: 92px;
+      left: 44px;
+      border-top: 4px solid var(--rust);
+    }
+
+    .note.method {
+      top: 184px;
+      right: 44px;
+      border-top: 4px solid var(--green);
+    }
+
+    .note.evidence {
+      left: 62px;
+      bottom: 122px;
+      border-top: 4px solid var(--blue);
+    }
+
+    .note.plan {
+      right: 62px;
+      bottom: 54px;
+      border-top: 4px solid var(--amber);
+    }
+
+    .connector {
+      position: absolute;
+      height: 2px;
+      background: rgba(46, 111, 100, 0.32);
+      transform-origin: left center;
+    }
+
+    .connector.one {
+      width: 138px;
+      top: 178px;
+      left: 193px;
+      transform: rotate(18deg);
+    }
+
+    .connector.two {
+      width: 152px;
+      top: 291px;
+      left: 132px;
+      transform: rotate(131deg);
+    }
+
+    .connector.three {
+      width: 144px;
+      right: 134px;
+      bottom: 144px;
+      transform: rotate(18deg);
+    }
+
+    .formula-strip {
+      position: absolute;
+      left: 34px;
+      right: 34px;
+      bottom: 22px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+      color: rgba(24, 33, 31, 0.52);
+      font-family: "SFMono-Regular", Consolas, monospace;
+      font-size: 11px;
+    }
+
+    .formula-strip span {
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+
+    .section {
+      padding: 76px 24px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .section:nth-of-type(even) {
+      background: rgba(242, 238, 228, 0.55);
+    }
+
+    .section-header {
+      display: grid;
+      grid-template-columns: 260px minmax(0, 1fr);
+      gap: 44px;
+      align-items: start;
+      margin-bottom: 34px;
+    }
+
+    .section-kicker {
+      color: var(--rust);
+      font-size: 13px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0;
+    }
+
+    h2 {
+      margin-bottom: 14px;
+      font-size: 34px;
+      line-height: 1.15;
+      letter-spacing: 0;
+    }
+
+    .lead {
+      max-width: 760px;
+      color: var(--muted);
+      font-size: 18px;
+    }
+
+    .two-column {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .comparison {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--white);
+      padding: 24px;
+      min-height: 210px;
+    }
+
+    .comparison h3 {
+      margin-bottom: 12px;
+      color: var(--green-deep);
+      font-size: 20px;
+      letter-spacing: 0;
+    }
+
+    .comparison.warning h3 {
+      color: var(--rust);
+    }
+
+    .comparison p {
+      color: var(--muted);
+    }
+
+    .principles {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .principle-card {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--white);
+      padding: 22px;
+    }
+
+    .number {
+      display: inline-grid;
+      place-items: center;
+      width: 34px;
+      height: 34px;
+      margin-bottom: 18px;
+      border-radius: 50%;
+      background: var(--green-deep);
+      color: var(--white);
+      font-weight: 800;
+      font-size: 14px;
+    }
+
+    .principle-card:nth-child(2) .number {
+      background: var(--rust);
+    }
+
+    .principle-card:nth-child(3) .number {
+      background: var(--blue);
+    }
+
+    .principle-card h3 {
+      margin-bottom: 8px;
+      font-size: 20px;
+      letter-spacing: 0;
+    }
+
+    .principle-card p {
+      margin-bottom: 0;
+      color: var(--muted);
+    }
+
+    .checklist {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+    }
+
+    .check-item {
+      display: grid;
+      grid-template-columns: 28px minmax(0, 1fr);
+      gap: 14px;
+      align-items: start;
+      border-top: 1px solid var(--line);
+      padding-top: 18px;
+    }
+
+    .check-mark {
+      display: inline-grid;
+      place-items: center;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: #e3eee8;
+      color: var(--green-deep);
+      font-weight: 900;
+    }
+
+    .check-item h3 {
+      margin-bottom: 5px;
+      font-size: 18px;
+      letter-spacing: 0;
+    }
+
+    .check-item p {
+      margin-bottom: 0;
+      color: var(--muted);
+    }
+
+    .flow {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      overflow: hidden;
+      background: var(--white);
+    }
+
+    .flow-step {
+      min-height: 220px;
+      padding: 24px;
+      border-right: 1px solid var(--line);
+    }
+
+    .flow-step:last-child {
+      border-right: 0;
+    }
+
+    .flow-step small {
+      display: block;
+      margin-bottom: 28px;
+      color: var(--rust);
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0;
+    }
+
+    .flow-step h3 {
+      margin-bottom: 10px;
+      font-size: 21px;
+      letter-spacing: 0;
+    }
+
+    .flow-step p {
+      margin-bottom: 0;
+      color: var(--muted);
+    }
+
+    .draft-callout {
+      display: grid;
+      grid-template-columns: 1fr 340px;
+      gap: 36px;
+      align-items: stretch;
+    }
+
+    .quote-panel {
+      padding: 34px;
+      border-left: 6px solid var(--rust);
+      background: var(--white);
+      box-shadow: 0 14px 36px rgba(24, 33, 31, 0.08);
+      border-radius: 0 8px 8px 0;
+    }
+
+    .quote-panel p {
+      margin-bottom: 0;
+      color: var(--ink);
+      font-size: 28px;
+      line-height: 1.28;
+      font-weight: 760;
+    }
+
+    .draft-list {
+      display: grid;
+      gap: 12px;
+    }
+
+    .draft-list div {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.72);
+      padding: 18px;
+    }
+
+    .draft-list strong {
+      display: block;
+      margin-bottom: 5px;
+      color: var(--green-deep);
+    }
+
+    .draft-list span {
+      color: var(--muted);
+    }
+
+    .template {
+      display: grid;
+      grid-template-columns: 340px minmax(0, 1fr);
+      gap: 22px;
+      align-items: start;
+    }
+
+    .template-title {
+      position: sticky;
+      top: 24px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--green-deep);
+      color: var(--white);
+      padding: 26px;
+    }
+
+    .template-title h2 {
+      margin-bottom: 10px;
+      font-size: 28px;
+    }
+
+    .template-title p {
+      margin-bottom: 0;
+      color: rgba(255, 255, 255, 0.82);
+    }
+
+    .template-body {
+      display: grid;
+      gap: 14px;
+    }
+
+    .template-row {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--white);
+      padding: 22px;
+    }
+
+    .template-row h3 {
+      margin-bottom: 8px;
+      font-size: 20px;
+      letter-spacing: 0;
+    }
+
+    .template-row p {
+      margin-bottom: 0;
+      color: var(--muted);
+    }
+
+    .closing {
+      padding: 84px 24px;
+      background: #17251f;
+      color: var(--white);
+    }
+
+    .closing .content-inner {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 260px;
+      gap: 40px;
+      align-items: end;
+    }
+
+    .closing h2 {
+      max-width: 780px;
+      color: var(--white);
+      font-size: 38px;
+    }
+
+    .closing p {
+      max-width: 760px;
+      color: rgba(255, 255, 255, 0.74);
+      font-size: 18px;
+    }
+
+    .signature {
+      color: rgba(255, 255, 255, 0.82);
+      text-align: right;
+      font-size: 18px;
+    }
+
+    .signature strong {
+      display: block;
+      color: var(--white);
+      font-size: 24px;
+    }
+
+    @media (max-width: 980px) {
+      .hero-grid,
+      .section-header,
+      .draft-callout,
+      .template,
+      .closing .content-inner {
+        grid-template-columns: 1fr;
+      }
+
+      .visual {
+        min-height: 430px;
+      }
+
+      h1 {
+        font-size: 48px;
+      }
+
+      .principles,
+      .flow {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .flow-step:nth-child(2) {
+        border-right: 0;
+      }
+
+      .flow-step:nth-child(-n + 2) {
+        border-bottom: 1px solid var(--line);
+      }
+
+      .template-title {
+        position: static;
+      }
+
+      .signature {
+        text-align: left;
+      }
+    }
+
+    @media (max-width: 680px) {
+      .hero {
+        min-height: auto;
+        padding-top: 42px;
+      }
+
+      h1 {
+        font-size: 38px;
+      }
+
+      h2 {
+        font-size: 28px;
+      }
+
+      .hero-copy,
+      .lead {
+        font-size: 16px;
+      }
+
+      .visual {
+        min-height: 500px;
+      }
+
+      .research-board {
+        transform: none;
+      }
+
+      .note {
+        width: calc(100% - 64px);
+        left: 32px;
+        right: auto;
+      }
+
+      .note.problem {
+        top: 78px;
+      }
+
+      .note.method {
+        top: 176px;
+      }
+
+      .note.evidence {
+        top: 274px;
+        bottom: auto;
+      }
+
+      .note.plan {
+        top: 372px;
+        bottom: auto;
+      }
+
+      .connector,
+      .formula-strip {
+        display: none;
+      }
+
+      .two-column,
+      .principles,
+      .checklist,
+      .flow {
+        grid-template-columns: 1fr;
+      }
+
+      .flow-step,
+      .flow-step:nth-child(2),
+      .flow-step:nth-child(-n + 2) {
+        border-right: 0;
+        border-bottom: 1px solid var(--line);
+      }
+
+      .flow-step:last-child {
+        border-bottom: 0;
+      }
+
+      .quote-panel {
+        padding: 26px;
+      }
+
+      .quote-panel p {
+        font-size: 23px;
+      }
+    }
+
+    @media print {
+      body {
+        background: #ffffff;
+      }
+
+      body::before,
+      .visual,
+      .hero-actions {
+        display: none;
+      }
+
+      .hero,
+      .section,
+      .closing {
+        min-height: 0;
+        padding: 32px 0;
+        border-bottom: 1px solid #cccccc;
+        background: #ffffff;
+        color: #111111;
+      }
+
+      .hero-grid,
+      .section-header,
+      .draft-callout,
+      .template,
+      .closing .content-inner {
+        grid-template-columns: 1fr;
+      }
+
+      .closing h2,
+      .closing p,
+      .signature,
+      .signature strong {
+        color: #111111;
+      }
+
+      .template-title {
+        position: static;
+        background: #ffffff;
+        color: #111111;
+      }
+
+      .template-title p {
+        color: #333333;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner hero-grid">
+      <div>
+        <div class="eyebrow">TAI Lab Research Training</div>
+        <h1>Individual Meeting Guideline</h1>
+        <p class="hero-copy">
+          An individual meeting is not a weekly checkpoint. It is a focused research discussion where we
+          clarify the problem, sharpen the method, examine the evidence, and decide the next step together.
+        </p>
+        <p class="hero-copy">
+          Please come with <strong>materials, thoughts, and questions</strong>, so the meeting can move your
+          research forward rather than only record what has happened.
+        </p>
+        <div class="hero-actions" aria-label="Core meeting values">
+          <span class="pill">Problem formulation</span>
+          <span class="pill">Method motivation</span>
+          <span class="pill">Experiment design</span>
+          <span class="pill">Draft updating</span>
+        </div>
+      </div>
+      <div class="visual" aria-label="Research discussion board">
+        <div class="research-board">
+          <div class="board-title">
+            <span>Before the meeting</span>
+            <span>Discuss, not report</span>
+          </div>
+          <div class="connector one"></div>
+          <div class="connector two"></div>
+          <div class="connector three"></div>
+          <div class="note problem">
+            <strong>Challenge</strong>
+            <p>What is the key difficulty we must resolve?</p>
+          </div>
+          <div class="note method">
+            <strong>Method</strong>
+            <p>Why is this technical design necessary?</p>
+          </div>
+          <div class="note evidence">
+            <strong>Evidence</strong>
+            <p>Which observations support the claim?</p>
+          </div>
+          <div class="note plan">
+            <strong>Next step</strong>
+            <p>What concrete deliverable is expected next week?</p>
+          </div>
+          <div class="formula-strip" aria-hidden="true">
+            <span>L = L_task + lambda L_reg</span>
+            <span>RQ1: effectiveness</span>
+            <span>Observation -> analysis</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+      <div class="content-inner">
+        <div class="section-header">
+          <div class="section-kicker">01 / Objective</div>
+          <div>
+            <h2>What the meeting is for</h2>
+            <p class="lead">
+              The meeting should be used for important research decisions: problem formulation, methodology,
+              experiment design, result analysis, paper writing, and the plan for the next stage.
+            </p>
+          </div>
+        </div>
+        <div class="two-column">
+          <article class="comparison warning">
+            <h3>It should not become only this</h3>
+            <p>
+              A simple progress report where we only check current model performance, unfinished experiments,
+              or whether the numbers look better than last week.
+            </p>
+          </article>
+          <article class="comparison">
+            <h3>It should become this</h3>
+            <p>
+              A deep discussion based on concrete materials, where we identify the bottleneck, improve the
+              design, clarify the writing, and make the next action more precise.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="content-inner">
+        <div class="section-header">
+          <div class="section-kicker">02 / Mindset</div>
+          <div>
+            <h2>Bring a discussion, not only a result</h2>
+            <p class="lead">
+              A good meeting begins before the meeting. Please think carefully about what you want to discuss
+              and what feedback you need.
+            </p>
+          </div>
+        </div>
+        <div class="principles">
+          <article class="principle-card">
+            <span class="number">1</span>
+            <h3>State the key question</h3>
+            <p>
+              What is the most important research question or technical uncertainty you want to resolve in
+              this meeting?
+            </p>
+          </article>
+          <article class="principle-card">
+            <span class="number">2</span>
+            <h3>Explain your reasoning</h3>
+            <p>
+              Why do you believe the current design is reasonable? What challenge does it address?
+            </p>
+          </article>
+          <article class="principle-card">
+            <span class="number">3</span>
+            <h3>Use evidence</h3>
+            <p>
+              Which preliminary experiments, observations, examples, or failed attempts support your current
+              decision?
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="content-inner">
+        <div class="section-header">
+          <div class="section-kicker">03 / Preparation</div>
+          <div>
+            <h2>Prepare materials that can be discussed</h2>
+            <p class="lead">
+              Slides are useful for temporary ideas and fast discussion. The Overleaf draft is more important
+              when the idea needs to be formalized and remembered.
+            </p>
+          </div>
+        </div>
+        <div class="checklist">
+          <div class="check-item">
+            <span class="check-mark">✓</span>
+            <div>
+              <h3>Slides or updated draft</h3>
+              <p>Bring visible materials. Do not rely only on oral explanation.</p>
+            </div>
+          </div>
+          <div class="check-item">
+            <span class="check-mark">✓</span>
+            <div>
+              <h3>Clear technical details</h3>
+              <p>Use equations, definitions, figures, or algorithmic descriptions whenever possible.</p>
+            </div>
+          </div>
+          <div class="check-item">
+            <span class="check-mark">✓</span>
+            <div>
+              <h3>Motivation for each design</h3>
+              <p>Explain why each component is needed and why simpler solutions are insufficient.</p>
+            </div>
+          </div>
+          <div class="check-item">
+            <span class="check-mark">✓</span>
+            <div>
+              <h3>Concrete next-week plan</h3>
+              <p>Prepare specific deliverables instead of vague statements such as “continue experiments.”</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="content-inner">
+        <div class="section-header">
+          <div class="section-kicker">04 / Methodology</div>
+          <div>
+            <h2>For methodology discussions</h2>
+            <p class="lead">
+              At the method-development stage, please make the logic visible: challenge, design, formalization,
+              and evidence should be connected.
+            </p>
+          </div>
+        </div>
+        <div class="flow">
+          <article class="flow-step">
+            <small>Step 1</small>
+            <h3>Technical details</h3>
+            <p>Describe the method clearly enough that another student could re-implement the core idea.</p>
+          </article>
+          <article class="flow-step">
+            <small>Step 2</small>
+            <h3>Formalization</h3>
+            <p>Write down the key definitions, equations, objectives, constraints, or algorithmic process.</p>
+          </article>
+          <article class="flow-step">
+            <small>Step 3</small>
+            <h3>Motivation</h3>
+            <p>Explain what challenge each design addresses and what benefit it brings.</p>
+          </article>
+          <article class="flow-step">
+            <small>Step 4</small>
+            <h3>Preliminary evidence</h3>
+            <p>Use observations, pilot experiments, examples, or ablations to make the idea convincing.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="content-inner">
+        <div class="section-header">
+          <div class="section-kicker">05 / Experiments</div>
+          <div>
+            <h2>For experiment discussions</h2>
+            <p class="lead">
+              Experiments are not only numbers. Each experiment should answer a research question and support
+              a claim in the paper.
+            </p>
+          </div>
+        </div>
+        <div class="principles">
+          <article class="principle-card">
+            <span class="number">1</span>
+            <h3>Settings</h3>
+            <p>
+              Include datasets, baselines, metrics, implementation details, and important hyperparameters.
+            </p>
+          </article>
+          <article class="principle-card">
+            <span class="number">2</span>
+            <h3>Motivation</h3>
+            <p>
+              Explain why this experiment is necessary and which research question it is designed to answer.
+            </p>
+          </article>
+          <article class="principle-card">
+            <span class="number">3</span>
+            <h3>Observation</h3>
+            <p>
+              Summarize what we can learn from the result, why it happens, and whether it supports the paper.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="content-inner">
+        <div class="section-header">
+          <div class="section-kicker">06 / Draft Culture</div>
+          <div>
+            <h2>Treat the draft as part of research</h2>
+            <p class="lead">
+              Updating the draft is not a final-stage polishing task. It is how we force ourselves to clarify
+              the research logic.
+            </p>
+          </div>
+        </div>
+        <div class="draft-callout">
+          <div class="quote-panel">
+            <p>Writing is not only the final step of a paper. Writing is part of the research process.</p>
+          </div>
+          <div class="draft-list">
+            <div>
+              <strong>Problem formulation</strong>
+              <span>Writing it down forces you to define exactly what problem you are solving.</span>
+            </div>
+            <div>
+              <strong>Methodology</strong>
+              <span>Formalizing the method exposes unclear assumptions and missing details.</span>
+            </div>
+            <div>
+              <strong>Experiments</strong>
+              <span>Writing RQs and settings makes baselines, metrics, fairness, and analysis more precise.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="content-inner template">
+        <aside class="template-title">
+          <h2>Next-week plan</h2>
+          <p>
+            Every meeting should end with a concrete plan. The plan should specify the task, the reason, and
+            the expected deliverable.
+          </p>
+        </aside>
+        <div class="template-body">
+          <article class="template-row">
+            <h3>What will be done?</h3>
+            <p>
+              Example: Complete the ablation study for the representation alignment module on two datasets.
+            </p>
+          </article>
+          <article class="template-row">
+            <h3>Why is it important?</h3>
+            <p>
+              Example: This experiment verifies whether the module is necessary for the main performance gain.
+            </p>
+          </article>
+          <article class="template-row">
+            <h3>What should be delivered?</h3>
+            <p>
+              Example: A table, a short observation paragraph, and the corresponding update in the Overleaf draft.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="closing">
+    <div class="content-inner">
+      <div>
+        <h2>Please take the individual meeting seriously.</h2>
+        <p>
+          My expectation is not that every meeting must already have perfect results. My expectation is that
+          every meeting should help us move the research forward, by clarifying the problem, improving the
+          method, strengthening the experiments, or sharpening the writing.
+        </p>
+      </div>
+      <div class="signature">
+        Best regards,
+        <strong>Enyan</strong>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
