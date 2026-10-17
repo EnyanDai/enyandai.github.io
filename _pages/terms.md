@@ -34,6 +34,6 @@ Third-party advertisers may also place and read cookies on your browser and/or u
 
 If you wish to disable cookies, you may do so through your web browser options. Instructions for doing so can be found on the specific web browsers' websites.
 
-#### Google Analytics
+#### Visitor statistics
 
-Google Analytics is a web analytics tool I use to help understand how visitors engage with this website. It reports website trends using cookies and web beacons without identifying individual visitors. You can read [Google Analytics Privacy Policy](http://www.google.com/analytics/learn/privacy.html).
+This site uses [Stats4U](https://www.stats4u.net/) to count visits and display approximate visitor locations on a globe. Your browser loads a counter image; Stats4U uses IP addresses and browser information to estimate country and city and distinguish daily visits. The visitor counter does not set cookies. See the [Stats4U Privacy Policy](https://www.stats4u.net/privacy) for details.

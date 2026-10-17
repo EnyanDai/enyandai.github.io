@@ -10,6 +10,8 @@ redirect_from:
 I am a tenure-track assistant professor in the AI Thrust at the [Hong Kong University of Science and Technology (Guangzhou)](https://www.hkust-gz.edu.cn/).
 I recevied my Ph.D. degree from the [Pennsylvania State University](https://www.psu.edu/) under the supervision of [Dr. Suhang Wang](https://suhangwang.ist.psu.edu/). I obtained my Master of AI degree from Computer Science Department at [KU Leuven](https://www.kuleuven.be/english/). I received my Bachelor Degree from the [University of Science and Technology of China](https://www.ustc.edu.cn/). 
 
+I am a recipient of China’s National Overseas Talent Recruitment Program (国家级海外引才计划) and have been recognized among the World’s Top 2% Scientists by Stanford University and Elsevier.
+
 <div style="background-color: #f9d9a6; padding: 10px; border: 2px solid #e0a96d;">
     <p style="font-size: 15px; color: #d9534f; font-weight: bold; margin-bottom: 5px;">
         [Open Positions]

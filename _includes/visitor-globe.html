@@ -1,0 +1,11 @@
+{% if site.visitor_globe.stats4u_id %}
+<div class="author__visitors">
+  <script async src="https://www.stats4u.net/js/globe.js"
+    data-s4uid="{{ site.visitor_globe.stats4u_id | escape }}"
+    data-size="200" data-lang="en" data-count="1"
+    data-form="dots" data-skin="erde" data-ui="none"></script>
+  <noscript>
+    <a href="https://www.stats4u.net/live/{{ site.visitor_globe.stats4u_id | escape }}">Visitor statistics</a>
+  </noscript>
+</div>
+{% endif %}

@@ -73,9 +73,15 @@ social:
 
 # Analytics
 analytics:
-  provider               :  "google-universal" # false (default), "google", "google-universal", "custom"
+  provider               :  false # false (default), "google", "google-universal", "custom"
   google:
     tracking_id          :
+
+# Live visitor globe (counts visits through the globe widget itself).
+visitor_globe:
+  stats4u_id             : "292559878"
+# Former ClustrMaps ID, retained for possible historical-data recovery:
+# qa6Z2PDmMboTDS-korcoF9_DuY5yQjZF22lBBRv9fUU
 
 
 # Site Author

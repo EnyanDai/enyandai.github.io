@@ -1,0 +1,93 @@
+- id: phd
+  title: Ph.D. Students
+  members:
+    - name: Yuliang Yan
+      role: Ph.D. student
+      image: /images/yuliangyan.jpg
+      url: https://yuliangyan0807.github.io/
+      education:
+        - Master's degree, Fudan University
+      portrait: zoom
+    - name: Shuo Yan
+      role: Ph.D. student
+      image: /images/shuoyan.jpg
+      education:
+        - Master's degree, UCAS
+      portrait: full
+    - name: Bin Ma
+      role: Ph.D. student
+      image: https://github.com/TrustApplication-AI-Lab/TrustApplication-AI-Lab.github.io/blob/main/content/authors/binma/avatar.jpg?raw=true
+      education:
+        - Bachelor's degree, Xian Jiaotong University
+    - name: Chenao Li
+      role: Ph.D. student
+      image: /images/chenao.jpg
+      education:
+        - Master's degree, UCAS
+    - name: Yaochi Guo
+      role: Ph.D. student
+      image: /images/yaochi.jpg
+      education:
+        - Bachelor's degree, USTC
+        - Master's degree, UCAS
+    - name: Bowen Huang
+      role: Ph.D. student
+      image: /images/bowenhuang.jpg
+      education:
+        - Bachelor's degree, Fudan University
+        - Master's degree, HKUST
+
+- id: mphil
+  title: M.Phil. Students
+  members:
+    - name: Bingqing Han
+      role: M.Phil. student
+      image: /images/bingqinghan.jpg
+      education: []
+      note: 2026 entry
+      portrait: upper
+    - name: Yaoyang Gong
+      role: M.Phil. student
+      image: /images/yaoyanggong.png
+      education: []
+      portrait: upper
+    - name: Ruihan Zhang
+      role: M.Phil. student
+      image: /images/ruihanzhang.jpg
+      education: []
+      portrait: upper
+    - name: Dehong Liu
+      role: M.Phil. student
+      image: /images/dehongliu.jpg
+      education: []
+      portrait: full
+    - name: Luyue Wang
+      role: M.Phil. student
+      image: /images/luyuewang.jpg
+      education: []
+      portrait: upper
+    - name: Meijia Zeng
+      role: M.Phil. student
+      image: /images/meijiazeng.jpg
+      education: []
+      portrait: full
+
+- id: research
+  title: Research Assistants
+  members:
+    - name: Kaiyun Hou
+      role: Research Assistant
+      image: /images/kaiyunhou.png
+      education:
+        - Bachelor's degree, USTC
+      portrait: full
+    - name: Jiahua Lu
+      role: Research Assistant
+      image: https://github.com/TrustApplication-AI-Lab/TrustApplication-AI-Lab.github.io/blob/main/content/authors/jiahualu/avatar.png?raw=true
+      education:
+        - Master's student, Jilin University
+    - name: Haochun Tang
+      role: Research Assistant
+      image: https://github.com/TrustApplication-AI-Lab/TrustApplication-AI-Lab.github.io/blob/main/content/authors/haochuntang/avatar.png?raw=true
+      education:
+        - Master's student, Jilin University
