@@ -6,6 +6,10 @@ author_profile: true
 ---
 
 ## Publications
+### 2027
+1. Yuxiang Zhang, Bin Ma, **Enyan Dai**. "Poisoning the Inner Prediction Logic of Graph Neural Networks for Clean-Label Backdoor Attacks." Accepted by the 20th ACM International Conference on Web Search and Data Mining (**WSDM 2027 Main Conference**) [[paper](https://arxiv.org/abs/2603.05004)]
+1. Yuyuan Feng, Bin Ma, **Enyan Dai**. "RGMoE: A Unified Robust Graph Mixture of Experts to Defend Various Graph Adversarial Attacks." Accepted by Findings of the 20th ACM International Conference on Web Search and Data Mining (**WSDM 2027 Findings**) [[paper](https://arxiv.org/abs/2510.15333)] [[code](https://github.com/ehappymonkey/RGMoE)]
+
 ### 2026
 1. Bin Ma, Yuyuan Feng, Minhua Lin, **Enyan Dai**. "Do Explanations Increase the Risk of Decision Logic Leakage? Explanation-Guided Stealing of Graph Models." In Proceedings of the 32nd ACM SIGKDD Conference on Knowledge Discovery and Data Mining (**KDD 2026 Research Track**) [[paper](https://arxiv.org/abs/2506.03087)]
 1. Shuo Yan, Yuliang Yan, Bin Ma, Chenao Li, Haochun Tang, Jiahua Lu, Minhua Lin, Yuyuan Feng, **Enyan Dai**. "General Protein Pretraining or Domain-Specific Designs? Benchmarking Protein Modeling on Realistic Applications." In Proceedings of the 32nd ACM SIGKDD Conference on Knowledge Discovery and Data Mining (**KDD 2026 Datasets and Benchmarks Track**) [[paper](https://arxiv.org/abs/2506.02052)]

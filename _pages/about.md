@@ -35,6 +35,9 @@ My recent research interests lie in the **Protein Foundation Model** and the **V
 
 
 ## News
+* 11/2026: 🎉 Two papers accepted by **WSDM 2027** (1 Main Conference + 1 Findings)
+  * [Poisoning the Inner Prediction Logic of Graph Neural Networks for Clean-Label Backdoor Attacks](https://arxiv.org/abs/2603.05004) (Main Conference)
+  * [RGMoE: A Unified Robust Graph Mixture of Experts to Defend Various Graph Adversarial Attacks](https://arxiv.org/abs/2510.15333) (Findings)
 * 05/2026: 🎉 Two papers accepted by **KDD-2026**
   * [Do Explanations Increase the Risk of Decision Logic Leakage? Explanation-Guided Stealing of Graph Models](https://arxiv.org/abs/2506.03087) (Research Track)
   * [General Protein Pretraining or Domain-Specific Designs? Benchmarking Protein Modeling on Realistic Applications](https://arxiv.org/abs/2506.02052) (Datasets and Benchmarks Track)
