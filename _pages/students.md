@@ -5,18 +5,6 @@ title: "People@TAI Lab"
 author_profile: false
 ---
 
-<section class="people-section" aria-labelledby="principal-investigator">
-  <h2 id="principal-investigator">Principal Investigator</h2>
-  <div class="people-pi">
-    <img class="people-pi-photo" src="{{ '/images/profile.png' | relative_url }}" alt="Enyan Dai" width="152" height="152">
-    <div>
-      <h3>Enyan Dai</h3>
-      <p class="people-pi-role">Assistant Professor</p>
-      <p class="people-pi-bio">Enyan obtained his Ph.D. from the Pennsylvania State University. He has published over 30 papers in top-tier venues including ICLR (Spotlight), KDD, NeurIPS, WWW, and TKDE. As of 2025, he has over 1,900 Google Scholar citations and an h-index of 18.</p>
-    </div>
-  </div>
-</section>
-
 <div class="people-groups">
 {% for group in site.data.people %}
 <section class="people-section people-section--{{ group.id }}" aria-labelledby="people-{{ group.id }}">
