@@ -1,7 +1,7 @@
 {% include base_path %}
 <section class="research-directions" aria-labelledby="research-directions-title">
   <header class="research-directions__header">
-    <h2 id="research-directions-title">Research Directions at <img src="{{ base_path }}/images/logo.svg" alt="">(Trust &amp; Application AI Lab)</h2>
+    <h2 id="research-directions-title">Research Directions at <img src="{{ base_path }}/images/logo.svg" alt="" width="57" height="56" style="display:inline-block;height:2.5em;width:auto;vertical-align:middle;">(Trust &amp; Application AI Lab)</h2>
   </header>
 
   <p class="research-directions__intro">My research focuses on <strong>AI for Science (AI4Sci)</strong>, aiming to connect <strong>AI-driven drug discovery (AIDD)</strong> with <strong>embodied robotic manipulation</strong> in a scientific discovery loop. Computational models guide experimental design, while evidence from physical experiments informs model refinement and the next round of research.</p>
@@ -86,6 +86,6 @@
     <p class="research-discovery__overview"><a href="{{ base_path }}/images/research-overview.png" target="_blank" rel="noopener">View full research overview</a></p>
   </div>
 </section>
-<script src="{{ base_path }}/assets/js/research-directions.js" defer></script>
-<script src="{{ base_path }}/assets/js/research-aidd.js" defer></script>
-<script src="{{ base_path }}/assets/js/research-embodied.js" defer></script>
+<script src="{{ base_path }}/assets/js/research-directions.js?v={{ site.time | date: '%s' }}" defer></script>
+<script src="{{ base_path }}/assets/js/research-aidd.js?v={{ site.time | date: '%s' }}" defer></script>
+<script src="{{ base_path }}/assets/js/research-embodied.js?v={{ site.time | date: '%s' }}" defer></script>
