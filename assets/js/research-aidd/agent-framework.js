@@ -11,15 +11,15 @@
       text(s,x+w/2,y+h/2+5,size);
     };
     const path=(points,color=p.muted,arrow=false,dash=false)=>a.push({kind:'path',points,color,arrow,dash});
-    text('推理与调度',88,21,16);
-    box('领域推理',26,57,124,35,p.violet,15);
-    box('任务调度',26,116,124,35,p.blue,15);
-    box('反思更新',26,175,124,35,p.violet,15);
-    path([[88,92],[88,115]],p.muted,true);
-    path([[88,151],[88,174]],p.muted,true);
-    path([[150,192],[165,192],[165,74],[151,74]],p.violet,true);
-    text('RSI',88,240,14,p.violet);
-    text('策略　工具　记忆',88,260,12.5,p.muted);
+    text('推理与调度',88,17,16);
+    box('领域推理',26,32,124,30,p.violet,15);
+    box('任务调度',26,76,124,30,p.blue,15);
+    box('反思更新',26,120,124,30,p.violet,15);
+    path([[88,62],[88,75]],p.muted,true);
+    path([[88,106],[88,119]],p.muted,true);
+    path([[150,135],[165,135],[165,47],[151,47]],p.violet,true);
+    text('RSI',88,169,14,p.violet);
+    text('策略　工具　记忆',88,188,12.5,p.muted);
     return a;
   }
   function arrowPoints(points) {
@@ -29,7 +29,7 @@
       [b[0]-5*Math.cos(angle+.45),b[1]-5*Math.sin(angle+.45)]];
   }
   scenes.agentFramework = function(c,seconds,width,height,p) {
-    c.save();c.scale(width/180,height/270);c.lineJoin='round';c.lineCap='round';
+    c.save();c.scale(width/180,height/190);c.lineJoin='round';c.lineCap='round';
     diagram(p).forEach(a=>{
       if(a.kind==='text'){
         c.font=`500 ${a.size*(p.typeScale||1)}px ${FONT}`;c.fillStyle=a.color;c.textAlign=a.align;c.fillText(a.s,a.x,a.y);
@@ -45,7 +45,7 @@
   const escape=s=>String(s).replace(/[&<>\"]/g,q=>({'&':'&amp;','<':'&lt;','>':'&gt;','\"':'&quot;'}[q]));
   const colorAttr=(name,value)=>value.length===9?`${name}="${value.slice(0,7)}" ${name}-opacity="${(parseInt(value.slice(7),16)/255).toFixed(4)}"`:`${name}="${value}"`;
   scenes.agentFrameworkSvg = function(p) {
-    const parts=[`<svg xmlns="http://www.w3.org/2000/svg" width="360" height="540" viewBox="0 0 180 270" role="img" aria-labelledby="title"><title id="title">科学智能体推理、调度与反思更新核心</title><rect width="180" height="270" fill="${p.paper}"/>`];
+    const parts=[`<svg xmlns="http://www.w3.org/2000/svg" width="360" height="380" viewBox="0 0 180 190" role="img" aria-labelledby="title"><title id="title">科学智能体推理、调度与反思更新核心</title><rect width="180" height="190" fill="${p.paper}"/>`];
     diagram(p).forEach(a=>{
       if(a.kind==='text')parts.push(`<text x="${a.x}" y="${a.y}" fill="${a.color}" text-anchor="${a.align==='center'?'middle':a.align==='right'?'end':'start'}" font-family="${FONT}" font-size="${a.size}">${escape(a.s)}</text>`);
       else if(a.kind==='rect')parts.push(`<rect x="${a.x}" y="${a.y}" width="${a.w}" height="${a.h}" rx="${a.r}" ${colorAttr('fill',a.fill)} ${colorAttr('stroke',a.stroke)} stroke-width="1"/>`);

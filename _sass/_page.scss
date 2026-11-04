@@ -140,7 +140,7 @@
 }
 
 .research-discovery {
-  margin-top: 1.5em;
+  margin-top: 1em;
 
   &__title {
     margin: 0;
@@ -154,7 +154,7 @@
     grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr) minmax(0, 1fr);
     gap: 20px;
     align-items: center;
-    margin: 20px 0 30px;
+    margin: 8px 0 10px;
   }
 
   &__tab {
@@ -165,9 +165,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 5px;
-    min-height: 108px;
-    padding: 16px;
+    gap: 2px;
+    min-height: 74px;
+    padding: 8px 16px;
     border: 2px solid #dce5eb;
     border-radius: 12px;
     appearance: none;
@@ -295,15 +295,15 @@
   }
 
   &__item {
-    padding: 18px 0;
+    padding: 6px 0;
     border-top: 1px solid #dce5eb;
 
     h4 {
-      margin: 0 0 10px;
+      margin: 0 0 3px;
       color: #183249;
-      font-size: 23px;
+      font-size: 21px;
       font-weight: 600;
-      line-height: 1.4;
+      line-height: 1.3;
     }
 
     picture, img, canvas {
@@ -319,16 +319,16 @@
   }
 
   &__canvas {
-    &[data-research-scene="design"] { aspect-ratio: 840 / 200; }
-    &[data-research-scene="worldModel"] { aspect-ratio: 840 / 220; }
-    &[data-research-scene="agent"] { aspect-ratio: 840 / 270; }
-    &[data-research-embodied="crossHand"] { aspect-ratio: 1320 / 300; }
-    &[data-research-embodied="brain"] { aspect-ratio: 1320 / 400; }
-    &[data-research-embodied="safety"] { aspect-ratio: 1320 / 420; }
+    &[data-research-scene="design"] { aspect-ratio: 840 / 150; }
+    &[data-research-scene="worldModel"] { aspect-ratio: 840 / 160; }
+    &[data-research-scene="agent"] { aspect-ratio: 840 / 190; }
+    &[data-research-embodied="crossHand"] { aspect-ratio: 1320 / 240; }
+    &[data-research-embodied="brain"] { aspect-ratio: 1320 / 260; }
+    &[data-research-embodied="safety"] { aspect-ratio: 1320 / 280; }
   }
 
   .research-discovery__overview {
-    margin: 10px 0 0;
+    margin: 4px 0 0;
     text-align: right;
     font-size: 16px;
   }

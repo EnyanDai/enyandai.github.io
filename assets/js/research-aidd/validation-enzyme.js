@@ -47,11 +47,13 @@
     c.strokeStyle=colors.chain;c.lineWidth=4.8;c.lineCap='round';c.lineJoin='round';c.stroke();
   }
   scenes.validationEnzyme=function(c,seconds,width,height,p){
-    c.save();c.scale(width/280,height/220);
-    text(c,'酶催化能力',140,21,p,17,p.ink);
-    text(c,'活性位点　催化裂解',140,43,p,14);
-    c.save();c.beginPath();c.rect(9,53,262,143);c.clip();
-    enzyme(c,p);
+    c.save();c.scale(width/280,height/160);
+    text(c,'酶催化能力',140,17,p,17,p.ink);
+    text(c,'活性位点　催化裂解',140,35,p,14);
+    c.save();c.beginPath();c.rect(9,40,262,101);c.clip();
+    c.translate(140,90);c.scale(.72,.72);c.translate(-140,-125);
+    const artPalette={...p,typeScale:(p.typeScale||1)/.72};
+    enzyme(c,artPalette);
     const cycle=((seconds%12)+12)%12,t=cycle>11.25?0:cycle;
     const alpha=cycle<10.7?1:cycle<11.25?1-smooth((cycle-10.7)/.55):smooth((cycle-11.25)/.75);
     const bind=smooth((t-.75)/3.6),cleave=smooth((t-5.55)/1.15),release=smooth((t-7)/3.2);
@@ -77,11 +79,11 @@
     });
     c.restore();
     // The substrate and product names stay clear of the moving chain.
-    if(t<3.2)text(c,'蛋白底物',62,63,p,12,colors.chain);
-    else if(t>=8.3)text(c,'裂解产物',67,184,p,12,colors.chain);
+    if(t<3.2)text(c,'蛋白底物',62,76,artPalette,12,colors.chain);
+    else if(t>=8.3)text(c,'裂解产物',67,184,artPalette,12,colors.chain);
     c.restore();
     const caption=t<4.3?'底物进入并结合':t<5.55?'活性位点识别':t<7.1?'催化肽链裂解':'裂解产物释放';
-    text(c,caption,140,213,p,13,p.ink);
+    text(c,caption,140,156,p,13,p.ink);
     c.restore();
   };
 })();

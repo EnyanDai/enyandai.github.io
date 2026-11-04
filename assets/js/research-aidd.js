@@ -146,7 +146,7 @@
 (function () {
   'use strict';
   const scenes = window.ResearchScenes = window.ResearchScenes || {};
-  const TAU = Math.PI * 2, W = 280, H = 200;
+  const TAU = Math.PI * 2, W = 280, H = 150;
   const clamp = q => Math.max(0, Math.min(1, q));
   const smooth = q => { q = clamp(q); return q * q * (3 - 2 * q); };
   const mix = (a,b,q) => a + (b-a)*q;
@@ -180,13 +180,13 @@
     c.lineCap='round';c.lineJoin='round';
   }
   function base(c,title,condition,result,p) {
-    text(c,title,140,21,p,17,p.ink);
-    text(c,condition,140,43,p,14);
-    text(c,result,140,196,p,14);
+    text(c,title,140,17,p,17,p.ink);
+    text(c,condition,140,35,p,14);
+    text(c,result,140,147,p,14);
   }
-  function clipArt(c,scale=1.12,height=139) {
-    c.beginPath();c.rect(10,48,260,height);c.clip();
-    c.translate(140,119);c.scale(scale,scale);c.translate(-190,-117);
+  function clipArt(c,scale=.76,height=90) {
+    c.beginPath();c.rect(10,39,260,height);c.clip();
+    c.translate(140,85);c.scale(scale,scale);c.translate(-190,-117);
   }
   function sample(target,i,count,seed,state,variant=0) {
     const a=i*2.399963+seed+variant*.71;
@@ -268,7 +268,7 @@
   function sirna(c,seconds,width,height,p) {
     c.save();fit(c,width,height);base(c,'siRNA 修饰设计','目标序列　修饰约束','修饰位点与类型',p);
     const s=clock(seconds),u=s.u,n=1-u;
-    c.save();clipArt(c,1.48,128);rnaScaffold(c,p);mist(c,s,p,p.teal,40);
+    c.save();clipArt(c,1.15,85);rnaScaffold(c,p);mist(c,s,p,p.teal,40);
     c.save();c.globalAlpha*=s.alpha;
     mods.forEach((q,i)=>{
       const col=[p.teal,p.violet,p.red][q.type];
@@ -280,20 +280,20 @@
       ball(c,q.x,q.y,3.1+u*.8,colorMix(p.muted,col,u),.48+.48*u);
       c.strokeStyle=rgba(col,.15+.2*u);c.lineWidth=.8;c.beginPath();c.arc(q.x,q.y,6+n*4,0,TAU);c.stroke();
     });c.restore();c.restore();
-    text(c,'2′-OMe　2′-F　PS',140,177,p,12.5);
+    text(c,'2′-OMe　2′-F　PS',140,129,p,12.5);
     c.restore();
   }
 
   function enzyme(c,seconds,width,height,p) {
     c.save();fit(c,width,height);base(c,'酶设计','催化位点　底物信息','酶骨架与活性位点',p);
-    scenes.enzymeArtwork(c,seconds,18,50,244,132,p);
+    scenes.enzymeArtwork(c,seconds,18,40,244,90,p);
     c.restore();
   }
   scenes.designGlue=glue;scenes.designSirna=sirna;scenes.designEnzyme=enzyme;
   scenes.design=function(c,seconds,width,height,p){
-    const s=Math.min(width/840,height/200);
-    c.save();c.translate((width-840*s)/2,(height-200*s)/2);c.scale(s,s);
-    [glue,sirna,enzyme].forEach((draw,i)=>{c.save();c.translate(i*280,0);draw(c,seconds,280,200,p);c.restore();});
+    const s=Math.min(width/840,height/150);
+    c.save();c.translate((width-840*s)/2,(height-150*s)/2);c.scale(s,s);
+    [glue,sirna,enzyme].forEach((draw,i)=>{c.save();c.translate(i*280,0);draw(c,seconds,280,150,p);c.restore();});
     c.restore();
   };
 })();
@@ -328,11 +328,11 @@
     c.fillStyle = g; c.beginPath(); c.arc(x, y, r, 0, TAU); c.fill(); c.restore();
   }
   function setup(c, width, height, title, subtitle, p) {
-    const scale = Math.min(width / 280, height / 220);
-    c.save(); c.translate((width - 280 * scale) / 2, (height - 220 * scale) / 2); c.scale(scale, scale);
+    const scale = Math.min(width / 280, height / 160);
+    c.save(); c.translate((width - 280 * scale) / 2, (height - 160 * scale) / 2); c.scale(scale, scale);
     c.lineCap = 'round'; c.lineJoin = 'round';
-    text(c, title, 140, 21, p, 17, p.ink);
-    text(c, subtitle, 140, 43, p, 14);
+    text(c, title, 140, 17, p, 17, p.ink);
+    text(c, subtitle, 140, 35, p, 14);
   }
   function protein(c, cx, cy, rx, ry, angle, color, opacity = 1, outlineOnly = false) {
     c.save(); c.translate(cx, cy); c.rotate(angle); c.globalAlpha *= opacity;
@@ -400,7 +400,8 @@
     const t=cycle>11.35?0:cycle;
     const alpha=cycle<10.8?1:cycle<11.35?1-smooth((cycle-10.8)/.55):smooth((cycle-11.35)/.65);
     const state=glueState(t),r=state.rearrange,d=state.docking;
-    c.save(); c.beginPath(); c.rect(10,53,260,144); c.clip();
+    c.save(); c.beginPath(); c.rect(10,40,260,99); c.clip();
+    c.translate(140,90); c.scale(.68,.68); c.translate(-140,-125);
     c.globalAlpha*=alpha;
     const top={x:lerp(102,97,r),y:lerp(88,96,r),angle:lerp(-.15,-.24,r)};
     const bottom={x:lerp(202,189,r),y:lerp(163,155,r),angle:lerp(.17,-.32,r)};
@@ -446,7 +447,7 @@
     });
     drawGlue(c,pts,p);
     c.restore();
-    text(c,t<4.9?'分子对接　位姿搜索':t<8.4?'界面构象重排':'复合物稳定性评估',140,213,p,13);
+    text(c,t<4.9?'分子对接　位姿搜索':t<8.4?'界面构象重排':'复合物稳定性评估',140,156,p,13);
     c.restore();
   };
 
@@ -482,12 +483,13 @@
     const t=((seconds%12)+12)%12,theta=t/12*TAU;
     const engagement=(1-Math.cos(theta))/2;
     const risk=engagement*engagement;
-    c.save();c.beginPath();c.rect(10,52,260,144);c.clip();
+    c.save();c.beginPath();c.rect(10,40,260,101);c.clip();
+    c.translate(140,86);c.scale(.8,.8);c.translate(-140,-126);
     const pts=rnaPoints(theta),prev=rnaPoints(theta-.5);
     drawRna(c,prev,p,.12);drawRna(c,pts,p);
     const enzyme={x:164-15*engagement,y:82+18*engagement};
     nuclease(c,enzyme.x,enzyme.y,p,theta);
-    text(c,'核酸酶',211,80,p,12,p.teal);
+    text(c,'核酸酶',211,80,{...p,typeScale:(p.typeScale||1)/.8},12,p.teal);
     const a=pts[7],b=pts[8],center={x:(a.x+b.x)/2,y:(a.y+b.y)/2};
     c.save();c.setLineDash([2,3]);
     line(c,{x:enzyme.x-3,y:enzyme.y+16},center,p.teal,1.2,.25+.45*engagement);c.restore();
@@ -505,9 +507,9 @@
       for(let i=1;i<fragment.length;i++)line(c,fragment[i-1],fragment[i],p.red,1.8,.28*risk);
       fragment.forEach(q=>ball(c,q.x,q.y,2.8,p.red,.25*risk));
     }
-    text(c,'2′-OMe　2′-F　PS',140,191,p,12.5);
     c.restore();
-    text(c,['模拟核酸酶接触','评估骨架完整性','定位潜在降解位点'][Math.floor(t/4)],140,213,p,13);
+    text(c,'2′-OMe　2′-F　PS',140,137,p,12.5);
+    text(c,['模拟核酸酶接触','评估骨架完整性','定位潜在降解位点'][Math.floor(t/4)],140,156,p,13);
     c.restore();
   };
 })();
@@ -563,11 +565,13 @@
     c.strokeStyle=colors.chain;c.lineWidth=4.8;c.lineCap='round';c.lineJoin='round';c.stroke();
   }
   scenes.validationEnzyme=function(c,seconds,width,height,p){
-    c.save();c.scale(width/280,height/220);
-    text(c,'酶催化能力',140,21,p,17,p.ink);
-    text(c,'活性位点　催化裂解',140,43,p,14);
-    c.save();c.beginPath();c.rect(9,53,262,143);c.clip();
-    enzyme(c,p);
+    c.save();c.scale(width/280,height/160);
+    text(c,'酶催化能力',140,17,p,17,p.ink);
+    text(c,'活性位点　催化裂解',140,35,p,14);
+    c.save();c.beginPath();c.rect(9,40,262,101);c.clip();
+    c.translate(140,90);c.scale(.72,.72);c.translate(-140,-125);
+    const artPalette={...p,typeScale:(p.typeScale||1)/.72};
+    enzyme(c,artPalette);
     const cycle=((seconds%12)+12)%12,t=cycle>11.25?0:cycle;
     const alpha=cycle<10.7?1:cycle<11.25?1-smooth((cycle-10.7)/.55):smooth((cycle-11.25)/.75);
     const bind=smooth((t-.75)/3.6),cleave=smooth((t-5.55)/1.15),release=smooth((t-7)/3.2);
@@ -593,11 +597,11 @@
     });
     c.restore();
     // The substrate and product names stay clear of the moving chain.
-    if(t<3.2)text(c,'蛋白底物',62,63,p,12,colors.chain);
-    else if(t>=8.3)text(c,'裂解产物',67,184,p,12,colors.chain);
+    if(t<3.2)text(c,'蛋白底物',62,76,artPalette,12,colors.chain);
+    else if(t>=8.3)text(c,'裂解产物',67,184,artPalette,12,colors.chain);
     c.restore();
     const caption=t<4.3?'底物进入并结合':t<5.55?'活性位点识别':t<7.1?'催化肽链裂解':'裂解产物释放';
-    text(c,caption,140,213,p,13,p.ink);
+    text(c,caption,140,156,p,13,p.ink);
     c.restore();
   };
 })();
@@ -609,9 +613,9 @@
   'use strict';
   const scenes = window.ResearchScenes = window.ResearchScenes || {};
   scenes.worldModel = function(c,t,width,height,p) {
-    c.save();c.scale(width/840,height/220);
+    c.save();c.scale(width/840,height/160);
     ['validationGlue','validationRna','validationEnzyme'].forEach((key,i)=>{
-      c.save();c.translate(i*280,0);scenes[key](c,t,280,220,p);c.restore();
+      c.save();c.translate(i*280,0);scenes[key](c,t,280,160,p);c.restore();
     });
     c.restore();
   };
@@ -632,15 +636,15 @@
       text(s,x+w/2,y+h/2+5,size);
     };
     const path=(points,color=p.muted,arrow=false,dash=false)=>a.push({kind:'path',points,color,arrow,dash});
-    text('推理与调度',88,21,16);
-    box('领域推理',26,57,124,35,p.violet,15);
-    box('任务调度',26,116,124,35,p.blue,15);
-    box('反思更新',26,175,124,35,p.violet,15);
-    path([[88,92],[88,115]],p.muted,true);
-    path([[88,151],[88,174]],p.muted,true);
-    path([[150,192],[165,192],[165,74],[151,74]],p.violet,true);
-    text('RSI',88,240,14,p.violet);
-    text('策略　工具　记忆',88,260,12.5,p.muted);
+    text('推理与调度',88,17,16);
+    box('领域推理',26,32,124,30,p.violet,15);
+    box('任务调度',26,76,124,30,p.blue,15);
+    box('反思更新',26,120,124,30,p.violet,15);
+    path([[88,62],[88,75]],p.muted,true);
+    path([[88,106],[88,119]],p.muted,true);
+    path([[150,135],[165,135],[165,47],[151,47]],p.violet,true);
+    text('RSI',88,169,14,p.violet);
+    text('策略　工具　记忆',88,188,12.5,p.muted);
     return a;
   }
   function arrowPoints(points) {
@@ -650,7 +654,7 @@
       [b[0]-5*Math.cos(angle+.45),b[1]-5*Math.sin(angle+.45)]];
   }
   scenes.agentFramework = function(c,seconds,width,height,p) {
-    c.save();c.scale(width/180,height/270);c.lineJoin='round';c.lineCap='round';
+    c.save();c.scale(width/180,height/190);c.lineJoin='round';c.lineCap='round';
     diagram(p).forEach(a=>{
       if(a.kind==='text'){
         c.font=`500 ${a.size*(p.typeScale||1)}px ${FONT}`;c.fillStyle=a.color;c.textAlign=a.align;c.fillText(a.s,a.x,a.y);
@@ -666,7 +670,7 @@
   const escape=s=>String(s).replace(/[&<>\"]/g,q=>({'&':'&amp;','<':'&lt;','>':'&gt;','\"':'&quot;'}[q]));
   const colorAttr=(name,value)=>value.length===9?`${name}="${value.slice(0,7)}" ${name}-opacity="${(parseInt(value.slice(7),16)/255).toFixed(4)}"`:`${name}="${value}"`;
   scenes.agentFrameworkSvg = function(p) {
-    const parts=[`<svg xmlns="http://www.w3.org/2000/svg" width="360" height="540" viewBox="0 0 180 270" role="img" aria-labelledby="title"><title id="title">科学智能体推理、调度与反思更新核心</title><rect width="180" height="270" fill="${p.paper}"/>`];
+    const parts=[`<svg xmlns="http://www.w3.org/2000/svg" width="360" height="380" viewBox="0 0 180 190" role="img" aria-labelledby="title"><title id="title">科学智能体推理、调度与反思更新核心</title><rect width="180" height="190" fill="${p.paper}"/>`];
     diagram(p).forEach(a=>{
       if(a.kind==='text')parts.push(`<text x="${a.x}" y="${a.y}" fill="${a.color}" text-anchor="${a.align==='center'?'middle':a.align==='right'?'end':'start'}" font-family="${FONT}" font-size="${a.size}">${escape(a.s)}</text>`);
       else if(a.kind==='rect')parts.push(`<rect x="${a.x}" y="${a.y}" width="${a.w}" height="${a.h}" rx="${a.r}" ${colorAttr('fill',a.fill)} ${colorAttr('stroke',a.stroke)} stroke-width="1"/>`);
@@ -877,8 +881,8 @@
     }
     c.restore();
   }
-  function roleArt(c,kind,x,y,p){
-    c.save();c.translate(x,y);c.lineCap='round';c.lineJoin='round';
+  function roleArt(c,kind,x,y,p,scale=1){
+    c.save();c.translate(x,y);c.scale(scale,scale);c.lineCap='round';c.lineJoin='round';
     if(kind==='plan'){
       c.strokeStyle=p.blue;c.lineWidth=1.3;c.strokeRect(-6,-15,12,9);line(c,0,-6,0,1,p.blue);line(c,-14,1,14,1,p.blue);
       [-14,0,14].forEach(X=>{line(c,X,1,X,7,p.blue);c.fillStyle=rgba(p.blue,.10);c.fillRect(X-5,7,10,8);c.strokeRect(X-5,7,10,8);});
@@ -904,37 +908,37 @@
   }
   const stageLabels=['任务约束 → 任务规划','候选分子 → 世界模型预测','实验方案 → 具身执行 → 实验证据','评估结果 → 更新策略 → 下一轮规划'];
   scenes.agentCollaboration=function(c,seconds,width,height,p){
-    const narrow=width/height<1.5,W=narrow?330:660,H=narrow?600:270;
+    const narrow=width/height<1.5,W=narrow?330:660,H=narrow?600:190;
     c.save();c.scale(width/W,height/H);c.lineJoin='round';c.lineCap='round';
     const t=((seconds%12)+12)%12,theta=t/12*TAU,phase=Math.floor(t/3);
     const weights=[0,1,2,3].map(i=>{let d=Math.abs(t-(i*3+1.5));d=Math.min(d,12-d);return 1-smooth((d-.8)/1.1);});
-    text(c,'多智能体协作',W/2,21,p,16);
+    text(c,'多智能体协作',W/2,17,p,16);
     const mains=narrow?[
       {id:'design',x:96,y:150,title:'分子设计',art:'agentDesignArt'},
       {id:'world',x:96,y:301,title:'世界模型验证',art:'agentWorldArt'},
       {id:'physical',x:96,y:451,title:'具身实验',art:'agentPhysicalArt'}
     ]:[
-      {id:'design',x:151,y:104,title:'分子设计',art:'agentDesignArt'},
-      {id:'world',x:337,y:104,title:'世界模型验证',art:'agentWorldArt'},
-      {id:'physical',x:521,y:104,title:'具身实验',art:'agentPhysicalArt'}
+      {id:'design',x:151,y:76,title:'分子设计',art:'agentDesignArt'},
+      {id:'world',x:337,y:76,title:'世界模型验证',art:'agentWorldArt'},
+      {id:'physical',x:521,y:76,title:'具身实验',art:'agentPhysicalArt'}
     ];
     mains.forEach((m,i)=>{m.x+=Math.sin(theta*2+i*1.8)*3.4;m.y+=Math.cos(theta*2+i*1.8)*2;});
     const roles=narrow?[
       {id:'plan',name:'规划',x:247,y:177,ph:[0,3]},
       {id:'evaluate',name:'评估更新',x:247,y:397,ph:[1,2,3]}
     ]:[
-      {id:'plan',name:'规划',x:200,y:211,ph:[0,3]},
-      {id:'evaluate',name:'评估更新',x:470,y:211,ph:[1,2,3]}
+      {id:'plan',name:'规划',x:200,y:136,ph:[0,3]},
+      {id:'evaluate',name:'评估更新',x:470,y:136,ph:[1,2,3]}
     ];
     roles.forEach((r,i)=>{r.active=Math.min(1,r.ph.reduce((s,j)=>s+weights[j],0));r.x+=Math.sin(theta*2+i)*4+(narrow?-9:8)*r.active;r.y+=Math.cos(theta*2+i)*2.5-r.active*(narrow?0:7);});
     const [design,world,physical]=mains,[plan,evaluate]=roles;
-    const input=narrow?{x:96,y:62}:{x:31,y:103},output=narrow?{x:96,y:554}:{x:628,y:103};
+    const input=narrow?{x:96,y:62}:{x:31,y:76},output=narrow?{x:96,y:554}:{x:628,y:76};
     const primary=(a,b)=>narrow?[{x:a.x,y:a.y+42},{x:b.x,y:b.y-42}]:[{x:a.x+57,y:a.y},{x:b.x-57,y:b.y}];
-    const e0=narrow?[{x:96,y:86},{x:design.x,y:design.y-42}]:[{x:57,y:103},{x:design.x-54,y:design.y}];
+    const e0=narrow?[{x:96,y:86},{x:design.x,y:design.y-42}]:[{x:57,y:76},{x:design.x-54,y:design.y}];
     connect(c,...e0,'task',weights[0],t,0,p,0,true);
     connect(c,...primary(design,world),'molecule',Math.max(weights[0]*.25,weights[1]),t,1,p,0,true);
     connect(c,...primary(world,physical),'protocol',weights[2],t,2,p,0,true);
-    const e3=narrow?[{x:physical.x,y:physical.y+43},{x:96,y:531}]:[{x:physical.x+54,y:physical.y},{x:605,y:103}];
+    const e3=narrow?[{x:physical.x,y:physical.y+43},{x:96,y:531}]:[{x:physical.x+54,y:physical.y},{x:605,y:76}];
     connect(c,...e3,'evidence',weights[2],t,3,p,0,true);
 
     const secondary=(a,b,kind,active,index,bend=0,main=false)=>{
@@ -948,26 +952,26 @@
     secondary(evaluate,plan,'strategy',weights[3],10,narrow?30:18);
 
     // Named input/output artifacts remain visible even between hand-offs.
-    paper(c,input.x,input.y,narrow?53:44,narrow?39:49,p.blue);
+    paper(c,input.x,input.y,narrow?53:44,narrow?39:41,p.blue);
     text(c,'靶标',input.x,input.y-5,p,11.5,p.blue);text(c,'约束',input.x,input.y+11,p,11.5,p.blue);
-    text(c,'输入',input.x,narrow?40:53,p,13);
+    text(c,'输入',input.x,narrow?40:39,p,13);
     payload(c,'evidence',output.x,output.y,narrow?32:34,p);
-    text(c,'输出',output.x,narrow?585:53,p,13);
-    if(!narrow)text(c,'实验证据',output.x,151,p,12,p.muted);
+    text(c,'输出',output.x,narrow?585:39,p,13);
+    if(!narrow)text(c,'实验证据',output.x,119,p,12,p.muted);
     if(narrow){text(c,'候选分子',96,232,p,12.5,p.muted);text(c,'实验方案',96,383,p,12.5,p.muted);}
-    else {text(c,'候选分子',245,151,p,12.5,p.muted);text(c,'实验方案',429,151,p,12.5,p.muted);text(c,'预测结果',367,176,p,11.5,p.muted);}
+    else {text(c,'候选分子',245,119,p,12.5,p.muted);text(c,'实验方案',429,119,p,12.5,p.muted);text(c,'预测结果',367,142,p,11.5,p.muted);}
 
     mains.forEach((m,i)=>{
       const active=i===0?Math.max(weights[0],weights[1]):i===1?Math.max(weights[1],weights[2]):weights[2];
       c.save();c.globalAlpha=.75+active*.25;
-      scenes[m.art](c,t,m.x-52,m.y-37,104,75,p);c.restore();
-      text(c,m.title,m.x,m.y-49,p,14.5);
+      scenes[m.art](c,t,m.x-52,m.y-(narrow?37:29),104,narrow?75:58,p);c.restore();
+      text(c,m.title,m.x,m.y-(narrow?49:36),p,14.5);
     });
     roles.forEach(r=>{
       if(r.active>.05){c.save();c.globalAlpha=r.active*.07;c.fillStyle=r.id==='evaluate'?p.violet:p.blue;c.beginPath();c.ellipse(r.x,r.y,27,25,0,0,TAU);c.fill();c.restore();}
-      roleArt(c,r.id,r.x,r.y,p);text(c,r.name,r.x,r.y+34,p,13.5);
+      roleArt(c,r.id,r.x,r.y,p,narrow?1:.86);text(c,r.name,r.x,r.y+(narrow?34:31),p,13.5);
     });
-    if(!narrow)text(c,'RSI：'+stageLabels[phase],W/2,265,p,12.5,p.muted);
+    if(!narrow)text(c,'RSI：'+stageLabels[phase],W/2,188,p,12.5,p.muted);
     c.restore();
   };
 })();
@@ -984,9 +988,9 @@
       scenes.agentCoreCompact(c,seconds,330,105,p);c.translate(0,105);
       scenes.agentCollaboration(c,seconds,330,600,p);c.restore();return;
     }
-    c.save();c.scale(width/840,height/270);
-    scenes.agentFramework(c,seconds,180,270,p);
-    c.translate(180,0);scenes.agentCollaboration(c,seconds,660,270,p);
+    c.save();c.scale(width/840,height/190);
+    scenes.agentFramework(c,seconds,180,190,p);
+    c.translate(180,0);scenes.agentCollaboration(c,seconds,660,190,p);
     c.restore();
   };
 })();

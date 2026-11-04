@@ -11,7 +11,7 @@
   <p class="research-directions__intro">My research focuses on <strong>AI for Science (AI4Sci)</strong>, aiming to connect <strong>AI-driven drug discovery (AIDD)</strong> with <strong>embodied robotic manipulation</strong> in a scientific discovery loop. Computational models guide experimental design, while evidence from physical experiments informs model refinement and the next round of research.</p>
 
   <div class="research-discovery" data-research-discovery data-active="aidd">
-    <h3 class="research-discovery__title">AI4Sci 科学发现闭环</h3>
+    <h3 class="research-discovery__title" id="research-discovery-title">AI4Sci 科学发现闭环</h3>
     <div class="research-discovery__navigation" role="tablist" aria-label="Research directions">
       <button class="research-discovery__tab research-discovery__tab--aidd is-active" type="button" id="research-tab-aidd" role="tab" data-research-tab="aidd" aria-selected="true" aria-controls="research-panel-aidd" tabindex="0">
         <span class="research-discovery__tab-title">AIDD</span>
@@ -19,22 +19,22 @@
       </button>
       <div class="research-discovery__flow" role="presentation" aria-hidden="true">
         <span class="research-discovery__transfer research-discovery__transfer--forward">候选分子与实验方案</span>
-        <svg class="research-discovery__orbit" data-research-loop viewBox="0 0 400 160" focusable="false">
+        <svg class="research-discovery__orbit" data-research-loop viewBox="0 0 400 80" focusable="false">
           <defs>
             <marker id="research-arrow-forward" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M2 1 L7 5 L2 9" fill="none" stroke="#267e76" stroke-width="1.5"/></marker>
             <marker id="research-arrow-return" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M2 1 L7 5 L2 9" fill="none" stroke="#286fa9" stroke-width="1.5"/></marker>
           </defs>
-          <path class="research-discovery__orbit-path research-discovery__orbit-path--forward" d="M16 80 C16 44 108 26 200 26 C292 26 384 44 384 80" marker-mid="url(#research-arrow-forward)"/>
-          <path class="research-discovery__orbit-path research-discovery__orbit-path--return" d="M384 80 C384 116 292 134 200 134 C108 134 16 116 16 80" marker-mid="url(#research-arrow-return)"/>
-          <path data-loop-orbit d="M16 80 C16 8 384 8 384 80 C384 152 16 152 16 80" fill="none" stroke="none"/>
-          <circle class="research-discovery__orbit-node" cx="16" cy="80" r="6"/>
-          <circle class="research-discovery__orbit-node" cx="384" cy="80" r="6"/>
+          <path class="research-discovery__orbit-path research-discovery__orbit-path--forward" d="M16 40 C16 26.6667 108 20 200 20 C292 20 384 26.6667 384 40" marker-mid="url(#research-arrow-forward)"/>
+          <path class="research-discovery__orbit-path research-discovery__orbit-path--return" d="M384 40 C384 53.3333 292 60 200 60 C108 60 16 53.3333 16 40" marker-mid="url(#research-arrow-return)"/>
+          <path data-loop-orbit d="M16 40 C16 13.3333 384 13.3333 384 40 C384 66.6667 16 66.6667 16 40" fill="none" stroke="none"/>
+          <circle class="research-discovery__orbit-node" cx="16" cy="40" r="6"/>
+          <circle class="research-discovery__orbit-node" cx="384" cy="40" r="6"/>
           <g class="research-discovery__traveler">
-            <circle data-loop-trail cx="16" cy="80" r="2.5" opacity="0.2"/>
-            <circle data-loop-trail cx="16" cy="80" r="3.5" opacity="0.4"/>
-            <circle data-loop-trail cx="16" cy="80" r="4.5" opacity="0.65"/>
-            <circle class="research-discovery__halo" data-loop-halo cx="16" cy="80" r="16"/>
-            <circle class="research-discovery__marker" data-loop-marker cx="16" cy="80" r="7"/>
+            <circle data-loop-trail cx="16" cy="40" r="2.5" opacity="0.2"/>
+            <circle data-loop-trail cx="16" cy="40" r="3.5" opacity="0.4"/>
+            <circle data-loop-trail cx="16" cy="40" r="4.5" opacity="0.65"/>
+            <circle class="research-discovery__halo" data-loop-halo cx="16" cy="40" r="16"/>
+            <circle class="research-discovery__marker" data-loop-marker cx="16" cy="40" r="7"/>
           </g>
         </svg>
         <span class="research-discovery__transfer research-discovery__transfer--backward">实测数据与结果反馈</span>
@@ -49,19 +49,19 @@
       <div class="research-discovery__panel is-active" id="research-panel-aidd" role="tabpanel" data-research-panel="aidd" aria-labelledby="research-tab-aidd" tabindex="0">
         <section class="research-discovery__item">
           <h4>分子设计模型</h4>
-          <canvas class="research-discovery__canvas" data-research-scene="design" width="840" height="200" role="img" aria-label="分子胶设计、siRNA 修饰设计和酶设计的条件生成过程。">
+          <canvas class="research-discovery__canvas" data-research-scene="design" width="840" height="150" role="img" aria-label="分子胶设计、siRNA 修饰设计和酶设计的条件生成过程。">
             <img src="{{ base_path }}/images/research-panels/molecular-design.png" width="1260" height="300" alt="分子设计模型示意图">
           </canvas>
         </section>
         <section class="research-discovery__item">
           <h4>分子世界模型虚拟验证</h4>
-          <canvas class="research-discovery__canvas" data-research-scene="worldModel" width="840" height="220" role="img" aria-label="分子胶对接和构象重排、RNA 修饰稳定性、酶催化过程的虚拟验证。">
+          <canvas class="research-discovery__canvas" data-research-scene="worldModel" width="840" height="160" role="img" aria-label="分子胶对接和构象重排、RNA 修饰稳定性、酶催化过程的虚拟验证。">
             <img src="{{ base_path }}/images/research-panels/world-model.png" width="1260" height="330" alt="分子世界模型虚拟验证示意图">
           </canvas>
         </section>
         <section class="research-discovery__item">
           <h4>自动化科学智能体</h4>
-          <canvas class="research-discovery__canvas" data-research-scene="agent" width="840" height="270" role="img" aria-label="科学智能体协作进行分子设计、世界模型验证和具身实验，并根据反馈递归改进。">
+          <canvas class="research-discovery__canvas" data-research-scene="agent" width="840" height="190" role="img" aria-label="科学智能体协作进行分子设计、世界模型验证和具身实验，并根据反馈递归改进。">
             <img src="{{ base_path }}/images/research-panels/scientific-agent.png" width="1260" height="405" alt="自动化科学智能体示意图">
           </canvas>
         </section>
@@ -69,19 +69,19 @@
       <div class="research-discovery__panel" id="research-panel-embodied" role="tabpanel" data-research-panel="embodied" aria-labelledby="research-tab-embodied" tabindex="0" hidden>
         <section class="research-discovery__item">
           <h4>跨手型、跨任务灵巧操作</h4>
-          <canvas class="research-discovery__canvas" data-research-embodied="crossHand" data-video-src="{{ base_path }}/images/research-panels/cross-hand-source.mp4" width="1320" height="300" role="img" aria-label="人手与多种灵巧手完成甜甜圈和酒杯等不同物体的抓取操作。">
+          <canvas class="research-discovery__canvas" data-research-embodied="crossHand" data-video-src="{{ base_path }}/images/research-panels/cross-hand-source.mp4" width="1320" height="240" role="img" aria-label="人手与多种灵巧手完成甜甜圈和酒杯等不同物体的抓取操作。">
             <img src="{{ base_path }}/images/research-panels/dexterous-manipulation.png" width="1320" height="300" alt="跨手型、跨任务灵巧操作示意图">
           </canvas>
         </section>
         <section class="research-discovery__item">
           <h4>具身操作智能体大小脑规划</h4>
-          <canvas class="research-discovery__canvas" data-research-embodied="brain" data-video-src="{{ base_path }}/images/research-panels/astra-source.mp4" width="1320" height="400" role="img" aria-label="大脑任务规划、小脑动作控制和执行反馈架构，以及 Astra 干预演示。">
+          <canvas class="research-discovery__canvas" data-research-embodied="brain" data-video-src="{{ base_path }}/images/research-panels/astra-source.mp4" width="1320" height="260" role="img" aria-label="大脑任务规划、小脑动作控制和执行反馈架构，以及 Astra 干预演示。">
             <img src="{{ base_path }}/images/research-panels/embodied-planning.png" width="1320" height="400" alt="具身操作智能体大小脑规划示意图">
           </canvas>
         </section>
         <section class="research-discovery__item">
           <h4>科学实验智能体及安全</h4>
-          <canvas class="research-discovery__canvas" data-research-embodied="safety" data-video-src="{{ base_path }}/images/research-panels/handover-source.mp4" width="1320" height="420" role="img" aria-label="五指灵巧手操控移液器进行取样和孔板实验，包含安全暂停、检测和人机交接。">
+          <canvas class="research-discovery__canvas" data-research-embodied="safety" data-video-src="{{ base_path }}/images/research-panels/handover-source.mp4" width="1320" height="280" role="img" aria-label="五指灵巧手操控移液器进行取样和孔板实验，包含安全暂停、检测和人机交接。">
             <img src="{{ base_path }}/images/research-panels/scientific-experiments.png" width="1320" height="420" alt="科学实验智能体及安全示意图">
           </canvas>
         </section>

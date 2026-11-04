@@ -26,11 +26,11 @@
     c.fillStyle = g; c.beginPath(); c.arc(x, y, r, 0, TAU); c.fill(); c.restore();
   }
   function setup(c, width, height, title, subtitle, p) {
-    const scale = Math.min(width / 280, height / 220);
-    c.save(); c.translate((width - 280 * scale) / 2, (height - 220 * scale) / 2); c.scale(scale, scale);
+    const scale = Math.min(width / 280, height / 160);
+    c.save(); c.translate((width - 280 * scale) / 2, (height - 160 * scale) / 2); c.scale(scale, scale);
     c.lineCap = 'round'; c.lineJoin = 'round';
-    text(c, title, 140, 21, p, 17, p.ink);
-    text(c, subtitle, 140, 43, p, 14);
+    text(c, title, 140, 17, p, 17, p.ink);
+    text(c, subtitle, 140, 35, p, 14);
   }
   function protein(c, cx, cy, rx, ry, angle, color, opacity = 1, outlineOnly = false) {
     c.save(); c.translate(cx, cy); c.rotate(angle); c.globalAlpha *= opacity;
@@ -98,7 +98,8 @@
     const t=cycle>11.35?0:cycle;
     const alpha=cycle<10.8?1:cycle<11.35?1-smooth((cycle-10.8)/.55):smooth((cycle-11.35)/.65);
     const state=glueState(t),r=state.rearrange,d=state.docking;
-    c.save(); c.beginPath(); c.rect(10,53,260,144); c.clip();
+    c.save(); c.beginPath(); c.rect(10,40,260,99); c.clip();
+    c.translate(140,90); c.scale(.68,.68); c.translate(-140,-125);
     c.globalAlpha*=alpha;
     const top={x:lerp(102,97,r),y:lerp(88,96,r),angle:lerp(-.15,-.24,r)};
     const bottom={x:lerp(202,189,r),y:lerp(163,155,r),angle:lerp(.17,-.32,r)};
@@ -144,7 +145,7 @@
     });
     drawGlue(c,pts,p);
     c.restore();
-    text(c,t<4.9?'分子对接　位姿搜索':t<8.4?'界面构象重排':'复合物稳定性评估',140,213,p,13);
+    text(c,t<4.9?'分子对接　位姿搜索':t<8.4?'界面构象重排':'复合物稳定性评估',140,156,p,13);
     c.restore();
   };
 
@@ -180,12 +181,13 @@
     const t=((seconds%12)+12)%12,theta=t/12*TAU;
     const engagement=(1-Math.cos(theta))/2;
     const risk=engagement*engagement;
-    c.save();c.beginPath();c.rect(10,52,260,144);c.clip();
+    c.save();c.beginPath();c.rect(10,40,260,101);c.clip();
+    c.translate(140,86);c.scale(.8,.8);c.translate(-140,-126);
     const pts=rnaPoints(theta),prev=rnaPoints(theta-.5);
     drawRna(c,prev,p,.12);drawRna(c,pts,p);
     const enzyme={x:164-15*engagement,y:82+18*engagement};
     nuclease(c,enzyme.x,enzyme.y,p,theta);
-    text(c,'核酸酶',211,80,p,12,p.teal);
+    text(c,'核酸酶',211,80,{...p,typeScale:(p.typeScale||1)/.8},12,p.teal);
     const a=pts[7],b=pts[8],center={x:(a.x+b.x)/2,y:(a.y+b.y)/2};
     c.save();c.setLineDash([2,3]);
     line(c,{x:enzyme.x-3,y:enzyme.y+16},center,p.teal,1.2,.25+.45*engagement);c.restore();
@@ -203,9 +205,9 @@
       for(let i=1;i<fragment.length;i++)line(c,fragment[i-1],fragment[i],p.red,1.8,.28*risk);
       fragment.forEach(q=>ball(c,q.x,q.y,2.8,p.red,.25*risk));
     }
-    text(c,'2′-OMe　2′-F　PS',140,191,p,12.5);
     c.restore();
-    text(c,['模拟核酸酶接触','评估骨架完整性','定位潜在降解位点'][Math.floor(t/4)],140,213,p,13);
+    text(c,'2′-OMe　2′-F　PS',140,137,p,12.5);
+    text(c,['模拟核酸酶接触','评估骨架完整性','定位潜在降解位点'][Math.floor(t/4)],140,156,p,13);
     c.restore();
   };
 })();

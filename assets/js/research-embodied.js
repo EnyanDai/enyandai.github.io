@@ -10,10 +10,10 @@ function line(c,ps,col,w=2,dash=[]){c.strokeStyle=col;c.lineWidth=w;c.setLineDas
 function box(c,x,y,w,h,r,fill,stroke){c.beginPath();c.roundRect(x,y,w,h,r);if(fill){c.fillStyle=fill;c.fill();}if(stroke){c.strokeStyle=stroke;c.lineWidth=1.5;c.stroke();}}
 function ball(c,x,y,r=10){const g=c.createRadialGradient(x-3,y-4,1,x,y,r);g.addColorStop(0,'#eaf0f2');g.addColorStop(.5,'#8c9ea7');g.addColorStop(1,'#576d78');c.fillStyle=g;c.beginPath();c.arc(x,y,r,0,Math.PI*2);c.fill();c.fillStyle=P.teal;c.beginPath();c.arc(x,y,r*.43,0,Math.PI*2);c.fill();}
 function arm(c,wrist){
- const b={x:200,y:282},l1=170,l2=199,dx=wrist.x-b.x,dy=wrist.y-b.y,d=Math.hypot(dx,dy);
+ const b={x:200,y:190},l1=116,l2=172,dx=wrist.x-b.x,dy=wrist.y-b.y,d=Math.hypot(dx,dy);
  const a=Math.atan2(dy,dx)-Math.acos(Math.max(-1,Math.min(1,(d*d+l1*l1-l2*l2)/(2*d*l1))));
  const e={x:b.x+l1*Math.cos(a),y:b.y+l1*Math.sin(a)};
- c.fillStyle='#e6edef';c.beginPath();c.ellipse(b.x,306,43,7,0,0,Math.PI*2);c.fill();box(c,b.x-35,294,70,12,5,'#728995');box(c,b.x-15,274,30,24,5,'#90a4ae');
+ c.fillStyle='#e6edef';c.beginPath();c.ellipse(b.x,214,43,7,0,0,Math.PI*2);c.fill();box(c,b.x-35,202,70,12,5,'#728995');box(c,b.x-15,182,30,24,5,'#90a4ae');
  for(const[q,r]of[[b,e],[e,wrist]]){line(c,[[q.x,q.y],[r.x,r.y]],'#728692',19);line(c,[[q.x-3,q.y-3],[r.x-3,r.y-3]],'#d4e1e5',12);line(c,[[q.x-4,q.y-5],[r.x-4,r.y-5]],'#f8fbfc',2);}
  ball(c,b.x,b.y,14);ball(c,e.x,e.y,13);ball(c,wrist.x,wrist.y,11);
 }
@@ -68,33 +68,25 @@ function drop(c,x,y,a=1){c.save();c.globalAlpha=a;c.fillStyle='#3b9a81';c.beginP
 function state(t){if(t<2.4)return['取样吸液',P.blue];if(t<4.8)return['定量分配至微孔板',P.teal];if(t<6.4)return['人员靠近，暂停移液',P.red];if(t<8.2)return['确认安全，继续分配',P.teal];if(t<9.8)return['反应完成，送入检测',P.teal];return['检测读出，结果回传',P.teal];}
 function experiment(c,t){
  const risk=t>=4.8&&t<6.4, S=state(t);
- c.save();c.beginPath();c.rect(0,0,900,324);c.clip();c.lineCap='round';c.lineJoin='round';
- // Tasks are experiment types; the animation illustrates a shared wet-lab workflow.
- txt(c,'分子胶验证　RNA稳定性　酶活检测',442,22,19,P.muted);
- txt(c,'灵巧手操控移液器',480,53,22,P.ink);
- // A compact instruction card represents the scientific agent's plan.
- txt(c,'实验智能体',80,72,20,P.ink);box(c,22,88,119,78,5,'#f4f8fa','#bad0d8');txt(c,'取样与分配',81,114,18);line(c,[[40,135],[125,135]],'#bed0d6',3);line(c,[[40,151],[104,151]],'#cedbdf',3);
- line(c,[[148,129],[178,129]],'#b6d1d7',1.6,[3,5]);const px=148+30*((t/2)%1);c.fillStyle=P.teal;c.beginPath();c.arc(px,129,3,0,Math.PI*2);c.fill();
- // Laboratory bench and open sample/reagent tubes.
- line(c,[[161,307],[878,307]],'#a5b9c2',2.1);
- box(c,305,281,98,26,4,'#e5efed','#a0bfb5');tube(c,321,224,'#99c5dd',31,true);tube(c,350,213,'#64b09a',40,false);tube(c,380,224,'#b7a1ce',31,true);
- txt(c,'样品与试剂',353,323,18,P.muted);
- // Plate transport rail and reader, drawn before the moving sample carrier.
- box(c,441,294,417,8,4,'#dee8e9');
- box(c,700,146,178,144,10,'#e8eff2','#93acb7');box(c,709,156,159,102,7,'#f4f8fa');
- txt(c,'微孔板检测',789,127,21,P.ink);
- box(c,727,166,127,65,4,'#ffffff','#aac0c9');
- txt(c,'检测读出',790,185,16,P.muted);
- box(c,705,263,169,20,3,'#738995');line(c,[[712,285],[868,285]],'#abc1ca',3);
- // Visible blank plate gradually fills as individual droplets arrive.
+ c.save();c.beginPath();c.rect(0,0,900,226);c.clip();c.lineCap='round';c.lineJoin='round';
+ // Compact wet-lab composition: short robot reach, full pipette and plate workflow.
+ txt(c,'灵巧手操控移液器',445,23,22,P.ink);
+ txt(c,'实验智能体',80,38,20,P.ink);box(c,22,53,119,68,5,'#f4f8fa','#bad0d8');txt(c,'取样与分配',81,79,18);line(c,[[40,96],[125,96]],'#bed0d6',3);line(c,[[40,110],[104,110]],'#cedbdf',3);
+ line(c,[[148,92],[178,92]],'#b6d1d7',1.6,[3,5]);const px=148+30*((t/2)%1);c.fillStyle=P.teal;c.beginPath();c.arc(px,92,3,0,Math.PI*2);c.fill();
+ line(c,[[161,215],[878,215]],'#a5b9c2',2.1);
+ box(c,305,189,98,26,4,'#e5efed','#a0bfb5');tube(c,321,132,'#99c5dd',31,true);tube(c,350,121,'#64b09a',40,false);tube(c,380,132,'#b7a1ce',31,true);
+ box(c,441,202,417,8,4,'#dee8e9');
+ box(c,700,60,178,138,10,'#e8eff2','#93acb7');box(c,709,70,159,96,7,'#f4f8fa');
+ txt(c,'微孔板检测',789,44,21,P.ink);
+ box(c,727,80,127,65,4,'#ffffff','#aac0c9');txt(c,'检测读出',790,99,16,P.muted);
+ box(c,705,171,169,20,3,'#738995');line(c,[[712,193],[868,193]],'#abc1ca',3);
  let filled=t<3.5?0:t<4.8?.43:t<6.4?.43:t<8.2?mix(.43,1,(t-6.4)/1.8):1;
  let slide=smooth((t-8.2)/1.6),plateAlpha=1-smooth((t-9.25)/.55);
- plate(c,mix(443,702,slide),252,filled,plateAlpha);
- // Three qualitative readout traces deliberately omit axes values.
+ plate(c,mix(443,702,slide),160,filled,plateAlpha);
  if(t>=9.8){
-  const u=clamp((t-9.8)/1.35);c.save();c.beginPath();c.rect(734,190,112*u,33);c.clip();
-  for(let k=0;k<3;k++){const cols=['#318e7a','#5790bb','#9178ad'];const ps=[];for(let i=0;i<32;i++)ps.push([735+i*3.55,218-k*6-(10-k*2)*Math.exp(-Math.pow((i-(12+k*4))/5.5,2))]);line(c,ps,cols[k],1.6);}
-  c.restore();c.fillStyle=P.teal;c.beginPath();c.arc(858,274,3,0,Math.PI*2);c.fill();
+  const u=clamp((t-9.8)/1.35);c.save();c.beginPath();c.rect(734,104,112*u,33);c.clip();
+  for(let k=0;k<3;k++){const cols=['#318e7a','#5790bb','#9178ad'];const ps=[];for(let i=0;i<32;i++)ps.push([735+i*3.55,132-k*6-(10-k*2)*Math.exp(-Math.pow((i-(12+k*4))/5.5,2))]);line(c,ps,cols[k],1.6);}
+  c.restore();c.fillStyle=P.teal;c.beginPath();c.arc(858,182,3,0,Math.PI*2);c.fill();
  }
  let w={x:350,y:109};
  if(t<1)w.y=mix(109,133,smooth(t));
@@ -105,30 +97,30 @@ function experiment(c,t){
  else if(t<6.4)w={x:525,y:127};
  else if(t<8.2)w={x:mix(525,566,smooth((t-6.4)/1.8)),y:127};
  else {let u=smooth((t-8.2)/1);w={x:mix(566,480,u),y:mix(127,76,u)};}
+ // Move the instrument along a shallow reach while preserving its proportions.
+ w.y=48+(w.y-76)*.3;
  let volume=t<1.8?mix(.05,.9,smooth((t-.6)/1.2)):t<3.4?.9:t<4.8?mix(.9,.55,(t-3.4)/1.4):t<6.4?.55:t<8.2?mix(.55,.07,(t-6.4)/1.8):.07;
  const dispensing=(t>=3.4&&t<4.8)||(t>=6.4&&t<8.2),u=(t*3)%1;
  const press=t<.65?1:t<1.8?1-smooth((t-.65)/1.15):dispensing?smooth(u/.26)*(1-smooth((u-.6)/.35)):0;
- arm(c,{x:w.x-102,y:w.y+46});pipette(c,w,volume,press);dexterousGrip(c,w,press);
- if((t>=3.4&&t<4.8)||(t>=6.4&&t<8.2)){
-  if(u>.22)drop(c,w.x,w.y+107+19*(u-.22)/.78,1-u*.1);
- }
+ arm(c,{x:w.x-102*.82,y:w.y+46*.82});
+ c.save();c.translate(w.x,w.y);c.scale(.82,.82);pipette(c,{x:0,y:0},volume,press);dexterousGrip(c,{x:0,y:0},press);c.restore();
+ if(dispensing&&u>.22)drop(c,w.x,w.y+88+18*(u-.22)/.78,1-u*.1);
  const enter=smooth((t-4.7)/.5)*(1-smooth((t-6)/.45));
  if(enter>.001){
-  c.save();c.globalAlpha=enter;c.fillStyle='#c65b5c12';c.strokeStyle=P.red;c.lineWidth=1.5;c.setLineDash([4,5]);c.beginPath();c.ellipse(571,214,62,41,0,0,Math.PI*2);c.fill();c.stroke();c.restore();hand(c,mix(945,579,enter),213,enter);
+  c.save();c.globalAlpha=enter;c.fillStyle='#c65b5c12';c.strokeStyle=P.red;c.lineWidth=1.5;c.setLineDash([4,5]);c.beginPath();c.ellipse(571,137,62,35,0,0,Math.PI*2);c.fill();c.stroke();c.restore();hand(c,mix(945,579,enter),136,enter);
  }
- if(risk){box(c,530,70,105,35,4,'#fbedeb');txt(c,'暂停移液',582,94,21,P.red,undefined,500);line(c,[[567,108],[543,137]],P.red,1.4,[3,5]);}
- else if(t>=6.4&&t<8.2){txt(c,'安全确认',614,94,19,P.teal);}
+ if(risk){box(c,542,37,105,30,4,'#fbedeb');txt(c,'暂停移液',594,59,21,P.red,undefined,500);line(c,[[567,70],[550,88]],P.red,1.4,[3,5]);}
+ else if(t>=6.4&&t<8.2){txt(c,'安全确认',614,59,19,P.teal);}
  c.restore();return S;
 }
-window.drawExperimentSafety=function(c,t,w=1320,h=420,video){
- t=((t%12)+12)%12;c.save();c.scale(w/1320,h/420);c.fillStyle='#ffffff';c.fillRect(0,0,1320,420);
- txt(c,'科学实验自动执行',450,29,25,P.ink,undefined,500);txt(c,'人机交接',1118,29,25,P.ink,undefined,500);
- txt(c,'流程示意',887,28,15,P.muted,'end');
- c.save();c.translate(0,42);const S=experiment(c,t);c.restore();
- if(video&&video.readyState>=2)c.drawImage(video,0,24,480,246,936,108,364,186.55);
- else box(c,936,108,364,187,0,'#f1f4f4');
- txt(c,'动态跟随　交接确认',1118,329,20,P.muted);
- txt(c,S[0],450,396,23,S[1],undefined,500);
+window.drawExperimentSafety=function(c,t,w=1320,h=280,video){
+ t=((t%12)+12)%12;c.save();c.scale(w/1320,h/280);c.fillStyle='#ffffff';c.fillRect(0,0,1320,280);
+ txt(c,'分子胶验证　RNA稳定性　酶活检测',450,22,21,P.ink,undefined,500);txt(c,'人机交接',1118,22,25,P.ink,undefined,500);
+ c.save();c.translate(0,27);const S=experiment(c,t);c.restore();
+ if(video&&video.readyState>=2)c.drawImage(video,0,24,480,246,936,40,364,186.55);
+ else box(c,936,40,364,187,0,'#f1f4f4');
+ txt(c,'动态跟随　交接确认',1118,265,20,P.muted);
+ txt(c,S[0],450,272,23,S[1],undefined,500);
  c.restore();
 };
 })();
@@ -138,7 +130,7 @@ window.drawExperimentSafety=function(c,t,w=1320,h=420,video){
   'use strict';
   var C = { ink: '#183249', muted: '#4c6476', blue: '#3378bf', teal: '#267e76', amber: '#bf7c19' };
   var FONT = '"PingFang SC","Microsoft YaHei",Arial,sans-serif';
-  var sizes = { crossHand: [1320, 300], brain: [1320, 400], safety: [1320, 420] };
+  var sizes = { crossHand: [1320, 240], brain: [1320, 260], safety: [1320, 280] };
   var stillTimes = { crossHand: 2, brain: 5.5, safety: 3.8 };
 
   function text(c, s, x, y, size, color, align, weight) {
@@ -168,43 +160,43 @@ window.drawExperimentSafety=function(c,t,w=1320,h=420,video){
     var origins = [[112, 112], [752, 112], [1392, 112], [112, 592], [752, 592], [1392, 592]];
     names.forEach(function (name, i) {
       text(c, name, 110 + i * 220, 27, 24, C.ink, 'center');
-      videoCrop(c, video, origins[i][0], origins[i][1], 416, 416, 2 + i * 220, 38, 216, 216);
+      videoCrop(c, video, origins[i][0], origins[i][1], 416, 416, 22 + i * 220, 33, 176, 176);
     });
-    text(c, '跨手型适配', 16, 288, 19, C.muted);
-    text(c, '甜甜圈抓取', 540, 288, 22, t < 6 ? C.teal : C.muted, 'center');
-    text(c, '酒杯抓取', 785, 288, 22, t >= 6 ? C.teal : C.muted, 'center');
-    text(c, '多任务操作', 1304, 288, 19, C.muted, 'right');
+    text(c, '跨手型适配', 16, 234, 19, C.muted);
+    text(c, '甜甜圈抓取', 540, 234, 22, t < 6 ? C.teal : C.muted, 'center');
+    text(c, '酒杯抓取', 785, 234, 22, t >= 6 ? C.teal : C.muted, 'center');
+    text(c, '多任务操作', 1304, 234, 19, C.muted, 'right');
   }
 
   function brainSourceTime(t) { return t < 4.5 ? 10 + t / 2.5 : t < 6.5 ? 11.84 : 11.8 + (t - 6.5) / 2.5; }
   function brainNode(c, y, title, sub, active, color) {
     c.fillStyle = active ? (color === C.amber ? '#fff5e6' : '#eef7f6') : '#f7fafb';
     c.strokeStyle = active ? color : '#b5c9d3'; c.lineWidth = active ? 2 : 1.3;
-    c.beginPath(); c.roundRect(20, y, 270, 75, 5); c.fill(); c.stroke();
-    text(c, title, 155, y + 30, 26, active ? color : C.ink, 'center', 500);
-    text(c, sub, 155, y + 57, 19, C.muted, 'center');
+    c.beginPath(); c.roundRect(20, y, 270, 58, 5); c.fill(); c.stroke();
+    text(c, title, 155, y + 25, 25, active ? color : C.ink, 'center', 500);
+    text(c, sub, 155, y + 47, 19, C.muted, 'center');
   }
   function drawBrain(c, t, video) {
     var sourceTime = brainSourceTime(t), intervening = sourceTime >= 11.8 && sourceTime < 12;
-    brainNode(c, 45, '大脑', '任务理解　规划纠错', intervening, C.amber);
-    brainNode(c, 155, '小脑', 'VLA 操作技能', !intervening, C.teal);
-    brainNode(c, 265, '执行与感知', '动作执行　状态反馈', false, C.teal);
-    arrow(c, [[140, 120], [140, 155]], C.teal);
-    arrow(c, [[140, 230], [140, 265]], C.teal);
-    arrow(c, [[290, 302], [308, 302], [308, 82], [290, 82]], intervening ? C.amber : '#7895a4');
-    var ty = 302 - (t % 1.5) / 1.5 * 220;
+    brainNode(c, 13, '大脑', '任务理解　规划纠错', intervening, C.amber);
+    brainNode(c, 88, '小脑', 'VLA 操作技能', !intervening, C.teal);
+    brainNode(c, 163, '执行与感知', '动作执行　状态反馈', false, C.teal);
+    arrow(c, [[140, 71], [140, 88]], C.teal);
+    arrow(c, [[140, 146], [140, 163]], C.teal);
+    arrow(c, [[290, 192], [308, 192], [308, 42], [290, 42]], intervening ? C.amber : '#7895a4');
+    var ty = 192 - (t % 1.5) / 1.5 * 150;
     c.beginPath(); c.arc(308, ty, 3.5, 0, Math.PI * 2); c.fillStyle = intervening ? C.amber : C.teal; c.fill();
-    text(c, '状态观测与异常反馈', 155, 379, 19, C.muted, 'center');
-    text(c, 'Astra 干预示例', 330, 29, 24, C.ink);
-    text(c, '演示片段慢放', 1302, 29, 18, C.muted, 'right');
-    videoCrop(c, video, 0, 0, 426, 240, 330, 45, 480, 270);
-    videoCrop(c, video, 854, 0, 426, 240, 822, 45, 480, 270);
-    text(c, '全局视角', 330, 336, 19, C.muted);
-    text(c, '末端视角', 822, 336, 19, C.muted);
-    var status = sourceTime < 11.8 ? '小脑执行抓取与搬运' : intervening ? '数字滑落  Astra 干预' : '交回小脑  重新接近';
-    text(c, status, 330, 377, 25, intervening ? C.amber : C.teal);
-    text(c, '原片状态', 1302, 344, 14, C.muted, 'right');
-    videoCrop(c, video, 24, 260, 347, 65, 1110, 351, 192, 36);
+    text(c, '状态观测与异常反馈', 155, 251, 19, C.muted, 'center');
+    text(c, 'Astra 干预示例', 330, 25, 24, C.ink);
+    text(c, '演示片段慢放', 1302, 25, 18, C.muted, 'right');
+    // Contain each full camera crop, keeping the robot and tabletop proportions.
+    videoCrop(c, video, 0, 0, 426, 240, 380, 37, 337.25, 190);
+    videoCrop(c, video, 854, 0, 426, 240, 865, 37, 337.25, 190);
+    text(c, '全局视角', 548.625, 251, 19, C.muted, 'center');
+    text(c, '末端视角', 1033.625, 251, 19, C.muted, 'center');
+    var status = sourceTime < 11.8 ? '小脑执行' : intervening ? 'Astra 干预' : '小脑重试';
+    text(c, status, 774, 117, 23, intervening ? C.amber : C.teal, 'center');
+    arrow(c, [[733, 137], [815, 137]], intervening ? C.amber : C.teal);
   }
 
   function initialize(canvas) {

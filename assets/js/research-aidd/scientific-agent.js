@@ -8,9 +8,9 @@
       scenes.agentCoreCompact(c,seconds,330,105,p);c.translate(0,105);
       scenes.agentCollaboration(c,seconds,330,600,p);c.restore();return;
     }
-    c.save();c.scale(width/840,height/270);
-    scenes.agentFramework(c,seconds,180,270,p);
-    c.translate(180,0);scenes.agentCollaboration(c,seconds,660,270,p);
+    c.save();c.scale(width/840,height/190);
+    scenes.agentFramework(c,seconds,180,190,p);
+    c.translate(180,0);scenes.agentCollaboration(c,seconds,660,190,p);
     c.restore();
   };
 })();
