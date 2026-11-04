@@ -26,12 +26,7 @@ I am a recipient of China’s National Overseas Talent Recruitment Program (国�
     </p>
 </div>
 
-## Research Directions at <img src="../images/logo.svg" style="height: 2.5em; vertical-align: middle;">(Trust & Application AI Lab)
-
-My recent research interests lie in the **Protein Foundation Model** and the **Visual Language Action (VLA) model**. Specifically, he believes that scientific discoveries in proteins can be reshaped by a system of: LLM Idea Propose <-> Protein Foundation Model Dry Experiments <-> Wet Experiments by Visual Language Action Model. 
-<div style="display: flex; justify-content: center;">
-    <img src="..\images\research.png" alt="" style="width: 100%" class="image">
-</div>
+{% include research-directions.html %}
 
 
 ## News
