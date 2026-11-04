@@ -5,7 +5,7 @@ Rebuild the single browser script with `node assets/js/research-aidd/build.cjs`.
 Load `assets/js/research-aidd.js` with `defer`. It renders canvases marked with
 `data-research-scene="design"`, `"worldModel"`, or `"agent"` at native screen
 pixel density, with a maximum device pixel ratio of 3. The expected aspect ratios
-are 840/150, 840/160, and 840/190 respectively.
+are 840/120, 840/140, and 840/190 respectively.
 
 The controller pauses drawings outside the viewport and inside an inactive research
 panel. Reduced-motion mode displays a representative static frame. It adds no

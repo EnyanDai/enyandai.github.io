@@ -146,7 +146,7 @@
 (function () {
   'use strict';
   const scenes = window.ResearchScenes = window.ResearchScenes || {};
-  const TAU = Math.PI * 2, W = 280, H = 150;
+  const TAU = Math.PI * 2, W = 280, H = 120;
   const clamp = q => Math.max(0, Math.min(1, q));
   const smooth = q => { q = clamp(q); return q * q * (3 - 2 * q); };
   const mix = (a,b,q) => a + (b-a)*q;
@@ -179,14 +179,12 @@
     const s=Math.min(width/W,height/H);c.translate((width-W*s)/2,(height-H*s)/2);c.scale(s,s);
     c.lineCap='round';c.lineJoin='round';
   }
-  function base(c,title,condition,result,p) {
+  function base(c,title,p) {
     text(c,title,140,17,p,17,p.ink);
-    text(c,condition,140,35,p,14);
-    text(c,result,140,147,p,14);
   }
   function clipArt(c,scale=.76,height=90) {
-    c.beginPath();c.rect(10,39,260,height);c.clip();
-    c.translate(140,85);c.scale(scale,scale);c.translate(-190,-117);
+    c.beginPath();c.rect(10,25,260,height);c.clip();
+    c.translate(140,71);c.scale(scale,scale);c.translate(-190,-117);
   }
   function sample(target,i,count,seed,state,variant=0) {
     const a=i*2.399963+seed+variant*.71;
@@ -229,7 +227,7 @@
   const glueBonds=[[0,1,2],[1,2,1],[2,3,2],[3,4,1],[4,5,2],[5,0,1],[5,6,1],[6,7,1],[7,8,1],[8,0,1],[6,9,2],[8,10,2],[7,11,1]];
   const glueTargets=glueAtoms.map(a=>({x:171+a[0]*.85,y:130+a[1]*.85,kind:a[2]}));
   function glue(c,seconds,width,height,p) {
-    c.save();fit(c,width,height);base(c,'分子胶设计','靶蛋白　作用界面','蛋白界面小分子',p);
+    c.save();fit(c,width,height);base(c,'分子胶设计',p);
     const s=clock(seconds),u=s.u;
     c.save();clipArt(c);
     // Protein surfaces are fixed conditioning information throughout denoising.
@@ -266,7 +264,7 @@
     rnaTargets.forEach(q=>ball(c,q.x,q.y,2.7,q.strand?p.violet:p.blue,.55));
   }
   function sirna(c,seconds,width,height,p) {
-    c.save();fit(c,width,height);base(c,'siRNA 修饰设计','目标序列　修饰约束','修饰位点与类型',p);
+    c.save();fit(c,width,height);base(c,'siRNA 修饰设计',p);
     const s=clock(seconds),u=s.u,n=1-u;
     c.save();clipArt(c,1.15,85);rnaScaffold(c,p);mist(c,s,p,p.teal,40);
     c.save();c.globalAlpha*=s.alpha;
@@ -280,20 +278,19 @@
       ball(c,q.x,q.y,3.1+u*.8,colorMix(p.muted,col,u),.48+.48*u);
       c.strokeStyle=rgba(col,.15+.2*u);c.lineWidth=.8;c.beginPath();c.arc(q.x,q.y,6+n*4,0,TAU);c.stroke();
     });c.restore();c.restore();
-    text(c,'2′-OMe　2′-F　PS',140,129,p,12.5);
     c.restore();
   }
 
   function enzyme(c,seconds,width,height,p) {
-    c.save();fit(c,width,height);base(c,'酶设计','催化位点　底物信息','酶骨架与活性位点',p);
-    scenes.enzymeArtwork(c,seconds,18,40,244,90,p);
+    c.save();fit(c,width,height);base(c,'酶设计',p);
+    scenes.enzymeArtwork(c,seconds,18,25,244,90,p);
     c.restore();
   }
   scenes.designGlue=glue;scenes.designSirna=sirna;scenes.designEnzyme=enzyme;
   scenes.design=function(c,seconds,width,height,p){
-    const s=Math.min(width/840,height/150);
-    c.save();c.translate((width-840*s)/2,(height-150*s)/2);c.scale(s,s);
-    [glue,sirna,enzyme].forEach((draw,i)=>{c.save();c.translate(i*280,0);draw(c,seconds,280,150,p);c.restore();});
+    const s=Math.min(width/840,height/120);
+    c.save();c.translate((width-840*s)/2,(height-120*s)/2);c.scale(s,s);
+    [glue,sirna,enzyme].forEach((draw,i)=>{c.save();c.translate(i*280,0);draw(c,seconds,280,120,p);c.restore();});
     c.restore();
   };
 })();
@@ -327,12 +324,11 @@
     g.addColorStop(0, '#ffffff'); g.addColorStop(.29, color); g.addColorStop(1, color);
     c.fillStyle = g; c.beginPath(); c.arc(x, y, r, 0, TAU); c.fill(); c.restore();
   }
-  function setup(c, width, height, title, subtitle, p) {
-    const scale = Math.min(width / 280, height / 160);
-    c.save(); c.translate((width - 280 * scale) / 2, (height - 160 * scale) / 2); c.scale(scale, scale);
+  function setup(c, width, height, title, p) {
+    const scale = Math.min(width / 280, height / 140);
+    c.save(); c.translate((width - 280 * scale) / 2, (height - 140 * scale) / 2); c.scale(scale, scale);
     c.lineCap = 'round'; c.lineJoin = 'round';
     text(c, title, 140, 17, p, 17, p.ink);
-    text(c, subtitle, 140, 35, p, 14);
   }
   function protein(c, cx, cy, rx, ry, angle, color, opacity = 1, outlineOnly = false) {
     c.save(); c.translate(cx, cy); c.rotate(angle); c.globalAlpha *= opacity;
@@ -394,14 +390,14 @@
     c.restore();
   }
   scenes.validationGlue = function (c, seconds, width, height, p) {
-    setup(c,width,height,'分子胶','分子对接　构象重排',p);
+    setup(c,width,height,'分子胶',p);
     const cycle=((seconds%12)+12)%12;
     // Fade to a fresh free ligand rather than playing docking backwards.
     const t=cycle>11.35?0:cycle;
     const alpha=cycle<10.8?1:cycle<11.35?1-smooth((cycle-10.8)/.55):smooth((cycle-11.35)/.65);
     const state=glueState(t),r=state.rearrange,d=state.docking;
-    c.save(); c.beginPath(); c.rect(10,40,260,99); c.clip();
-    c.translate(140,90); c.scale(.68,.68); c.translate(-140,-125);
+    c.save(); c.beginPath(); c.rect(10,25,260,99); c.clip();
+    c.translate(140,75); c.scale(.68,.68); c.translate(-140,-125);
     c.globalAlpha*=alpha;
     const top={x:lerp(102,97,r),y:lerp(88,96,r),angle:lerp(-.15,-.24,r)};
     const bottom={x:lerp(202,189,r),y:lerp(163,155,r),angle:lerp(.17,-.32,r)};
@@ -447,7 +443,7 @@
     });
     drawGlue(c,pts,p);
     c.restore();
-    text(c,t<4.9?'分子对接　位姿搜索':t<8.4?'界面构象重排':'复合物稳定性评估',140,156,p,13);
+    text(c,t<4.9?'分子对接':t<8.4?'构象重排':'稳定性评估',140,137,p,13);
     c.restore();
   };
 
@@ -479,17 +475,16 @@
     ball(c,x-10,y+12,2.8,p.teal,.8);ball(c,x+5,y+16,2.8,p.teal,.8);
   }
   scenes.validationRna = function(c,seconds,width,height,p) {
-    setup(c,width,height,'RNA 修饰稳定性','链完整性　降解风险',p);
+    setup(c,width,height,'RNA 修饰稳定性',p);
     const t=((seconds%12)+12)%12,theta=t/12*TAU;
     const engagement=(1-Math.cos(theta))/2;
     const risk=engagement*engagement;
-    c.save();c.beginPath();c.rect(10,40,260,101);c.clip();
-    c.translate(140,86);c.scale(.8,.8);c.translate(-140,-126);
+    c.save();c.beginPath();c.rect(10,25,260,101);c.clip();
+    c.translate(140,71);c.scale(.8,.8);c.translate(-140,-126);
     const pts=rnaPoints(theta),prev=rnaPoints(theta-.5);
     drawRna(c,prev,p,.12);drawRna(c,pts,p);
     const enzyme={x:164-15*engagement,y:82+18*engagement};
     nuclease(c,enzyme.x,enzyme.y,p,theta);
-    text(c,'核酸酶',211,80,{...p,typeScale:(p.typeScale||1)/.8},12,p.teal);
     const a=pts[7],b=pts[8],center={x:(a.x+b.x)/2,y:(a.y+b.y)/2};
     c.save();c.setLineDash([2,3]);
     line(c,{x:enzyme.x-3,y:enzyme.y+16},center,p.teal,1.2,.25+.45*engagement);c.restore();
@@ -508,8 +503,7 @@
       fragment.forEach(q=>ball(c,q.x,q.y,2.8,p.red,.25*risk));
     }
     c.restore();
-    text(c,'2′-OMe　2′-F　PS',140,137,p,12.5);
-    text(c,['模拟核酸酶接触','评估骨架完整性','定位潜在降解位点'][Math.floor(t/4)],140,156,p,13);
+    text(c,['酶接触','骨架检查','降解风险'][Math.floor(t/4)],140,137,p,13);
     c.restore();
   };
 })();
@@ -539,7 +533,7 @@
     c.bezierCurveTo(160,157,148,152,143,168);c.bezierCurveTo(140,179,143,187,147,193);
     c.lineTo(267,193);c.closePath();
   }
-  function enzyme(c,p){
+  function enzyme(c){
     c.save();outline(c);c.fillStyle=colors.enzyme;c.fill();c.clip();
     c.fillStyle=colors.patch;
     c.beginPath();c.moveTo(145,63);c.bezierCurveTo(161,88,172,82,191,96);c.bezierCurveTo(221,121,240,92,270,108);c.lineTo(270,63);c.closePath();c.fill();
@@ -547,9 +541,6 @@
     c.fillStyle='#c7e4dc';c.beginPath();c.ellipse(245,139,28,13,-.6,0,TAU);c.fill();
     c.restore();outline(c);c.strokeStyle=colors.edge;c.lineWidth=1.1;c.stroke();
     [[206,116],[211,129],[204,142]].forEach(q=>dot(c,q[0],q[1],3.6,colors.site));
-    text(c,'酶',239,84,p,14,p.ink);
-    text(c,'活性位点',230,176,p,11.5,p.ink);
-    line(c,223,160,209,147,colors.site,1);
   }
   // Two continuous portions of one protein chain meet at the cleavage site.
   function portion(c,part){
@@ -565,13 +556,11 @@
     c.strokeStyle=colors.chain;c.lineWidth=4.8;c.lineCap='round';c.lineJoin='round';c.stroke();
   }
   scenes.validationEnzyme=function(c,seconds,width,height,p){
-    c.save();c.scale(width/280,height/160);
+    c.save();c.scale(width/280,height/140);
     text(c,'酶催化能力',140,17,p,17,p.ink);
-    text(c,'活性位点　催化裂解',140,35,p,14);
-    c.save();c.beginPath();c.rect(9,40,262,101);c.clip();
-    c.translate(140,90);c.scale(.72,.72);c.translate(-140,-125);
-    const artPalette={...p,typeScale:(p.typeScale||1)/.72};
-    enzyme(c,artPalette);
+    c.save();c.beginPath();c.rect(9,25,262,101);c.clip();
+    c.translate(140,75);c.scale(.72,.72);c.translate(-140,-125);
+    enzyme(c);
     const cycle=((seconds%12)+12)%12,t=cycle>11.25?0:cycle;
     const alpha=cycle<10.7?1:cycle<11.25?1-smooth((cycle-10.7)/.55):smooth((cycle-11.25)/.75);
     const bind=smooth((t-.75)/3.6),cleave=smooth((t-5.55)/1.15),release=smooth((t-7)/3.2);
@@ -596,12 +585,9 @@
       c.restore();
     });
     c.restore();
-    // The substrate and product names stay clear of the moving chain.
-    if(t<3.2)text(c,'蛋白底物',62,76,artPalette,12,colors.chain);
-    else if(t>=8.3)text(c,'裂解产物',67,184,artPalette,12,colors.chain);
     c.restore();
-    const caption=t<4.3?'底物进入并结合':t<5.55?'活性位点识别':t<7.1?'催化肽链裂解':'裂解产物释放';
-    text(c,caption,140,156,p,13,p.ink);
+    const caption=t<4.3?'底物结合':t<5.55?'位点识别':t<7.1?'催化裂解':'产物释放';
+    text(c,caption,140,137,p,13,p.ink);
     c.restore();
   };
 })();
@@ -613,9 +599,9 @@
   'use strict';
   const scenes = window.ResearchScenes = window.ResearchScenes || {};
   scenes.worldModel = function(c,t,width,height,p) {
-    c.save();c.scale(width/840,height/160);
+    c.save();c.scale(width/840,height/140);
     ['validationGlue','validationRna','validationEnzyme'].forEach((key,i)=>{
-      c.save();c.translate(i*280,0);scenes[key](c,t,280,160,p);c.restore();
+      c.save();c.translate(i*280,0);scenes[key](c,t,280,140,p);c.restore();
     });
     c.restore();
   };

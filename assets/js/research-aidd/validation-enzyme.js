@@ -21,7 +21,7 @@
     c.bezierCurveTo(160,157,148,152,143,168);c.bezierCurveTo(140,179,143,187,147,193);
     c.lineTo(267,193);c.closePath();
   }
-  function enzyme(c,p){
+  function enzyme(c){
     c.save();outline(c);c.fillStyle=colors.enzyme;c.fill();c.clip();
     c.fillStyle=colors.patch;
     c.beginPath();c.moveTo(145,63);c.bezierCurveTo(161,88,172,82,191,96);c.bezierCurveTo(221,121,240,92,270,108);c.lineTo(270,63);c.closePath();c.fill();
@@ -29,9 +29,6 @@
     c.fillStyle='#c7e4dc';c.beginPath();c.ellipse(245,139,28,13,-.6,0,TAU);c.fill();
     c.restore();outline(c);c.strokeStyle=colors.edge;c.lineWidth=1.1;c.stroke();
     [[206,116],[211,129],[204,142]].forEach(q=>dot(c,q[0],q[1],3.6,colors.site));
-    text(c,'酶',239,84,p,14,p.ink);
-    text(c,'活性位点',230,176,p,11.5,p.ink);
-    line(c,223,160,209,147,colors.site,1);
   }
   // Two continuous portions of one protein chain meet at the cleavage site.
   function portion(c,part){
@@ -47,13 +44,11 @@
     c.strokeStyle=colors.chain;c.lineWidth=4.8;c.lineCap='round';c.lineJoin='round';c.stroke();
   }
   scenes.validationEnzyme=function(c,seconds,width,height,p){
-    c.save();c.scale(width/280,height/160);
+    c.save();c.scale(width/280,height/140);
     text(c,'酶催化能力',140,17,p,17,p.ink);
-    text(c,'活性位点　催化裂解',140,35,p,14);
-    c.save();c.beginPath();c.rect(9,40,262,101);c.clip();
-    c.translate(140,90);c.scale(.72,.72);c.translate(-140,-125);
-    const artPalette={...p,typeScale:(p.typeScale||1)/.72};
-    enzyme(c,artPalette);
+    c.save();c.beginPath();c.rect(9,25,262,101);c.clip();
+    c.translate(140,75);c.scale(.72,.72);c.translate(-140,-125);
+    enzyme(c);
     const cycle=((seconds%12)+12)%12,t=cycle>11.25?0:cycle;
     const alpha=cycle<10.7?1:cycle<11.25?1-smooth((cycle-10.7)/.55):smooth((cycle-11.25)/.75);
     const bind=smooth((t-.75)/3.6),cleave=smooth((t-5.55)/1.15),release=smooth((t-7)/3.2);
@@ -78,12 +73,9 @@
       c.restore();
     });
     c.restore();
-    // The substrate and product names stay clear of the moving chain.
-    if(t<3.2)text(c,'蛋白底物',62,76,artPalette,12,colors.chain);
-    else if(t>=8.3)text(c,'裂解产物',67,184,artPalette,12,colors.chain);
     c.restore();
-    const caption=t<4.3?'底物进入并结合':t<5.55?'活性位点识别':t<7.1?'催化肽链裂解':'裂解产物释放';
-    text(c,caption,140,156,p,13,p.ink);
+    const caption=t<4.3?'底物结合':t<5.55?'位点识别':t<7.1?'催化裂解':'产物释放';
+    text(c,caption,140,137,p,13,p.ink);
     c.restore();
   };
 })();

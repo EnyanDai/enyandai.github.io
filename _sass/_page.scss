@@ -110,31 +110,15 @@
 .research-directions {
   margin: 2em 0;
 
-  &__header h2 {
-    margin-bottom: 0.4em;
-    font-size: 28px;
+  &__header h2 img {
+    height: 2.5em;
+    width: auto;
+    vertical-align: middle;
   }
 
   .research-directions__intro {
     font-size: 20px;
     line-height: 1.5;
-  }
-
-  &__lab {
-    display: flex;
-    align-items: center;
-    gap: 0.55em;
-    margin-bottom: 1em;
-    color: $gray;
-    font-size: 16px;
-
-    img {
-      display: block;
-      flex: 0 0 36px;
-      width: 36px;
-      height: 36px;
-      object-fit: contain;
-    }
   }
 
 }
@@ -319,8 +303,8 @@
   }
 
   &__canvas {
-    &[data-research-scene="design"] { aspect-ratio: 840 / 150; }
-    &[data-research-scene="worldModel"] { aspect-ratio: 840 / 160; }
+    &[data-research-scene="design"] { aspect-ratio: 840 / 120; }
+    &[data-research-scene="worldModel"] { aspect-ratio: 840 / 140; }
     &[data-research-scene="agent"] { aspect-ratio: 840 / 190; }
     &[data-research-embodied="crossHand"] { aspect-ratio: 1320 / 240; }
     &[data-research-embodied="brain"] { aspect-ratio: 1320 / 260; }
