@@ -6,12 +6,14 @@
 
   <p class="research-directions__intro">My research focuses on <strong>AI for Science (AI4Sci)</strong>, aiming to connect <strong>AI-driven drug discovery (AIDD)</strong> with <strong>embodied robotic manipulation</strong> in a scientific discovery loop. Computational models guide experimental design, while evidence from physical experiments informs model refinement and the next round of research.</p>
 
-  <div class="research-discovery" data-research-discovery data-active="aidd">
+  <div class="research-discovery" data-research-discovery data-active="embodied">
     <h3 class="research-discovery__title" id="research-discovery-title">AI4Sci 科学发现闭环</h3>
+    <p class="research-discovery__hint" id="research-discovery-hint">悬停或点击方向按钮，切换下方研究内容</p>
     <div class="research-discovery__navigation" role="tablist" aria-label="Research directions">
-      <button class="research-discovery__tab research-discovery__tab--aidd is-active" type="button" id="research-tab-aidd" role="tab" data-research-tab="aidd" aria-selected="true" aria-controls="research-panel-aidd" tabindex="0">
+      <button class="research-discovery__tab research-discovery__tab--aidd" type="button" id="research-tab-aidd" role="tab" data-research-tab="aidd" aria-selected="false" aria-controls="research-panel-aidd" aria-describedby="research-discovery-hint" tabindex="-1">
         <span class="research-discovery__tab-title">AIDD</span>
         <span class="research-discovery__tab-detail">干实验</span>
+        <span class="research-discovery__tab-action" aria-hidden="true"><span class="research-discovery__action-idle">悬停查看 ↓</span><span class="research-discovery__action-active">正在展示 ↓</span></span>
       </button>
       <div class="research-discovery__flow" role="presentation" aria-hidden="true">
         <span class="research-discovery__transfer research-discovery__transfer--forward">候选分子与实验方案</span>
@@ -26,23 +28,24 @@
           <circle class="research-discovery__orbit-node" cx="16" cy="40" r="6"/>
           <circle class="research-discovery__orbit-node" cx="384" cy="40" r="6"/>
           <g class="research-discovery__traveler">
-            <circle data-loop-trail cx="16" cy="40" r="2.5" opacity="0.2"/>
-            <circle data-loop-trail cx="16" cy="40" r="3.5" opacity="0.4"/>
-            <circle data-loop-trail cx="16" cy="40" r="4.5" opacity="0.65"/>
-            <circle class="research-discovery__halo" data-loop-halo cx="16" cy="40" r="16"/>
-            <circle class="research-discovery__marker" data-loop-marker cx="16" cy="40" r="7"/>
+            <circle data-loop-trail cx="384" cy="40" r="2.5" opacity="0.2"/>
+            <circle data-loop-trail cx="384" cy="40" r="3.5" opacity="0.4"/>
+            <circle data-loop-trail cx="384" cy="40" r="4.5" opacity="0.65"/>
+            <circle class="research-discovery__halo" data-loop-halo cx="384" cy="40" r="16"/>
+            <circle class="research-discovery__marker" data-loop-marker cx="384" cy="40" r="7"/>
           </g>
         </svg>
         <span class="research-discovery__transfer research-discovery__transfer--backward">实测数据与结果反馈</span>
       </div>
-      <button class="research-discovery__tab research-discovery__tab--embodied" type="button" id="research-tab-embodied" role="tab" data-research-tab="embodied" aria-selected="false" aria-controls="research-panel-embodied" tabindex="-1">
+      <button class="research-discovery__tab research-discovery__tab--embodied is-active" type="button" id="research-tab-embodied" role="tab" data-research-tab="embodied" aria-selected="true" aria-controls="research-panel-embodied" aria-describedby="research-discovery-hint" tabindex="0">
         <span class="research-discovery__tab-title">具身操作</span>
         <span class="research-discovery__tab-detail">湿实验</span>
+        <span class="research-discovery__tab-action" aria-hidden="true"><span class="research-discovery__action-idle">悬停查看 ↓</span><span class="research-discovery__action-active">正在展示 ↓</span></span>
       </button>
     </div>
-
+    <div class="research-discovery__connector" aria-hidden="true"></div>
     <div class="research-discovery__panels">
-      <div class="research-discovery__panel is-active" id="research-panel-aidd" role="tabpanel" data-research-panel="aidd" aria-labelledby="research-tab-aidd" tabindex="0">
+      <div class="research-discovery__panel" id="research-panel-aidd" role="tabpanel" data-research-panel="aidd" aria-labelledby="research-tab-aidd" tabindex="0" hidden>
         <section class="research-discovery__item">
           <h4>分子设计模型</h4>
           <canvas class="research-discovery__canvas" data-research-scene="design" width="840" height="120" role="img" aria-label="分子胶设计、siRNA 修饰设计和酶设计的条件生成过程。">
@@ -62,7 +65,7 @@
           </canvas>
         </section>
       </div>
-      <div class="research-discovery__panel" id="research-panel-embodied" role="tabpanel" data-research-panel="embodied" aria-labelledby="research-tab-embodied" tabindex="0" hidden>
+      <div class="research-discovery__panel is-active" id="research-panel-embodied" role="tabpanel" data-research-panel="embodied" aria-labelledby="research-tab-embodied" tabindex="0">
         <section class="research-discovery__item">
           <h4>跨手型、跨任务灵巧操作</h4>
           <canvas class="research-discovery__canvas" data-research-embodied="crossHand" data-video-src="{{ base_path }}/images/research-panels/cross-hand-source.mp4" width="1320" height="240" role="img" aria-label="人手与多种灵巧手完成甜甜圈和酒杯等不同物体的抓取操作。">

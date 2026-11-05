@@ -132,7 +132,6 @@
     }
 
     tabs.forEach(function (tab, index) {
-      if (tab.matches(':hover')) hoveredTabs.add(tab);
       tab.addEventListener('pointerenter', function (event) {
         if (event.pointerType === 'touch') return;
         hoveredTabs.add(tab);
@@ -202,7 +201,6 @@
 
     discovery.classList.add('is-enhanced');
     panels.forEach(function (panel) { panel.hidden = false; });
-    if (hoveredTabs.size) initial = hoveredTabs.values().next().value.dataset.researchTab;
     jumpTo(initial);
     motionChanged();
 
